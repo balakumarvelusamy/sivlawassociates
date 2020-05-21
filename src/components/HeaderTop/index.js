@@ -8,7 +8,7 @@ const HeaderTop = props => {
                     <div className="row">
                         <div className="col-md-3 col-sm-12 col-12 col-lg-5">
                             <ul className="d-flex accountLoginArea">
-                                <li><i className="fa fa-map-marker" aria-hidden="true"></i>309 1st Floor, Linghi Chetty Street, Parrys , Chennai-01</li>
+                                <li><i className="fa fa-map-marker" aria-hidden="true"></i>309 1st Floor, Linghi Chetty Street, Parrys, Chennai-01</li>
                             </ul>
                         </div>
                         <div className="col-md-6 col-sm-12 col-12 col-lg-5">
@@ -19,8 +19,7 @@ const HeaderTop = props => {
                         </div>
                         <div className="col-lg-2 col-md-3 col-sm-12">
                             <div className="btnStyle btnStyle2 text-right">
-                         
-                                <a href="#">  <i className="fa fa-whatsapp text-success lighten-2"></i> Whats App
+                                <a href="https://api.whatsapp.com/send?phone=919965449000&forceIntent=true&load=loadInIOSExternalSafari" target="blank">  <i className="fa fa-whatsapp text-success lighten-2"></i> Whats App
                                 </a>
                             </div>
                         </div>
