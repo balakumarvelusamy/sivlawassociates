@@ -25,7 +25,8 @@ const HeaderBottom = props => {
                         <div className="col-lg-3 col-md-10 col-sm-6 col-8">
                             <div className="logo">
                                 <NavLink to="/">
-                                    <img src={logo} alt="" />
+                                    {/* <img src={logo} alt=""></img> */}
+                                   <h4 className="text-white">Siva Law Associates</h4> 
                                 </NavLink>
                             </div>
                         </div>
@@ -71,18 +72,19 @@ const HeaderBottom = props => {
                         <div className="col-lg-1 col-md-2 col-sm-6 col-4">
                             <div className="searchMenuWrapper">
                                 <div className="searchWrap">
-                                    <i onClick={clickHandler} className="fa fa-search"></i>
-                                    <div className={trigger ? 'searchform active' : 'searchform'}>
-                                        <form onSubmit={submitHandler}>
+                                    <i onClick={clickHandler} className="fa fa-phone"></i>
+                                     <div className={trigger ? 'searchform active' : 'searchform'}>
+                                         +91-9965449000,+91-9965446000 <br/>044-43536263
+                                        {/* <form onSubmit={submitHandler}>
                                             <input
                                                 placeholder="search here"
                                                 value={search}
                                                 type="text"
                                                 onChange={event => setSearch(event.target.value)}
-                                            />
+                                            /> 
                                             <button><i className="fa fa-search"></i></button>
-                                        </form>
-                                    </div>
+                                        </form> */}
+                                    </div> 
                                 </div>
                                 <div onClick={responsiveHandler} className="responsiveTrigger">
                                     <span className="first"></span>
