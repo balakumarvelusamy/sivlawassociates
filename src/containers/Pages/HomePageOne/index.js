@@ -32,17 +32,19 @@ const aboutText = [
 const heroSliders = [
     {
         images: 'slideWrapperOne',
-        title: 'We Fight For Your Justice',
-        subTitle: 'As Like A Friend.',
-        text: 'The Most Talented Law Frim',
-        button: 'Contact us now'
+        title: 'Providing Complete End',
+        subTitle: 'to End Legal Services.',
+        text: 'Chennai',
+        button: 'Contact us now',
+        url:'/contact'
     },
     {
         images: 'slideWrapperTwo',
         title: 'We Fight For Your Justice',
         subTitle: 'As Like A Friend.',
-        text: 'The Most Talented Law Frim',
-        button: 'Contact us now'
+        text: 'Madurai',
+        button: 'Contact us now',
+        url:'/contact'
     },
 ]
 
