@@ -111,9 +111,8 @@ class Form extends Component {
 
   submitHandler = (event) => {
     event.preventDefault();
-    const sgMail = require("@sendgrid/mail");
-    sgMail.setApiKey('SG.RpRR-woRTzm3F0-WK0I-ww.wZsj6VkF5Xbo5YsT1KosRceb_lMxR9jdL5-RKh1YsK');
-    const error = this.validate();
+    const config = require("@../../../config");
+    const error = this.validate();  
     if (error) {
       this.setState({
         error: error || {},
@@ -126,24 +125,31 @@ class Form extends Component {
         address: "",
         description: "",
       }); 
-      (async () => {
-        try {
+    //   {
+    //     "from": "noreply@sivalawassociates.com",
+    //     "to": "vbalakumar.cse@gmail.com",
+    //     "subject": "test 1",
+    //     "fromname": "sivalawassociates.com",
+    //     "toname": "bala",
+    //     "body": "test",
+    //     "token": "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"
+    //   }
           const msg = {
-            to: "vbalakumar.cse@example.com",
+            to: this.state.email,
             from: "noreply@sivalawassociates.com",
-            subject: "Contact from Customer of sivalawassociates.in",
-            text: "Test message",
-            html: "<strong>Test message</strong>",
+            fromname:"sivalawassociates.com",
+            subject: "Message from Customer of sivalawassociates.in",
+            body: this.state.description,
+            bodyhmtl:'<p>'+ this.state.name + '</p><br/>'+
+            '<p>'+ this.state.email + '</p><br/>'+
+            '<p>'+ this.state.phone + '</p><br/>'+
+            '<p>'+ this.state.address + '</p><br/>'+
+            '<p>'+ this.state.description + '</p>',
+            token:config.SENDGRID_API_KEY
           };
-          await sgMail.send(msg);
-        } catch (error) {
-          console.error(error);
+          console.log(msg);
+          // call service sendmail method
 
-          if (error.response) {
-            console.error(error.response.body);
-          }
-        }
-      })();
     }
   };
 
