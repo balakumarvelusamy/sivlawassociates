@@ -114,6 +114,7 @@ class Form extends Component {
     const config = require("@../../../config");
     const sgMail = require("@sendgrid/mail");
     sgMail.setApiKey( config.SENDGRID_API_KEY);
+    
     const error = this.validate();  
     if (error) {
       this.setState({
@@ -127,6 +128,17 @@ class Form extends Component {
         address: "",
         description: "",
       }); 
+    //   {
+    //     "from": "noreply@sivalawassociates.com",
+    //     "to": "vbalakumar.cse@gmail.com",
+    //     "subject": "test 1",
+    //     "fromname": "sivalawassociates.com",
+    //     "toname": "bala",
+    //     "body": "test",
+    //     "token": "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"
+    //   }
+
+
       (async () => {
         try {
             console.log(this.state.email);
