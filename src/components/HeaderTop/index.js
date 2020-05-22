@@ -13,7 +13,7 @@ const HeaderTop = props => {
                         </div>
                         <div className="col-md-6 col-sm-12 col-12 col-lg-5">
                             <ul className="headerContact">
-                                <li><i className="fa fa-phone"></i> 9965449000</li>
+                                <li><i className="fa fa-phone"></i>+91-9965449000</li>
                                 <li><i className="fa fa-clock-o"></i> 9AM - PM</li>
                             </ul>
                         </div>

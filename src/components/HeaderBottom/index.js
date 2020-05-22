@@ -164,7 +164,7 @@ const HeaderBottom = (props) => {
                     +91-9965446000 <hr />
                     044-43536263<hr />
                     <a href="mailto:sivalawassociates@gmail.com">
-                      <i class="fa fa-envelope text-dark"></i>
+                      <i class="fa fa-envelope text-dark px-2"></i>
                       sivalawassociates@gmail.com
                     </a>
                     {/* <form onSubmit={submitHandler}>
