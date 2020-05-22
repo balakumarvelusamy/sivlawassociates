@@ -111,9 +111,10 @@ class Form extends Component {
 
   submitHandler = (event) => {
     event.preventDefault();
+    const config = require("@../../../config");
     const sgMail = require("@sendgrid/mail");
-    sgMail.setApiKey('SG.RpRR-woRTzm3F0-WK0I-ww.wZsj6VkF5Xbo5YsT1KosRceb_lMxR9jdL5-RKh1YsK');
-    const error = this.validate();
+    sgMail.setApiKey( config.SENDGRID_API_KEY);
+    const error = this.validate();  
     if (error) {
       this.setState({
         error: error || {},
@@ -128,13 +129,15 @@ class Form extends Component {
       }); 
       (async () => {
         try {
+            console.log(this.state.email);
           const msg = {
-            to: "vbalakumar.cse@example.com",
+            to: this.state.email,
             from: "noreply@sivalawassociates.com",
             subject: "Contact from Customer of sivalawassociates.in",
-            text: "Test message",
-            html: "<strong>Test message</strong>",
+            text: this.state.description,
+            html:'<p>'+ this.state.description + '</p>'
           };
+          console.log(msg);
           await sgMail.send(msg);
         } catch (error) {
           console.error(error);

@@ -26,7 +26,7 @@ const HeaderBottom = (props) => {
               <div className="logo">
                 <NavLink to="/">
                   {/* <img src={logo} alt=""></img> */}
-                  <h4 className="text-white">Siva Law Associates</h4>
+                  <h4 className="text-white py-2">Siva Law Associates</h4>
                 </NavLink>
               </div>
             </div>
