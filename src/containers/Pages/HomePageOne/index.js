@@ -34,7 +34,7 @@ const heroSliders = [
         images: 'slideWrapperOne',
         title: 'Providing Complete End',
         subTitle: 'to End Legal Services.',
-        text: 'Chennai',
+        text: 'Branch: Chennai',
         button: 'Contact us now',
         url:'/contact'
     },
@@ -42,7 +42,7 @@ const heroSliders = [
         images: 'slideWrapperTwo',
         title: 'We Fight For Your Justice',
         subTitle: 'As Like A Friend.',
-        text: 'Madurai',
+        text: 'Branch: Madurai',
         button: 'Contact us now',
         url:'/contact'
     },
