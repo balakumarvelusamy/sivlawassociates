@@ -66,7 +66,7 @@ const FooterArea = () => {
                     <div className="footerBottomContent">
                         <div className="row">
                             <div className="col-md-8 col-sm-10 col-12">
-                                <span>Privacy Policy | © 2018 Barristar. All rights reserved</span>
+                                <span>Privacy Policy | © 2020 Developed by TheUniqueCreations</span>
                             </div>
                             <div className="col-md-4 col-sm-2 col-12">
                                 <ul className="socialListFooter">
