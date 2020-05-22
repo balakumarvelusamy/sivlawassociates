@@ -125,16 +125,7 @@ class Form extends Component {
         email: "",
         address: "",
         description: "",
-      });
-
-      console.log(
-        "Name" + "=" + this.state.name,
-        "Phone" + "=" + this.state.phone,
-        "Email" + "=" + this.state.email,
-        "Address" + "=" + this.state.address,
-        "Description" + "=" + this.state.description
-      );
-      toast.success("Please check Consol log")
+      }); 
       (async () => {
         try {
           const msg = {
@@ -157,15 +148,6 @@ class Form extends Component {
   };
 
   render() {
-    const options = [
-      { level: "Family Law", value: "family law" },
-      { level: "Criminal Law", value: "criminal law" },
-      { level: "Business Law", value: "business law" },
-      { level: "Personal Injury", value: "personal injury" },
-      { level: "Education Law", value: "education law" },
-      { level: "Drugs Crime", value: "drugs crime" },
-    ];
-
     return (
       <form onSubmit={this.submitHandler} className="contactForm">
         <div className="row">
@@ -210,7 +192,6 @@ class Form extends Component {
           </div>
           <div className="col-sm-6 col-12">
             <div className="formInput">
-              {this.props.addressInfo ? (
                 <div className="formInput">
                   <input
                     placeholder="Address"
@@ -220,21 +201,9 @@ class Form extends Component {
                     className="form-control"
                     type="address"
                   />
+                    {this.state.error.address && <p>{this.state.error.address}</p>}
                 </div>
-              ) : (
-                <select
-                  value={this.state.address}
-                  className="form-control"
-                  onChange={this.changeHandler}
-                  name="address"
-                >
-                  {options.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.level}
-                    </option>
-                  ))}
-                </select>
-              )}
+            
             </div>
           </div>
           <div className="col-12">
