@@ -112,9 +112,6 @@ class Form extends Component {
   submitHandler = (event) => {
     event.preventDefault();
     const config = require("@../../../config");
-    const sgMail = require("@sendgrid/mail");
-    sgMail.setApiKey( config.SENDGRID_API_KEY);
-    
     const error = this.validate();  
     if (error) {
       this.setState({
@@ -137,28 +134,22 @@ class Form extends Component {
     //     "body": "test",
     //     "token": "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"
     //   }
-
-
-      (async () => {
-        try {
-            console.log(this.state.email);
           const msg = {
             to: this.state.email,
             from: "noreply@sivalawassociates.com",
-            subject: "Contact from Customer of sivalawassociates.in",
-            text: this.state.description,
-            html:'<p>'+ this.state.description + '</p>'
+            fromname:"sivalawassociates.com",
+            subject: "Message from Customer of sivalawassociates.in",
+            body: this.state.description,
+            bodyhmtl:'<p>'+ this.state.name + '</p><br/>'+
+            '<p>'+ this.state.email + '</p><br/>'+
+            '<p>'+ this.state.phone + '</p><br/>'+
+            '<p>'+ this.state.address + '</p><br/>'+
+            '<p>'+ this.state.description + '</p>',
+            token:config.SENDGRID_API_KEY
           };
           console.log(msg);
-          await sgMail.send(msg);
-        } catch (error) {
-          console.error(error);
+          // call service sendmail method
 
-          if (error.response) {
-            console.error(error.response.body);
-          }
-        }
-      })();
     }
   };
 
