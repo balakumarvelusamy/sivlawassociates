@@ -15,6 +15,7 @@ import ContactPage from '../Pages/ContactPage'
 import BlogLeftPage from '../Pages/BlogLeftPage'
 import BlogRightPage from '../Pages/BlogRightPage'
 import BlogFullWidth from '../Pages/BlogFullWidth'
+import LogInPage from '../Pages/LogInPage'
 import './App.css';
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
                         <Route exact path="/blog-left" component={BlogLeftPage} />
                         <Route exact path="/blog-right" component={BlogRightPage} />
                         <Route exact path="/blog-fullwidth" component={BlogFullWidth} />
+                        <Route exact path="/login" component={LogInPage} />
                     </Switch>
                 </BrowserRouter>
             </Fragment>

@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@sendgrid/mail": "^7.1.1",
+    "amazon-cognito-identity-js": "^4.3.0",
+    "aws-amplify": "^3.0.12",
     "axios": "^0.18.1",
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
