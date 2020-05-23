@@ -4,7 +4,7 @@ import HeaderTop from '../../../components/HeaderTop'
 import Breadcumb from '../../../components/Breadcumb'
 import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
-import Form from '../../../components/LogInForm'
+import Form from '../../../components/Form'
 // images
 import breadcumb from '../../../images/breadcumb/1.jpg'
 
