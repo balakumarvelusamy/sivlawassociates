@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionTitle from '../Title'
 import './style.scss'
+import PortfolioContent from '../Portfolio/PortfolioContent'
 
 // images
 import portfolio1 from '../../images/studies/1.jpg'
@@ -18,6 +19,8 @@ const portfolioItem = [
 ]
 const Portfolio = ({ title, subTitle, className, fullWidth, portfolioItem }) => {
     return (
+        <>
+        <PortfolioContent></PortfolioContent>
         <div className={className}>
             <div className="container">
                 <div className="row">
@@ -60,6 +63,7 @@ const Portfolio = ({ title, subTitle, className, fullWidth, portfolioItem }) => 
                     </div>
                 )}
         </div>
+        </>
     )
 }
 export default Portfolio

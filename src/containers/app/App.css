@@ -1,0 +1,16 @@
+  /* common */
+  .inner-container li{
+    display: list-item;
+    list-style: disc;
+    margin-left: 50px;
+    line-height: 35px;
+    padding-left: 10px;
+}
+
+    .inner-container {
+       padding-top:20px;
+    }
+
+    .inner-container h1 {
+        padding-bottom: 20px;;
+    }

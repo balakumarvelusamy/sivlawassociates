@@ -18,7 +18,7 @@ import './style.scss'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
-    { name: 'Resent Case Studies' }
+    { name: 'Alternate Dispute Resolution' }
 ]
 
 const portfolioItem = [
@@ -44,7 +44,7 @@ const PortfolioPage = () => {
             </header>
             <Breadcumb
                 className="breadcumbArea"
-                title="Case Stadies"
+                title="Alternate Dispute Resolution"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />

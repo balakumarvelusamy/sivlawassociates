@@ -53,7 +53,7 @@ const services = [
 
 const breadcumbMenu = [
     {name:'Home',route:'/'},
-    {name:'Practice area'}
+    {name:'Banking & Finance'}
 ]
 
 const PracticePage = () => {
@@ -65,7 +65,7 @@ const PracticePage = () => {
             </header>
             <Breadcumb 
                 className="breadcumbArea"
-                title="Practice Area"
+                title="Banking &amp; Finance"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />

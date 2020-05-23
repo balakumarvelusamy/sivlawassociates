@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+import BankingFinanceContent from '../ServiceArea/BankingFinanceContent'
 
 const services = [
     { icon: 'fi flaticon-lawyer', subtitle: 'Book Your', title: 'Appointment' },
@@ -8,22 +9,25 @@ const services = [
 ]
 const Service = props => {
     return (
-        <div className={props.className}>
-            <div className="container">
-                <div className="row">
-                    {services.map((service, i) => (
-                        <div key={i} className="col-lg-4 col-md-6">
-                            <div className="serviceItem">
-                                <div className="serviceIcon">
-                                    <i className={service.icon}></i>
-                                </div>
-                                <div className="serviceText">
-                                    <span>{service.subtitle}</span>
-                                    <h3>{service.title}</h3>
+        <div>
+            <BankingFinanceContent></BankingFinanceContent>
+            <div className={props.className}>
+                <div className="container">
+                    <div className="row">
+                        {services.map((service, i) => (
+                            <div key={i} className="col-lg-4 col-md-6">
+                                <div className="serviceItem">
+                                    <div className="serviceIcon">
+                                        <i className={service.icon}></i>
+                                    </div>
+                                    <div className="serviceText">
+                                        <span>{service.subtitle}</span>
+                                        <h3>{service.title}</h3>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
