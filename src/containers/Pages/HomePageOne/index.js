@@ -5,7 +5,8 @@ import HeroSlider from '../../../components/HeroSlider'
 import Service from '../../../components/Service'
 import About from '../../../components/About'
 import ServiceArea from '../../../components/ServiceArea'
-import Portfolio from '../../../components/Portfolio'
+// import Portfolio from '../../../components/Portfolio'
+import Disclaimer from '../../../components/Disclaimer'
 import Testmonial from "../../../components/Testmonial";
 import ContactArea from '../../../components/ContactArea'
 import TeamMember from '../../../components/TeamMember'
@@ -99,7 +100,7 @@ const HomePageOne = () => {
             <HeroSlider 
                 sliders={heroSliders}
                 className="heroSliderArea" />
-            <Service className="serviceArea" />
+            {/* <Service className="serviceArea" /> */}
             <About
                 className="aboutArea"
                 title="About Us"
@@ -113,7 +114,7 @@ const HomePageOne = () => {
                 subTitle="Area Of Practice"
                 services={services}
             />
-            <Portfolio
+            <Disclaimer
                 className="portfolioArea"
                 title="Our Resent Case Studies"
                 subTitle="Here Our Best Work"

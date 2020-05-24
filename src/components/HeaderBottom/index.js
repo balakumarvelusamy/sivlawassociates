@@ -109,7 +109,7 @@ const HeaderBottom = (props) => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink exact to="/case-stadies-details">
+                      <NavLink exact to="/intellectual">
                       Intellectual Property
                       </NavLink>
                     </li>
@@ -119,12 +119,12 @@ const HeaderBottom = (props) => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink exact to="/case-stadies-details">
+                      <NavLink exact to="/drafting">
                       Drafting , Pleading & Conveyancing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink exact to="/case-stadies-details">
+                      <NavLink exact to="/tax">
                       Tax
                       </NavLink>
                     </li>

@@ -6,7 +6,6 @@ import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
 import SearchSidebar from "../../../components/SearchSidebar";
-import SingleContentAreaCyberLaw from "../../../components/SingleContentAreaCyberLaw";
 import RecentPosts from "../../../components/RecentPosts";
 import Portfolio from "../../../components/Portfolio";
 // images
@@ -17,8 +16,9 @@ import portfolio1 from "../../../images/studies/1.jpg";
 import portfolio2 from "../../../images/studies/2.jpg";
 import portfolio3 from "../../../images/studies/3.jpg";
 import "./style.scss";
+import TaxContent from '../TaxPage/TaxContent'
 
-const breadcumbMenu = [{ name: "Home", route: "/" },{name : 'Area of Practice' , route:'/'}, { name: "Cyber Law" }];
+const breadcumbMenu = [{ name: "Home", route: "/" },{name : 'Area of Practice' , route:'/'}, { name: "Tax" }];
 
 const portfolioItem = [
   { images: portfolio1, title: "General Service", subtitle: "Corporate" },
@@ -26,7 +26,7 @@ const portfolioItem = [
   { images: portfolio3, title: "Business Accounting", subtitle: "Business" },
 ];
 
-const CyberLawPage = () => {
+const Tax = () => {
   return (
     <Fragment>
       <header className="headerArea">
@@ -35,15 +35,15 @@ const CyberLawPage = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="Case Stadies"
+        title="Tax"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />
       <div className="singleArea singlePortfolioArea">
-        <div className="container">
+        <div className="container inner-container">
           <div className="row">
             <div className="col-lg-8 col-12">
-              <SingleContentAreaCyberLaw
+              <TaxContent
                 className="singleContentArea"
                 image={single}
               />
@@ -69,4 +69,4 @@ const CyberLawPage = () => {
     </Fragment>
   );
 };
-export default CyberLawPage;
+export default Tax;

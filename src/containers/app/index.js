@@ -20,6 +20,9 @@ import LaborLawPage from '../Pages/LaborLawPage'
 import CyberLawPage from '../Pages/CyberLawPage'
 import BankingFinancePage from '../Pages/BankingFinancePage'
 import './App.css';
+import Intellectual from '../Pages/IntellectualPage';
+import Drafting from '../Pages/DraftingPage';
+import Tax from '../Pages/TaxPage';
 
 class App extends Component {
     render() {
@@ -36,7 +39,7 @@ class App extends Component {
                         <Route exact path="/practice-details" component={PracticeSinglePage} />
                      
                         <Route exact path="/case-stadies" component={PortfolioPage} />
-                        <Route exact path="/case-stadies-details" component={SinglePortfolioPage} />
+                        <Route exact path="/intellectual" component={Intellectual} />
                         <Route exact path="/attorneys" component={TeamPage} />
                         <Route exact path="/attorneys-single" component={SingleTeamPage} />
                         <Route exact path="/contact" component={ContactPage} />
@@ -47,6 +50,8 @@ class App extends Component {
                         <Route exact path="/labourlaw" component={LaborLawPage} />
                         <Route exact path="/cyber-law" component={CyberLawPage} />
                         <Route exact path="/banking-finance" component={BankingFinancePage} />
+                        <Route exact path="/drafting" component={Drafting} />
+                        <Route exact path="/tax" component={Tax} />
                         
                     </Switch>
                 </BrowserRouter>

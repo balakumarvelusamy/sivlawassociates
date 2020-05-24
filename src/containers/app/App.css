@@ -1,10 +1,21 @@
   /* common */
-  .inner-container li{
-    display: list-item;
+  .inner-container  li {
+    display: block;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    line-height: 35px;
+    padding-left: 10px; 
+  }
+  .inner-container li:before{
+    /* display: list-item;
     list-style: disc;
     margin-left: 50px;
     line-height: 35px;
-    padding-left: 10px;
+    padding-left: 10px; */
+    content: "\f0da";
+    font-family: 'fontawesome';
+    margin-right: 10px;
+    color: #c0b596;
 }
 
     .inner-container {

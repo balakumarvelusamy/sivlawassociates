@@ -18,7 +18,7 @@ import portfolio2 from "../../../images/studies/2.jpg";
 import portfolio3 from "../../../images/studies/3.jpg";
 import "./style.scss";
 
-const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Labour Law" }];
+const breadcumbMenu = [{ name: "Home", route: "/" },{name : 'Area of Practice' , route:'/'}, { name: "Labour Law" }];
 
 const portfolioItem = [
   { images: portfolio1, title: "General Service", subtitle: "Corporate" },
@@ -35,7 +35,7 @@ const SinglePortfolioPage = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="Case Stadies"
+        title="Labour Law"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />
