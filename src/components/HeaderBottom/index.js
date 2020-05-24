@@ -66,26 +66,10 @@ const HeaderBottom = (props) => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink exact to="/">
+                  <NavLink exact to="/attorneys-single">
                     Attorneys
                   </NavLink>
-                  <ul className="subMenu">
-                    <li>
-                      <NavLink exact to="/attorneys-single">
-                      S.CHANDRASEKARAN
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink exact to="/attorneys-single">
-                      C.SIVAKUMAR
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink exact to="/attorneys-single">
-                      REKHA SIVAKUMAR
-                      </NavLink>
-                    </li>
-                  </ul>
+                 
                 </li>
 
                 <li>
