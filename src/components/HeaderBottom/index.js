@@ -163,11 +163,11 @@ const HeaderBottom = (props) => {
                     Contact
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink exact to="/login">
                     LogIn
                   </NavLink>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="col-lg-1 col-md-2 col-sm-6 col-4">
