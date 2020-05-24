@@ -48,7 +48,7 @@ const ContactPage = () => {
                         </div>
                         <div className="col-lg-7">
                             <div className="contactUSForm">
-                                <h3>Sign In/ Sign Up</h3>
+                                <h3>Contact Us</h3>
                                 <Form
                                     addressInfo={true}
                                 />
