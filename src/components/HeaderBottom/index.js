@@ -94,7 +94,7 @@ const HeaderBottom = (props) => {
                   </NavLink>
                   <ul className="subMenu">
                     <li>
-                      <NavLink exact to="/case-stadies">
+                      <NavLink exact to="/alt-dispute-resolution">
                       Alternate Dispute Resolution
                       </NavLink>
                     </li>
@@ -116,6 +116,11 @@ const HeaderBottom = (props) => {
                     <li>
                       <NavLink exact to="/cyber-law">
                       Cyber Law
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink exact to="/env-law">
+                      Environemntal Law
                       </NavLink>
                     </li>
                     <li>

@@ -46,7 +46,7 @@ const PortfolioPage = () => {
           </header>
           <Breadcumb
             className="breadcumbArea"
-            title="Banking & Finance"
+            title="Alternate Dispute Resolution"
             breadcumbMenu={breadcumbMenu}
             background={breadcumb}
           />

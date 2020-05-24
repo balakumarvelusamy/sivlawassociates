@@ -7,6 +7,7 @@ import About from '../../../components/About'
 import ServiceArea from '../../../components/ServiceArea'
 // import Portfolio from '../../../components/Portfolio'
 import Disclaimer from '../../../components/Disclaimer'
+
 import Testmonial from "../../../components/Testmonial";
 import ContactArea from '../../../components/ContactArea'
 import TeamMember from '../../../components/TeamMember'
@@ -26,8 +27,8 @@ import portfolio4 from '../../../images/studies/4.jpg'
 import portfolio5 from '../../../images/studies/5.jpg'
 
 const aboutText = [
-    { text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at ,' },
-    { text: 'and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum' },
+    { text: 'Siva Law Associates, a law firm established in 2009, our firm consists of well experienced attorney’s dealing with variety of cases mainly civil, criminal, Bank cases & Corporate matters on behalf of clients, companies and banks.' },
+    { text: 'We also do the preparing of sale deed, other legal agreements and appearing cases for SEBI. Our motto is to provide high quality and timely service to our clients at the time, when they needed the most.' },
 ]
 
 const heroSliders = [
@@ -105,8 +106,14 @@ const HomePageOne = () => {
                 className="aboutArea"
                 title="About Us"
                 images={about}
-                signature={signature}
                 pragraphs={aboutText}
+            />
+          <hr/>
+             <Disclaimer
+                className="portfolioArea"
+                title=""
+                subTitle=""
+                portfolioItem={portfolioItem}
             />
             <ServiceArea
                 className="ourServiceArea"
@@ -114,15 +121,10 @@ const HomePageOne = () => {
                 subTitle="Area Of Practice"
                 services={services}
             />
-            <Disclaimer
-                className="portfolioArea"
-                title="Our Resent Case Studies"
-                subTitle="Here Our Best Work"
-                portfolioItem={portfolioItem}
-            />
-            <Testmonial
+           
+            {/* <Testmonial
                 className="testmonialArea"
-            />
+            /> */}
             <ContactArea
                 className="contactArea"
             />
@@ -132,15 +134,15 @@ const HomePageOne = () => {
                 className="teamArea"
                 slider={true}
             />
-            <CounterArea
+            {/* <CounterArea
                 className="counterArea"
-            />
-            <BlogArea
+            /> */}
+            {/* <BlogArea
                 className="blogArea"
                 title="Latest News"
                 subTitle="From Our Blog
                 "
-            />
+            /> */}
             <NewsLetter
                 className="newsLetterArea"
             />

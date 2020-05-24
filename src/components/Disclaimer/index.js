@@ -21,7 +21,11 @@ const Disclaimer = ({ title, subTitle, className, fullWidth, portfolioItem }) =>
     return (
         <>
         <DisclaimerContent></DisclaimerContent>
-        <div className={className}>
+        <SectionTitle
+                            title={title}
+                            subTitle={subTitle}
+                        />
+        {/* <div className={className}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -31,9 +35,9 @@ const Disclaimer = ({ title, subTitle, className, fullWidth, portfolioItem }) =>
                         />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            {!fullWidth ? (
+            {/* {!fullWidth ? (
                 <div className="portfolioWrapper">
                     {portfolioItem.map((portfolio, i) => (
                         <div key={i} className="portfolioItem">
@@ -54,15 +58,15 @@ const Disclaimer = ({ title, subTitle, className, fullWidth, portfolioItem }) =>
                                         <img src={portfolio.images} alt="" />
                                         <div className="portfolioContent">
                                             <p>{portfolio.subtitle}</p>
-                                            <h3>{portfolio.title}</h3>
+                                            <h3 className="text-white">{portfolio.title}</h3>
                                         </div>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
-                )}
-        </div>
+                )} 
+        </div>*/}
         </>
     )
 }

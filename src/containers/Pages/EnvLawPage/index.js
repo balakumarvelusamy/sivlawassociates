@@ -6,7 +6,7 @@ import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
 import SearchSidebar from "../../../components/SearchSidebar";
-import SingleContentAreaCyberLaw from "../../../components/SingleContentAreaCyberLaw";
+import SingleContentAreaEnvLaw from "../../../components/SingleContentAreaEnvLaw";
 import RecentPosts from "../../../components/RecentPosts";
 import Portfolio from "../../../components/Portfolio";
 // images
@@ -18,7 +18,7 @@ import portfolio2 from "../../../images/studies/2.jpg";
 import portfolio3 from "../../../images/studies/3.jpg";
 import "./style.scss";
 
-const breadcumbMenu = [{ name: "Home", route: "/" },{name : 'Area of Practice' , route:'/'}, { name: "Cyber Law" }];
+const breadcumbMenu = [{ name: "Home", route: "/" },{name : 'Area of Practice' , route:'/'}, { name: "Environmental Law" }];
 
 const portfolioItem = [
   { images: portfolio1, title: "General Service", subtitle: "Corporate" },
@@ -35,7 +35,7 @@ const CyberLawPage = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="Cyber Law"
+        title="Environmental Law"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />
@@ -43,7 +43,7 @@ const CyberLawPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-12">
-              <SingleContentAreaCyberLaw
+              <SingleContentAreaEnvLaw
                 className="singleContentArea"
                 image={single}
               />

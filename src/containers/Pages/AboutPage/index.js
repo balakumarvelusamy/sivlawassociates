@@ -18,8 +18,8 @@ import breadcumb from '../../../images/breadcumb/1.jpg'
 import './style.scss'
 
 const aboutText = [
-    { text: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at ,' },
-    { text: 'and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum' },
+    { text: 'Siva Law Associates, a law firm established in 2009, our firm consists of well experienced attorney’s dealing with variety of cases mainly civil, criminal, Bank cases & Corporate matters on behalf of clients, companies and banks., we also do the preparing of sale deed, other legal agreements and appearing cases for SEBI. Our motto is to provide high quality and timely service to our clients at the time, when they needed the most.' },
+    { text: '' },
 ]
 
 const services = [
@@ -73,41 +73,41 @@ const AboutPage = () => {
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />
-            <Service className="serviceArea mt-0" />
+           
             <About
                 className="aboutArea aboutAreaStyleTwo"
-                title="Why You Need Us"
+                title="About us"
                 subTitle="We Are Expert"
                 images={about}
                 orderLast="order-last"
                 videoId="XxVg_s8xAms"
                 pragraphs={aboutText}
             />
-            <ServiceArea
+            {/* <ServiceArea
                 className="ourServiceArea ourServiceAreaStyleTwo"
                 title="How Can We Help You"
                 subTitle="Area Of Practice"
                 services={services}
-            />
-            <Testmonial
+            /> */}
+            {/* <Testmonial
                 className="testmonialArea pt100"
-            />
-            <CounterArea
+            /> */}
+            {/* <CounterArea
                 fullWidth={true}
                 className="counterArea counterAreaStyleTwo"
-            />
+            /> */}
             <TeamMember
                 title="Qualified Attorneys "
                 subTitle="Meet Our Experts"
                 className="teamArea"
                 slider={true}
             />
-            <BlogArea
+            {/* <BlogArea
                 className="blogArea"
                 title="Latest News"
                 subTitle="From Our Blog
                 "
-            />
+            /> */}
             <NewsLetter
                 className="newsLetterArea"
             />
