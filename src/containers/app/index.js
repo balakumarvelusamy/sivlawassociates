@@ -16,6 +16,9 @@ import BlogLeftPage from '../Pages/BlogLeftPage'
 import BlogRightPage from '../Pages/BlogRightPage'
 import BlogFullWidth from '../Pages/BlogFullWidth'
 import LogInPage from '../Pages/LogInPage'
+import LaborLawPage from '../Pages/LaborLawPage'
+import CyberLawPage from '../Pages/CyberLawPage'
+import BankingFinancePage from '../Pages/BankingFinancePage'
 import './App.css';
 
 class App extends Component {
@@ -31,6 +34,7 @@ class App extends Component {
                         <Route exact path="/about" component={AboutPage} />
                         <Route exact path="/practice" component={PracticePage} />
                         <Route exact path="/practice-details" component={PracticeSinglePage} />
+                     
                         <Route exact path="/case-stadies" component={PortfolioPage} />
                         <Route exact path="/case-stadies-details" component={SinglePortfolioPage} />
                         <Route exact path="/attorneys" component={TeamPage} />
@@ -40,6 +44,10 @@ class App extends Component {
                         <Route exact path="/blog-right" component={BlogRightPage} />
                         <Route exact path="/blog-fullwidth" component={BlogFullWidth} />
                         <Route exact path="/login" component={LogInPage} />
+                        <Route exact path="/labourlaw" component={LaborLawPage} />
+                        <Route exact path="/cyber-law" component={CyberLawPage} />
+                        <Route exact path="/banking-finance" component={BankingFinancePage} />
+                        
                     </Switch>
                 </BrowserRouter>
             </Fragment>
