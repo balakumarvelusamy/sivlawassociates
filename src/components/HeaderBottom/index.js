@@ -99,7 +99,7 @@ const HeaderBottom = (props) => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink exact to="/practice">
+                      <NavLink exact to="/banking-finance">
                       Banking & Finance
                       </NavLink>
                     </li>

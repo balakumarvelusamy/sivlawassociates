@@ -4,7 +4,7 @@ import './style.scss'
 
 const cetagoryMenu = [
     { name: 'Alternative Dispute Resolution', route: "case-stadies" },
-    { name: 'Banking & Finance', route: "case-stadies-details" },
+    { name: 'Banking & Finance', route: "banking-finance" },
     { name: 'Labour Law', route: "labourlaw" },
     { name: 'Cyber Law', route: "cyber-law" },
     { name: 'Education Law', route: "case-stadies-details" },
