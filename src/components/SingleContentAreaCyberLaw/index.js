@@ -13,17 +13,9 @@ const listItem = [
 const SingleContentArea = ({ className, avatar, image }) => {
     return (
         <div className={className}>
-           
-            <div className="singleContentWrap">
-                <h3>Cyber Law</h3>
-                <h5>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</h5>
-                <p>I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of
-                     human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because 
-                    those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone 
-                    who loves or pursues or desires to obtain pain of itself,</p>
-                <p>because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. 
-                    To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p>
-               
+            <div className="inner-container singleContentWrap">
+                <h1>Cyber Law</h1>
+                <p>The firm has expertise in complete range of matters related to Information Technology sector, including technology and strategic consulting services. We deal in software protection &amp; licencing, data protection, domain names dispute resolution, technology transfer and technical assistance agreements, credit card frauds etc. We advise our clients on cyber laws, Indian Information Technology laws, data protection, IP protection, e-commerce, etc. Data theft is one of the most common problems faced by the companies today. We advise our clients on, protection against data theft and the best possible method, to resolve it. Our lawyers are well versed with the cyber laws, information technology laws, and data protection laws in India. We deal in software licencing, development and support and website development agreements. We assist our clients in drafting agreements such as shrink wrap agreements, click wrap agreements software licence and maintenance agreements, hardware maintenance and system supply agreements, access and beta test agreements, service provide agreements, interconnect agreements, broadcasting, satellite and digital terrestrial agreements, Conditional Access Systems (CAS) agreements, server co-location space agreements and other related commercial agreements. We also assist the IT companies in protecting their intellectual property and information technology-related compliance and taxation issues. We represent our clients in the tribunals, High Courts and the Supreme Court in matters of infringement of intellectual property rights and disputes relating to contracts and domain names. We have significant experience in advising our clients in establishing strategic alliances between suppliers and buyers in India. We also deal in cyber law and handle cases like internet fraud, hacking, privacy and security related issues etc.</p>
             </div>
         </div>
     )

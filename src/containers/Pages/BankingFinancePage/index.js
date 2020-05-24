@@ -13,7 +13,7 @@ import single from "../../../images/practice/3.jpg";
 
 import "./style.scss";
 
-const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Banking & Finance" }];
+const breadcumbMenu = [{ name: "Home", route: "/" },,{name : 'Area of Practice' , route:'/'}, { name: "Banking & Finance" }];
 
 const BankingFinancePage = () => {
   return (

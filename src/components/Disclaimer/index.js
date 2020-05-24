@@ -1,7 +1,6 @@
 import React from 'react'
 import SectionTitle from '../Title'
 import './style.scss'
-import PortfolioContent from '../Portfolio/PortfolioContent'
 
 // images
 import portfolio1 from '../../images/studies/1.jpg'
@@ -9,6 +8,7 @@ import portfolio2 from '../../images/studies/2.jpg'
 import portfolio3 from '../../images/studies/3.jpg'
 import portfolio4 from '../../images/studies/4.jpg'
 import portfolio5 from '../../images/studies/5.jpg'
+import DisclaimerContent from '../Disclaimer/DisclaimerContent'
 
 const portfolioItem = [
     { images: portfolio1, title: 'General Service', subtitle: 'Corporate' },
@@ -17,11 +17,15 @@ const portfolioItem = [
     { images: portfolio4, title: 'Accounting issue', subtitle: 'Criminal' },
     { images: portfolio5, title: 'Business Accounting', subtitle: 'Family Issue' }
 ]
-const Portfolio = ({ title, subTitle, className, fullWidth, portfolioItem }) => {
+const Disclaimer = ({ title, subTitle, className, fullWidth, portfolioItem }) => {
     return (
         <>
-        {/* <PortfolioContent></PortfolioContent> */}
-        <div className={className}>
+        <DisclaimerContent></DisclaimerContent>
+        <SectionTitle
+                            title={title}
+                            subTitle={subTitle}
+                        />
+        {/* <div className={className}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -31,9 +35,9 @@ const Portfolio = ({ title, subTitle, className, fullWidth, portfolioItem }) => 
                         />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            {!fullWidth ? (
+            {/* {!fullWidth ? (
                 <div className="portfolioWrapper">
                     {portfolioItem.map((portfolio, i) => (
                         <div key={i} className="portfolioItem">
@@ -54,16 +58,16 @@ const Portfolio = ({ title, subTitle, className, fullWidth, portfolioItem }) => 
                                         <img src={portfolio.images} alt="" />
                                         <div className="portfolioContent">
                                             <p>{portfolio.subtitle}</p>
-                                            <h3>{portfolio.title}</h3>
+                                            <h3 className="text-white">{portfolio.title}</h3>
                                         </div>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
-                )}
-        </div>
+                )} 
+        </div>*/}
         </>
     )
 }
-export default Portfolio
+export default Disclaimer

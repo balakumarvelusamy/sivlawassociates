@@ -6,7 +6,7 @@ import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
 import SearchSidebar from "../../../components/SearchSidebar";
-import SingleContentAreaLabourLaw from "../../../components/SingleContentAreaLabourLaw";
+import IntellectualPropertyContent from "../../../components/IntellectualPropertyContent";
 import RecentPosts from "../../../components/RecentPosts";
 import Portfolio from "../../../components/Portfolio";
 // images
@@ -17,8 +17,9 @@ import portfolio1 from "../../../images/studies/1.jpg";
 import portfolio2 from "../../../images/studies/2.jpg";
 import portfolio3 from "../../../images/studies/3.jpg";
 import "./style.scss";
+import PortfolioContent from "../../../components/Portfolio/PortfolioContent";
 
-const breadcumbMenu = [{ name: "Home", route: "/" },{name : 'Area of Practice' , route:'/'}, { name: "Labour Law" }];
+const breadcumbMenu = [{ name: "Home", route: "/" },{name : 'Area of Practice' , route:'/'}, { name: "Intellectual Property" }];
 
 const portfolioItem = [
   { images: portfolio1, title: "General Service", subtitle: "Corporate" },
@@ -26,7 +27,7 @@ const portfolioItem = [
   { images: portfolio3, title: "Business Accounting", subtitle: "Business" },
 ];
 
-const SinglePortfolioPage = () => {
+const Intellectual = () => {
   return (
     <Fragment>
       <header className="headerArea">
@@ -35,7 +36,7 @@ const SinglePortfolioPage = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="Labour Law"
+        title="Intellectual Property"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />
@@ -43,7 +44,7 @@ const SinglePortfolioPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-12">
-              <SingleContentAreaLabourLaw
+              <IntellectualPropertyContent
                 className="singleContentArea"
                 image={single}
               />
@@ -69,4 +70,4 @@ const SinglePortfolioPage = () => {
     </Fragment>
   );
 };
-export default SinglePortfolioPage;
+export default Intellectual;

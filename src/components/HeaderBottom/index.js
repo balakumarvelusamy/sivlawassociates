@@ -94,7 +94,7 @@ const HeaderBottom = (props) => {
                   </NavLink>
                   <ul className="subMenu">
                     <li>
-                      <NavLink exact to="/case-stadies">
+                      <NavLink exact to="/alt-dispute-resolution">
                       Alternate Dispute Resolution
                       </NavLink>
                     </li>
@@ -109,7 +109,7 @@ const HeaderBottom = (props) => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink exact to="/case-stadies-details">
+                      <NavLink exact to="/intellectual">
                       Intellectual Property
                       </NavLink>
                     </li>
@@ -119,12 +119,17 @@ const HeaderBottom = (props) => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink exact to="/case-stadies-details">
+                      <NavLink exact to="/env-law">
+                      Environemntal Law
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink exact to="/drafting">
                       Drafting , Pleading & Conveyancing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink exact to="/case-stadies-details">
+                      <NavLink exact to="/tax">
                       Tax
                       </NavLink>
                     </li>
@@ -158,11 +163,11 @@ const HeaderBottom = (props) => {
                     Contact
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink exact to="/login">
                     LogIn
                   </NavLink>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="col-lg-1 col-md-2 col-sm-6 col-4">

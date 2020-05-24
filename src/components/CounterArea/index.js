@@ -3,9 +3,9 @@ import Odometer from 'react-odometerjs';
 import './style.scss'
 const counters = [
     { value: '95', title: 'Cases Won', level: '%' },
-    { value: '863', title: 'Trusted Client' },
-    { value: '126', title: 'Dedicated Lawyer', level: '+' },
-    { value: '25', title: 'Case Dismissed', level: '%' },
+    { value: '100', title: 'Trusted Client' , level: '+' },
+    { value: '30', title: 'Dedicated Lawyer', level: '+' },
+    { value: '10', title: 'Case Dismissed', level: '%' },
 ]
 const CounterArea = ({ className, fullWidth }) => {
     return (
