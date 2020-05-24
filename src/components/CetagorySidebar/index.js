@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import './style.scss'
 
 const cetagoryMenu = [
-    { name: 'Family Law', route: "case-stadies-details" },
-    { name: 'Criminal Law', route: "case-stadies-details" },
-    { name: 'Business Law', route: "case-stadies-details" },
-    { name: 'Personal Injury', route: "case-stadies-details" },
+    { name: 'Alternative Dispute Resolution', route: "case-stadies" },
+    { name: 'Banking & Finance', route: "case-stadies-details" },
+    { name: 'Labour Law', route: "labourlaw" },
+    { name: 'Cyber Law', route: "cyber-law" },
     { name: 'Education Law', route: "case-stadies-details" },
     { name: 'Drugs Crime', route: "case-stadies-details" },
 ]

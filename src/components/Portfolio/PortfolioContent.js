@@ -5,15 +5,15 @@ import './style.scss'
 const PortfolioContent =()=>{
     return (
     <div className='container inner-container'>
-    <div><h1>Alternative Dispute Resolution- (Arbitration-Conciliation-Lok Adalat)</h1></div>
+    <div><h3>Alternative Dispute Resolution- (Arbitration-Conciliation-Lok Adalat)</h3></div>
     <div><p>The well-known and oldest ADR techniques are Arbitration and Conciliation/Mediation.</p></div>
-    <div><h1>Arbitration</h1>
+    <div><h3>Arbitration</h3>
     <p>This is a paragraph. Click here to edit the text. It's easy. Just click here to add your own content and make changes to it.
         This is a paragraph. 
         Click here to edit the text. It's easy. Just click here to add your own content and make changes to it.</p>
     </div>
     <div>
-        <h1>Conciliation</h1>
+        <h3>Conciliation</h3>
         <p>Our Firm has a significant experience in domestic arbitration and other forms of Alternative Dispute Resolution (ADR) such as conciliation and mediation. Our attorneys have acted as counsel and arbitrators in high stake arbitrations providing best advice and support in resolving disputes. 
             We have a dedicated team of lawyers with specific expertise to meet our client's requirements and handle complex arbitration matters in India</p>
             <p>Services provided by our Firm include:</p>
@@ -35,7 +35,7 @@ const PortfolioContent =()=>{
           <p></p>
           </div>
             <div>
-                <h1>Lok Adalat</h1>
+                <h3>Lok Adalat</h3>
                 <p>Lok Adalats are intended to provide Quick justice at less expenditure. 
                     The Legal Services Authorities Act 1987 makes provisions in relation to the establishment, power and functions etc. 
                     All categories of cases can be settled through Lok Adalats except criminal cases. 

@@ -40,7 +40,7 @@ const Portfolio = ({ title, subTitle, className, fullWidth, portfolioItem }) => 
                             <img src={portfolio.images} alt="" />
                             <div className="portfolioContent">
                                 <p>{portfolio.subtitle}</p>
-                                <h3>{portfolio.title}</h3>
+                                <h4>{portfolio.title}</h4>
                             </div>
                         </div>
                     ))}
