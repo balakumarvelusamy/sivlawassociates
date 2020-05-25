@@ -8,8 +8,8 @@ const cetagoryMenu = [
     { name: 'Labour Law', route: "labourlaw" },
     { name: 'Cyber Law', route: "cyber-law" },
     { name: 'Environemnt Law', route: "env-law" },
-    { name: 'Education Law', route: "case-stadies-details" },
-    { name: 'Drugs Crime', route: "case-stadies-details" },
+    { name: 'Drafting', route: "drafting" },
+    { name: 'Tax', route: "tax" },
 ]
 
 const CetagorySidebar = ({ className, title }) => {

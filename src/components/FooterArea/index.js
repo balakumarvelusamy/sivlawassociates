@@ -1,36 +1,40 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../images/logo/logo.png'
+import logo from '../../images/logo/slalogo.png'
 import './style.scss'
 const footerLinks = [
     {
         title: 'Quick Link', menus: [
             { name: 'Home', route: '/' },
-            { name: 'Practice Area', route: 'practice' },
-            { name: 'Our Team', route: 'team' },
-            { name: 'Recent Case', route: 'case' },
-            { name: 'Our Blog', route: 'blog' },
+            { name: 'Attorneys', route: 'attorneys-single' },
+            { name: 'About Us', route: 'about' },
+            { name: 'Contact', route: 'contact' },
         ]
     },
     {
-        title: 'Practice Area', menus: [
-            { name: 'Family Law', route: 'home' },
-            { name: 'Criminal Law', route: 'home' },
-            { name: 'Parsonal Injury', route: 'home' },
-            { name: 'Real Estate Law', route: 'home' },
-            { name: 'Business Law', route: 'home' },
+        title: 'Area of Practice', menus: [
+            { name: 'Alternate Dispute Resolution', route: 'alt-dispute-resolution' },
+            { name: 'Banking & Finance', route: 'banking-finance' },
+            { name: 'Labour Law', route: 'labourlaw' },
+            { name: 'Intellectual Property', route: 'intellectual' },
+            { name: 'Cyber Law', route: 'cyber-law' },
+            {name: 'Environmental Law', route :'env-law'},
+            {name:'Drafting , Pleading & Conveyancing',route:'drafting'},
+            {name:'Tax', route:'tax'}
         ]
     },
     {
         title: 'Contact Us', menus: [
             { name: 'Head Office Address' },
-            { name: '121 King Street, Melbourne West,', },
-            { name: 'Australia', },
-            { name: 'Phone: 888 123-4587', },
-            { name: 'Email: info@example.com', },
+            { name: 'Old No. 150 & New no. 309,1st Floor,', },
+            { name: 'Linghi Chetty Street,', },
+            { name: 'Parrys,Chennai-600 001', },
         ]
     },
 ]
+
+
+
 
 const FooterArea = () => {
     return (
@@ -43,7 +47,9 @@ const FooterArea = () => {
                                 <Link to="/">
                                     <img src={logo} alt="" />
                                 </Link>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                                <p>Siva Law Associates, a law firm established in 2009, our firm consists of well experienced attorney’s dealing with variety of cases mainly civil, criminal, Bank cases & Corporate matters on behalf of clients, companies and banks.
+
+</p>
                             </div>
                         </div>
                         {footerLinks.map((menu, i) => (
@@ -66,13 +72,13 @@ const FooterArea = () => {
                     <div className="footerBottomContent">
                         <div className="row">
                             <div className="col-md-8 col-sm-10 col-12">
-                                <span>Privacy Policy | © 2020 Developed by TheUniqueCreations</span>
+                                <span>Privacy Policy | © 2020 Developed by <a href="www.instagram.com/theuniquecreations">TheUniqueCreations</a></span>
                             </div>
                             <div className="col-md-4 col-sm-2 col-12">
                                 <ul className="socialListFooter">
-                                    <li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    {/* <li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li> */}
+                                    <li><a href="www.instagram.com/theuniquecreations"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                         </div>

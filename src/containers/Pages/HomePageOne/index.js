@@ -53,33 +53,43 @@ const heroSliders = [
 const services = [
     {
         icon: 'flaticon-parents',
-        title: 'Family Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
+        title: 'Alternate Dispute Resolution',
+        // content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
     {
         icon: 'flaticon-wounded',
-        title: 'Personal Injury',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
+        title: 'Banking & Finance',
+        // content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
     {
         icon: 'flaticon-employee',
-        title: 'Business Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
+        title: 'Labour Law',
+        // content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
     {
         icon: 'flaticon-thief',
-        title: 'Criminal Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
+        title: 'Intellectual Property',
+        // content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
     {
         icon: 'flaticon-university-graduate-hat',
-        title: 'Education Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
+        title: 'Cyber Law',
+        // content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
     {
         icon: 'flaticon-house',
-        title: 'Real Estate Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of '
+        title: 'Environmental Law',
+        // content: 'It is a long established fact that a reader will be distracted by the readable content of '
+    },
+    {
+        icon: 'flaticon-house',
+        title: 'Drafting , Pleading & Conveyancing',
+        // content: 'It is a long established fact that a reader will be distracted by the readable content of '
+    },
+    {
+        icon: 'flaticon-house',
+        title: 'Tax',
+        // content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
 ]
 

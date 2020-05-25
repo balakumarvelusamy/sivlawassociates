@@ -35,15 +35,17 @@ const ContactPage = () => {
                         <div className="col-lg-5">
                             <div className="contactUsInfo">
                             <h3>Our Contacts</h3>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-                                </p>
-                                <h4>Address</h4>
-                                <span>245 King Street, Touterie Victoria 8520 Australia</span>
-                                <h4>Phone</h4>
-                                <span>0-123-456-7890</span>
-                                <span>0-123-456-7890</span>
-                                <h4>Email</h4>
-                                <span>sample@gmail.com</span>
+                                <h4>Head Office</h4>
+                                <span>Old No. 150 & New no. 309,1st Floor,Linghi Chetty Street,</span>
+                                <span>Parrys,Chennai-600 001</span>
+
+                                <h4>Madurai Branch</h4>
+                                <span>No: 1, 5th Street,South Alagar Nagar, </span><span>K.Puthur,</span>
+                                <span>Madurai – 600 007</span>
+
+                                <h4>Chennai Branch</h4>
+                                <span>No. 5, Jasmine Street, Blooming Garden, </span><span>Mugalivakkam,</span>
+                                <span>Chennai – 600 125</span>
                             </div>
                         </div>
                         <div className="col-lg-7">

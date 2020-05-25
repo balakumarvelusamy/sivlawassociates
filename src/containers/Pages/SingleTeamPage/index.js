@@ -21,15 +21,20 @@ const breadcumbMenu = [
     { name: 'Attorneys', route: '/attorneys' },
     { name: 'Attorneys Details' }
 ]
-const teamMembarInfo = [
-    { level: 'Positon: ', text: 'Senior Advocate' },
-    { level: 'Edication: ', text: 'BA, BL' },
-    { level: 'Experience: ', text: '33 Years' },
-    { level: 'Language: ', text: ' English (fluent), Tamil' },
-    { level: 'Language: ', text: ' I worked as a District Judge, I had been rendered my service of 33 years in judicial service and I had completed my service and started practising as an Advocate before the Supreme court of India and High Court of Madras and Madurai Bench.' },
-
-
-   
+const teamMembarInfo_ChandraSekar = [
+    { level: 'Positon: ', text: 'District & Sessions Judge(Retd)' },
+    { level: 'Education: ', text: 'BA, BL' },
+    { level: 'Experience: ', text: 'I worked as a District Judge, I had been rendered my service of 33 years in judicial service and I had completed my service and started practising as an Advocate before the Supreme court of India and High Court of Madras and Madurai Bench.' },
+]
+const teamMembarInfo_Sivakumar = [
+    { level: 'Positon: ', text: 'Advocate' },
+    { level: 'Education: ', text: 'BA, BL' },
+    { level: 'Experience: ', text: 'I worked as a Legal Assistant with Hon’ble Justice at High Court of Madras for two years. Later, I practiced as an Advocate in the High Court of Madras and various Tribunals including the Consumer Court and the DRT in the Law Chambers of Senior Counsel. Where I drafted a variety of agreements including Sale-purchase Agreement, will, Indemnity bond etc.; represented clients before the High Court of Madras, Debt Recovery Tribunal, Consumer Forum, SEBI and other tribunals; conducted legal research for a variety of matters including company Law matters, arbitration, SARFAESI Act, etc.; drafted writ petitions and other to be filed before the High Court of Madras & Madurai Bench and other Courts and Tribunals; conducted case research for various matters including writs, consumer disputes, arbitration proceedings, property law, civil law and negotiable instruments. Currently I have established and registered my own firm Siva Law Associates Where I deal with all matters relating to litigation as well as non-litigation.'},  
+]
+const teamMembarInfo_Rekha = [
+    { level: 'Positon: ', text: 'Advocate' },
+    { level: 'Education: ', text: 'BA, BL' },
+    { level: 'Experience: ', text: 'I worked as a legal assistant with the chambers of Senior Counsels before the High Court of Madras and Madurai Bench, Consumer Forum, Debt Recovery Tribunal. Where I conducted various researches including Company Law and Arbitration matters and Drafted a variety of documents including Sale Purchase Agreement, Sale Deeds, Mortgage Deeds, Will, Indemnity bonds etc.., further I drafted Writ petitions, Criminal petitions to be filed before the High Court and Family Disputes before the Family Court. Currently I have established and Registered my own firm in the name of SIVA ASSOCIATES Where I’m dealing with various Litigation matters before the High Court both Civil and Criminal , CLB , SEBI , DRT , DRAT and Family Litigations matters before the Family Courts.' },  
 ]
 const teamContents = [
     'Admization Institute of Law andTechnology, Juzment School of Management,Cambridge',
@@ -67,14 +72,14 @@ const SingleTeamPage = () => {
                                         <div className="singleTeamImg">
                                             <img src={team} alt="" />
                                         </div>
-                                        <h4>S.CHANDRASEKARAN</h4>
+                                        <h4>S.Chandrasekaran</h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-12">
                                     <div className="singleTeamContent">
-                                        <h4>Important Information</h4>
+                                        {/* <h4>Important Information</h4> */}
                                         <ul className="teamMembarInfo">
-                                            {teamMembarInfo.map((teamInfo, i) => (
+                                            {teamMembarInfo_ChandraSekar.map((teamInfo, i) => (
                                                 <li key={i}>
                                                     <span>{teamInfo.level}</span>
                                                     {teamInfo.text}
@@ -102,14 +107,14 @@ const SingleTeamPage = () => {
                                         <div className="singleTeamImg">
                                             <img src={team} alt="" />
                                         </div>
-                                        <h4>Lily Watson</h4>
+                                        <h4>C.Sivakumar</h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-12">
                                     <div className="singleTeamContent">
-                                        <h4>Important Information</h4>
+                                        {/* <h4>Important Information</h4> */}
                                         <ul className="teamMembarInfo">
-                                            {teamMembarInfo.map((teamInfo, i) => (
+                                            {teamMembarInfo_Sivakumar.map((teamInfo, i) => (
                                                 <li key={i}>
                                                     <span>{teamInfo.level}</span>
                                                     {teamInfo.text}
@@ -128,7 +133,7 @@ const SingleTeamPage = () => {
                             </div>
                         </div>
                     </div>
-             
+                    <hr></hr>
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1 col-12">
                             <div className="row">
@@ -137,14 +142,14 @@ const SingleTeamPage = () => {
                                         <div className="singleTeamImg">
                                             <img src={team} alt="" />
                                         </div>
-                                        <h4>Lily Watson</h4>
+                                        <h4>Rekha Sivakumar</h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-12">
                                     <div className="singleTeamContent">
-                                        <h4>Important Information</h4>
+                                        {/* <h4>Important Information</h4> */}
                                         <ul className="teamMembarInfo">
-                                            {teamMembarInfo.map((teamInfo, i) => (
+                                            {teamMembarInfo_Rekha.map((teamInfo, i) => (
                                                 <li key={i}>
                                                     <span>{teamInfo.level}</span>
                                                     {teamInfo.text}
@@ -163,17 +168,10 @@ const SingleTeamPage = () => {
                             </div>
                         </div>
                     </div>
-             
+                    <hr></hr>
           
                 </div>
             </div>
-            {/* <Portfolio
-                title="Participated Case"
-                subTitle="Here Our Best Work"
-                fullWidth={true}
-                portfolioItem={portfolioItem}
-                className="portfolioArea portfolioAreaStyleFour"
-            /> */}
          <ContactArea
                 className="contactArea"
             /> 

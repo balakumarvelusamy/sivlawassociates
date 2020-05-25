@@ -14,7 +14,7 @@ const SingleContentArea = ({ className, avatar, image }) => {
             <p>Our law firm provides advice on environmental laws, rules and regulations, governmental incentives available to further environmental interests, including tax credits, grants and land use provisions. O
                 Our law firm advises its clients on regulatory compliances related to environment protection laws.</p>
             </div>
-<img src={avatarImg} alt="envroimental-law"/>
+
 
             </div>
         </div>
