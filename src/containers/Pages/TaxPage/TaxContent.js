@@ -3,7 +3,7 @@ import React from 'react'
 const TaxContent = () => {
 
     return (
-        <div>
+        <div className="inner-container">
 
 
             <h1>Tax</h1>

@@ -40,7 +40,7 @@ const Tax = () => {
         background={breadcumb}
       />
       <div className="singleArea singlePortfolioArea">
-        <div className="container inner-container">
+        <div className="container">
           <div className="row">
             <div className="col-lg-8 col-12">
               <TaxContent
