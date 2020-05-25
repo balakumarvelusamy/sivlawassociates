@@ -18,7 +18,7 @@ import portfolio3 from "../../../images/studies/3.jpg";
 import "./style.scss";
 import TaxContent from '../TaxPage/TaxContent'
 
-const breadcumbMenu = [{ name: "Home", route: "/" },{name : 'Area of Practice' , route:'/'}, { name: "Tax" }];
+const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Tax" }];
 
 const portfolioItem = [
   { images: portfolio1, title: "General Service", subtitle: "Corporate" },

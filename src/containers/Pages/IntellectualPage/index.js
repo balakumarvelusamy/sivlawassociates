@@ -19,7 +19,7 @@ import portfolio3 from "../../../images/studies/3.jpg";
 import "./style.scss";
 import PortfolioContent from "../../../components/Portfolio/PortfolioContent";
 
-const breadcumbMenu = [{ name: "Home", route: "/" },{name : 'Area of Practice' , route:'/'}, { name: "Intellectual Property" }];
+const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Intellectual Property" }];
 
 const portfolioItem = [
   { images: portfolio1, title: "General Service", subtitle: "Corporate" },

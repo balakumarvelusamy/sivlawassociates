@@ -6,31 +6,35 @@ const footerLinks = [
     {
         title: 'Quick Link', menus: [
             { name: 'Home', route: '/' },
-            { name: 'Practice Area', route: 'practice' },
-            { name: 'Our Team', route: 'team' },
-            { name: 'Recent Case', route: 'case' },
-            { name: 'Our Blog', route: 'blog' },
+            { name: 'Attorneys', route: 'attorneys-single' },
+            { name: 'About Us', route: 'about' },
+            { name: 'Contact', route: 'contact' },
         ]
     },
     {
-        title: 'Practice Area', menus: [
-            { name: 'Family Law', route: 'home' },
-            { name: 'Criminal Law', route: 'home' },
-            { name: 'Parsonal Injury', route: 'home' },
-            { name: 'Real Estate Law', route: 'home' },
-            { name: 'Business Law', route: 'home' },
+        title: 'Area of Practice+', menus: [
+            { name: 'Alternate Dispute Resolution', route: 'alt-dispute-resolution' },
+            { name: 'Banking & Finance', route: 'banking-finance' },
+            { name: 'Labour Law', route: 'labourlaw' },
+            { name: 'Intellectual Property', route: 'intellectual' },
+            { name: 'Cyber Law', route: 'cyber-law' },
+            {name: 'Environmental Law', route :'env-law'},
+            {name:'Drafting , Pleading & Conveyancing',route:'drafting'},
+            {name:'Tax', route:'tax'}
         ]
     },
     {
         title: 'Contact Us', menus: [
             { name: 'Head Office Address' },
-            { name: '121 King Street, Melbourne West,', },
-            { name: 'Australia', },
-            { name: 'Phone: 888 123-4587', },
-            { name: 'Email: info@example.com', },
+            { name: 'Old No. 150 & New no. 309,1st Floor,', },
+            { name: 'Linghi Chetty Street,', },
+            { name: 'Parrys,Chennai-600 001', },
         ]
     },
 ]
+
+
+
 
 const FooterArea = () => {
     return (

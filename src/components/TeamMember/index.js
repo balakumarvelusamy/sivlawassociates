@@ -15,35 +15,20 @@ import teamMember6 from '../../images/expert/6.jpg'
 
 const teams = [
     {
-        name: 'Alecgander Harry', level: 'Business Lawyer', image: teamMember1, socialMedia: [
+        name: 'S.Chandrasekaran', level: 'District & Sessions Judge(Retd)', image: teamMember1, socialMedia: [
             'facebook', 'twitter', 'linkedin'
         ]
     },
     {
-        name: 'Lily Watson', level: 'Family Lawyer', image: teamMember2, socialMedia: [
+        name: 'C.Sivakumar', level: 'Advocate', image: teamMember2, socialMedia: [
             'facebook', 'twitter', 'linkedin'
         ]
     },
     {
-        name: 'Willam Stephen', level: 'Criminal Lawyer', image: teamMember3, socialMedia: [
+        name: 'Rekha Sivakumar', level: 'Advocate', image: teamMember3, socialMedia: [
             'facebook', 'twitter', 'linkedin'
         ]
-    },
-    {
-        name: 'Eshan Golly', level: 'Business Lawyer', image: teamMember4, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: 'Daniel Dambeldor', level: 'Family Lawyer', image: teamMember5, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: 'Darcy Alec', level: 'Criminal Lawyer', image: teamMember6, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
+    }
 ]
 
 const settings = {

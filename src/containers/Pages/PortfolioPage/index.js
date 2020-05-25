@@ -21,7 +21,7 @@ import PortfolioContent from '../../../components/Portfolio/PortfolioContent'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' }
-    ,{name : 'Area of Practice' , route:'/'},
+    ,{name : 'Area of Practice' , route:'alt-dispute-resolution'},
     { name: 'Alternate Dispute Resolution' }
 ]
 

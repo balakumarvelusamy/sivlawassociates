@@ -72,7 +72,7 @@ const SingleTeamPage = () => {
                                         <div className="singleTeamImg">
                                             <img src={team} alt="" />
                                         </div>
-                                        <h4>S.CHANDRASEKARAN</h4>
+                                        <h4>S.Chandrasekaran</h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-12">
@@ -107,7 +107,7 @@ const SingleTeamPage = () => {
                                         <div className="singleTeamImg">
                                             <img src={team} alt="" />
                                         </div>
-                                        <h4>C. Sivakumar</h4>
+                                        <h4>C.Sivakumar</h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-12">
