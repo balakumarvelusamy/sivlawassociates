@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom'
 
 import './style.scss'
 
@@ -32,7 +33,8 @@ class HeroSlider extends Component {
                                         <p>{slider.text}</p>
                                         <h2><span>{slider.title}</span> <span>{slider.subTitle}</span></h2>
                                         <div className="btnStyle btnStyle3">
-                                            <a href={slider.url}>{slider.button}</a>
+                                        <Link to={slider.url}>{slider.button}</Link>
+                                            {/* <a href={slider.url}>{slider.button}</a> */}
                                         </div>
                                     </div>
                                 </div>
