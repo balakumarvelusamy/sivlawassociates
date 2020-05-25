@@ -1,6 +1,6 @@
   /* common */
   .inner-container  li {
-    display: block;
+    display: flex;
     padding-bottom: 10px;
     margin-left: 20px;
     line-height: 35px;
