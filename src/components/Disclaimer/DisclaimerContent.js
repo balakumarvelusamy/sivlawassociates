@@ -11,25 +11,24 @@ const DisclaimerContent = () => {
         solicit work or advertise for our services. The user acknowledges the
         following:
       </p>
-<ul>
-      <li>
+<p>
           There has been no advertisement, personal communication, solicitation,
           invitation or inducement of any kind whatsoever from us or any of our
           members to solicit any work through this website;
-        </li>
+       </p>
 
-        <li>
+        <p>
           The user wishes to gain more information about us for his/her own
           information and use
-        </li>
-        <li>
+     </p>
+        <p>
           The information about us is provided to the user only on his/her
           specific request and any information obtained or materials downloaded
           from this website is completely at the user’s volition and any
           transmission, receipt or use of this site would not create any
           lawyer-client relationship.
-        </li>
-        </ul>
+       </p>
+       <p>
       <i>
         The information provided under this website is solely available at your
         request for informational purposes only, should not be interpreted as
@@ -38,7 +37,7 @@ const DisclaimerContent = () => {
         user relying on material/information provided on this website. In cases
         where the user has any legal issues, he/she in all cases must seek
         independent legal advice.
-      </i>
+      </i></p>
     </div>
   );
 };
