@@ -52,11 +52,17 @@
             }
             span{
                 display: block;
-                color: #ddd;
-                font-size: 10px;
-                font-family: 'Playfair Display', serif;
+                color: #ddd !important;
+                font-size: 14px;
+               
                 @media (max-width:576px) {
-                    font-size: 15px;
+                    font-size: 14px;
+                }
+            }
+            a{
+                color: #ddd;
+                &:hover{
+                    color: #c0b596;
                 }
             }
             .socialListFooter{
