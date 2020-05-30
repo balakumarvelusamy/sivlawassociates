@@ -3,6 +3,7 @@ import Joi from "joi-browser";
 import { toast } from "react-toastify";
 import "./style.scss";
 import { fetchService } from "../Services/Globalfunction";
+import config from "../../config.json"
 class Form extends Component {
   state = {
     name: "",
@@ -11,7 +12,8 @@ class Form extends Component {
     address: "",
     description: "",
     error: {},
-    status:''
+    loading:false,
+    message:""
   };
 
   schema = {
@@ -112,7 +114,7 @@ class Form extends Component {
 
   submitHandler = async(event) => {
     event.preventDefault();
-    const config = require("@../../../config");
+    
     const error = this.validate();  
     if (error) {
       this.setState({
@@ -136,8 +138,8 @@ class Form extends Component {
     //     "token": "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"
     //   }
           const msg = {
-            to: "vbalakumar.cse@gmail.com",
-            from: "noreply@sivalawassociates.com",
+            to: config.owneremail,
+            from: config.fromemail,
             fromname:"Siva Law Associates",
             toname: "Siva Law Associates",
             subject: "Message from Website - "+this.state.name,
@@ -151,7 +153,11 @@ class Form extends Component {
             token:""
           };
           console.log(msg);
-          this.setState.status=false
+          this.setState({
+            loading:true,
+            message:""
+          })
+         
           // call service sendmail method
           const response = await fetchService(
             "Email",
@@ -159,9 +165,16 @@ class Form extends Component {
             "POST",
             msg
           );
-          this.setState.status=true
+          if (response===200){
+            this.setState({
+              loading:false,
+              message:"Message sucessfully Sent. Thanks for contacting us. We will get back to you soon."
+            })
           console.log(response);
-          console.log( this.setState.status);
+          console.log(this.state.message);
+          console.log( this.setState.loading);
+          console.log(1);
+          }
       
         
 
@@ -169,8 +182,7 @@ class Form extends Component {
   };
 
   render() {
-    const msg=this.state.status;
-    console.log(msg);
+    const msgg=this.state.message;
     return (
       <form onSubmit={this.submitHandler} className="contactForm">
         <div className="row">
@@ -244,8 +256,8 @@ class Form extends Component {
             </div>
           </div>
           <div className="col-12">
-            <button type="submit">{this.state.status?"Sending":"Send"}</button>
-            <p >{!this.state.status?"":"Sucessfully Sent. Thanks for contacting us. We will get back to you soon."}</p>
+            <button type="submit">{this.state.loading?"Sending":"Send"}</button>
+            <p >{this.state.loading ?"": msgg}</p>
           </div>
         </div>
       </form>
