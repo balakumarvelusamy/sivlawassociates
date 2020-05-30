@@ -8,7 +8,7 @@ import FooterArea from "../../../components/FooterArea";
 import SingleContentAreaCivilLaw from "../../../components/SingleContentAreaCivilLaw";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
-import single from "../../../images/practice/envlaw.jpg";
+import single from "../../../images/practice/civil.jpg";
 // images
 
 import "./style.scss";
