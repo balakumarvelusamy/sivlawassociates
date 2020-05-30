@@ -72,13 +72,13 @@ const FooterArea = () => {
                     <div className="footerBottomContent">
                         <div className="row">
                             <div className="col-md-8 col-sm-10 col-12 ">
-                                <span className="small">Privacy Policy | ©  {new Date().getFullYear()} Developed by <a href="https://www.instagram.com/theuniquecreations">TheUniqueCreations.</a></span>
+                                <span className="small">Privacy Policy | ©  {new Date().getFullYear()} Developed by <a href="https://www.instagram.com/theuniquecreations" target="blank">TheUniqueCreations.</a></span>
                             </div>
                             <div className="col-md-4 col-sm-2 col-12">
                                 <ul className="socialListFooter">
                                     {/* <li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li> */}
-                                    <li><a href="https://www.instagram.com/theuniquecreations"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/theuniquecreations" target="blank"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                         </div>
