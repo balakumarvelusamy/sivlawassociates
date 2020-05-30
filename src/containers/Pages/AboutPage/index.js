@@ -18,7 +18,7 @@ import breadcumb from '../../../images/breadcumb/1.jpg'
 import './style.scss'
 
 const aboutText = [
-    { text: 'Siva Law Associates, a law firm established in 2009, our firm consists of well experienced attorney’s dealing with variety of cases mainly civil, criminal, Bank cases & Corporate matters on behalf of clients, companies and banks., we also do the preparing of sale deed, other legal agreements and appearing cases for SEBI. Our motto is to provide high quality and timely service to our clients at the time, when they needed the most.' },
+    { text: 'Siva Law Associates, a law firm established in 2009, our firm consists of well experienced attorney’s dealing with variety of cases mainly civil, criminal, Bank cases & corporate matters on behalf of clients, companies and banks. We also do the preparing of sale deed, other legal agreements and appearing cases for SEBI. Our motto is to provide high quality and timely service to our clients at the time, when they needed the most.' },
     { text: '' },
 ]
 

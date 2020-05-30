@@ -16,7 +16,7 @@ const PortfolioContent =()=>{
         <h3>Conciliation</h3>
         <p>Our Firm has a significant experience in domestic arbitration and other forms of Alternative Dispute Resolution (ADR) such as conciliation and mediation. Our attorneys have acted as counsel and arbitrators in high stake arbitrations providing best advice and support in resolving disputes. 
             We have a dedicated team of lawyers with specific expertise to meet our client's requirements and handle complex arbitration matters in India</p>
-            <p>Services provided by our Firm include:</p>
+            <p>Services provided by our firm includes:</p>
             <ul>
                 <li>Conducting international arbitration under UNCITRAL and ICC Rules</li>
                 <li>Rendering mediation services to clients.</li>

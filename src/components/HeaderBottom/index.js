@@ -73,7 +73,7 @@ const HeaderBottom = (props) => {
                 </li>
 
                 <li>
-                  <NavLink exact to="/alt-dispute-resolution">
+                  <NavLink exact to="#">
                   Area of Practice
                   </NavLink>
                   <ul className="subMenu">

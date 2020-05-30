@@ -5,10 +5,7 @@ import Breadcumb from "../../../components/Breadcumb";
 import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
-import SearchSidebar from "../../../components/SearchSidebar";
-import IntellectualPropertyContent from "../../../components/IntellectualPropertyContent";
-import RecentPosts from "../../../components/RecentPosts";
-import Portfolio from "../../../components/Portfolio";
+
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import single from "../../../images/practice/3.jpg";
@@ -21,11 +18,7 @@ import DrafingContent from "../../../components/DrafingContent";
 
 const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Drafting , Pleading & Conveyancing" }];
 
-const portfolioItem = [
-  { images: portfolio1, title: "General Service", subtitle: "Corporate" },
-  { images: portfolio2, title: "Personal Issue", subtitle: "General" },
-  { images: portfolio3, title: "Business Accounting", subtitle: "Business" },
-];
+
 
 const Drafting = () => {
   return (

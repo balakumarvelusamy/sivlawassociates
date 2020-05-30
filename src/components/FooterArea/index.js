@@ -28,7 +28,7 @@ const footerLinks = [
             { name: 'Head Office Address' },
             { name: 'Old No. 150 & New no. 309,1st Floor,', },
             { name: 'Linghi Chetty Street,', },
-            { name: 'Parrys,Chennai-600 001', },
+            { name: 'Parrys, Chennai-600 001', },
         ]
     },
 ]
@@ -72,7 +72,7 @@ const FooterArea = () => {
                     <div className="footerBottomContent">
                         <div className="row">
                             <div className="col-md-8 col-sm-10 col-12 ">
-                                <span className="small">Privacy Policy | ©  {new Date().getFullYear()} Developed by <a href="https://www.instagram.com/theuniquecreations" target="blank">TheUniqueCreations.</a></span>
+                                <span className="small">Privacy Policy | ©  {new Date().getFullYear()} Developed by <a href="https://www.instagram.com/theuniquecreations" target="blank">TheUniqueCreations</a></span>
                             </div>
                             <div className="col-md-4 col-sm-2 col-12">
                                 <ul className="socialListFooter">
