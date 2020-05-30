@@ -5,26 +5,18 @@ import Breadcumb from "../../../components/Breadcumb";
 import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
-import SearchSidebar from "../../../components/SearchSidebar";
+
 import SingleContentAreaEnvLaw from "../../../components/SingleContentAreaEnvLaw";
-import RecentPosts from "../../../components/RecentPosts";
-import Portfolio from "../../../components/Portfolio";
+
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
-import single from "../../../images/practice/3.jpg";
+import single from "../../../images/practice/envlaw.jpg";
 // images
-import portfolio1 from "../../../images/studies/1.jpg";
-import portfolio2 from "../../../images/studies/2.jpg";
-import portfolio3 from "../../../images/studies/3.jpg";
+
 import "./style.scss";
 
 const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Environmental Law" }];
 
-const portfolioItem = [
-  { images: portfolio1, title: "General Service", subtitle: "Corporate" },
-  { images: portfolio2, title: "Personal Issue", subtitle: "General" },
-  { images: portfolio3, title: "Business Accounting", subtitle: "Business" },
-];
 
 const CyberLawPage = () => {
   return (
@@ -53,7 +45,7 @@ const CyberLawPage = () => {
               
                 <div className="singleContentImg ">
                   
-                  <img src={single} alt="" />
+                  <img src={single} alt="Environment Law" />
                 </div>
                 <hr/>
                 <CetagorySidebar title="Category" className="cetagoryWrap" />

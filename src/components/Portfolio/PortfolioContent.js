@@ -5,7 +5,7 @@ import './style.scss'
 const PortfolioContent =()=>{
     return (
     <div className='container inner-container'>
-    <div><h3>Alternative Dispute Resolution- (Arbitration-Conciliation-Lok Adalat)</h3></div>
+    <div><h1>Alternative Dispute Resolution- (Arbitration-Conciliation-Lok Adalat)</h1></div>
     <div><p>The well-known and oldest ADR techniques are Arbitration and Conciliation/Mediation.</p></div>
     <div><h3>Arbitration</h3>
     <p>This is a paragraph. Click here to edit the text. It's easy. Just click here to add your own content and make changes to it.
@@ -41,6 +41,7 @@ const PortfolioContent =()=>{
                     All categories of cases can be settled through Lok Adalats except criminal cases. 
                     Assisting clients to settle the cases in an amicable manner through Lok Adalats with less expenditure.</p>
             </div> 
+            <br/>
     </div>)
 }
 

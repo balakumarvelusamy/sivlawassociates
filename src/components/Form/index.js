@@ -24,7 +24,7 @@ class Form extends Component {
         errors.forEach((err) => {
           switch (err.type) {
             case "string.email":
-              err.message = "email mast be A Valid Email";
+              err.message = "email must be A Valid Email";
               break;
             default:
               err.message = "email can not be empity";

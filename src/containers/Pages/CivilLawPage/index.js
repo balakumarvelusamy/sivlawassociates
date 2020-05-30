@@ -5,17 +5,17 @@ import Breadcumb from "../../../components/Breadcumb";
 import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
-import SingleContentAreaBankingFinance from "../../../components/SingleContentAreaBankingFinance";
-
+import SingleContentAreaCivilLaw from "../../../components/SingleContentAreaCivilLaw";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
-import single from "../../../images/practice/banking.jpg";
+import single from "../../../images/practice/civil.jpg";
+// images
 
 import "./style.scss";
 
-const breadcumbMenu = [{ name: "Home", route: "/" },{ name: "Banking & Finance" }];
+const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Civil" }];
 
-const BankingFinancePage = () => {
+const CyberLawPage = () => {
   return (
     <Fragment>
       <header className="headerArea">
@@ -24,7 +24,7 @@ const BankingFinancePage = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="Banking & Finance"
+        title="Civil"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />
@@ -32,7 +32,7 @@ const BankingFinancePage = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-12">
-              <SingleContentAreaBankingFinance
+              <SingleContentAreaCivilLaw
                 className="singleContentArea"
                 image={single}
               />
@@ -42,7 +42,7 @@ const BankingFinancePage = () => {
               
                 <div className="singleContentImg ">
                   
-                  <img src={single} alt="Banking Law" />
+                  <img src={single} alt="Environment Law" />
                 </div>
                 <hr/>
                 <CetagorySidebar title="Category" className="cetagoryWrap" />
@@ -58,4 +58,4 @@ const BankingFinancePage = () => {
     </Fragment>
   );
 };
-export default BankingFinancePage;
+export default CyberLawPage;

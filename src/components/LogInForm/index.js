@@ -3,6 +3,7 @@ import Joi from "joi-browser";
 import { toast } from "react-toastify";
 import "./style.scss";
 import { CognitoUserPool } from 'amazon-cognito-identity-js';
+import config from "../../config.json"
 class LogInForm extends Component {
   state = {
     email: "",
@@ -19,7 +20,7 @@ class LogInForm extends Component {
         errors.forEach((err) => {
           switch (err.type) {
             case "string.email":
-              err.message = "email mast be A Valid Email";
+              err.message = "email must be A Valid Email";
               break;
             default:
               err.message = "email can not be empity";
@@ -34,7 +35,7 @@ class LogInForm extends Component {
         errors.forEach((err) => {
           switch (err.type) {
             default:
-              err.message = "password can not be Empity";
+              err.message = "password can not be Empty";
               break;
           }
         });
@@ -96,8 +97,8 @@ class LogInForm extends Component {
     
      
     const poolData = {
-    UserPoolId:"us-east-1_7xGwhWeRm",
-    ClientId:"7r653tj5j2qb7evejpdle8jbbd"
+    UserPoolId:config.cognito.UserPoolId,
+    ClientId:config.cognito.ClientId
     };
 
     const { email, password } = this.state;

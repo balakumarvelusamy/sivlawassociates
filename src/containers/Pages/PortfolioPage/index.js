@@ -7,14 +7,9 @@ import FooterArea from '../../../components/FooterArea'
 import Portfolio from '../../../components/Portfolio'
 // images
 import breadcumb from '../../../images/breadcumb/1.jpg'
-import single from "../../../images/practice/3.jpg";
+import single from "../../../images/practice/dispute.jpg";
 import CetagorySidebar from "../../../components/CetagorySidebar";
-// images
-import portfolio1 from '../../../images/studies/1.jpg'
-import portfolio2 from '../../../images/studies/2.jpg'
-import portfolio3 from '../../../images/studies/3.jpg'
-import portfolio4 from '../../../images/studies/4.jpg'
-import portfolio5 from '../../../images/studies/5.jpg'
+
 
 import './style.scss'
 import PortfolioContent from '../../../components/Portfolio/PortfolioContent'
@@ -25,17 +20,7 @@ const breadcumbMenu = [
     { name: 'Alternate Dispute Resolution' }
 ]
 
-const portfolioItem = [
-    { images: portfolio1, title: 'General Service', subtitle: 'Corporate' },
-    { images: portfolio2, title: 'Personal Issue', subtitle: 'General' },
-    { images: portfolio3, title: 'Business Accounting', subtitle: 'Business' },
-    { images: portfolio4, title: 'Accounting issue', subtitle: 'Criminal' },
-    { images: portfolio5, title: 'Business Accounting', subtitle: 'Family Issue' },
-    { images: portfolio1, title: 'General Service', subtitle: 'Corporate' },
-    { images: portfolio2, title: 'Personal Issue', subtitle: 'General' },
-    { images: portfolio3, title: 'Business Accounting', subtitle: 'Business' },
-    { images: portfolio4, title: 'Accounting issue', subtitle: 'Criminal' },
-]
+
 
 const PortfolioPage = () => {
     return (
@@ -64,7 +49,7 @@ const PortfolioPage = () => {
                   
                     <div className="singleContentImg ">
                       
-                      <img src={single} alt="" />
+                      <img src={single} alt="Alternate Dispute Resolution" />
                     </div>
                     <hr/>
                     <CetagorySidebar title="Category" className="cetagoryWrap" />
