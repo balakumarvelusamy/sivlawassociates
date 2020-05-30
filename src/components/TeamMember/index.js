@@ -85,10 +85,10 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                                 {teams.map((team, i) => (
                                     <div key={i} className="teamWrapper">
                                         <div className="teamImage">
-                                            <img src={team.image} alt="" />
+                                <h3 className="p-5 "> <i class="fa fa-user">{" "}</i> {team.name}</h3>
                                         </div>
                                         <div className="teamContent">
-                                            <h3>{team.name}</h3>
+                                            <h3 >{team.name}</h3>
                                             <span>{team.level}</span>
                                             <ul>
                                                 {team.socialMedia.map(social => (
