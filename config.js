@@ -1,3 +1,0 @@
-module.exports={
-SENDGRID_API_KEY:'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',
-}
