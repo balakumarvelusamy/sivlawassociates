@@ -71,8 +71,8 @@ const FooterArea = () => {
                 <div className="container">
                     <div className="footerBottomContent">
                         <div className="row">
-                            <div className="col-md-8 col-sm-10 col-12">
-                                <span>Privacy Policy | ©  {new Date().getFullYear()} Developed by <a href="https://www.instagram.com/theuniquecreations">TheUniqueCreations.</a></span>
+                            <div className="col-md-8 col-sm-10 col-12 ">
+                                <span className="small">Privacy Policy | ©  {new Date().getFullYear()} Developed by <a href="https://www.instagram.com/theuniquecreations">TheUniqueCreations.</a></span>
                             </div>
                             <div className="col-md-4 col-sm-2 col-12">
                                 <ul className="socialListFooter">

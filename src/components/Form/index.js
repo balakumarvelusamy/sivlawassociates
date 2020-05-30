@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Joi from "joi-browser";
 import { toast } from "react-toastify";
 import "./style.scss";
+import { fetchService } from "../Services/Globalfunction";
 class Form extends Component {
   state = {
     name: "",
@@ -10,6 +11,7 @@ class Form extends Component {
     address: "",
     description: "",
     error: {},
+    status:''
   };
 
   schema = {
@@ -85,7 +87,6 @@ class Form extends Component {
       country: value,
     });
   };
-
   validationProperty = (event) => {
     const Obj = { [event.target.name]: event.target.value };
     const schema = { [event.target.name]: this.schema[event.target.name] };
@@ -107,9 +108,9 @@ class Form extends Component {
     const errors = {};
     for (let item of error.details) errors[item.path[0]] = item.message;
     return errors;
-  };
+  }; 
 
-  submitHandler = (event) => {
+  submitHandler = async(event) => {
     event.preventDefault();
     const config = require("@../../../config");
     const error = this.validate();  
@@ -135,25 +136,41 @@ class Form extends Component {
     //     "token": "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"
     //   }
           const msg = {
-            to: this.state.email,
+            to: "vbalakumar.cse@gmail.com",
             from: "noreply@sivalawassociates.com",
-            fromname:"sivalawassociates.com",
-            subject: "Message from Customer of sivalawassociates.in",
+            fromname:"Siva Law Associates",
+            toname: "Siva Law Associates",
+            subject: "Message from Website - "+this.state.name,
             body: this.state.description,
-            bodyhmtl:'<p>'+ this.state.name + '</p><br/>'+
-            '<p>'+ this.state.email + '</p><br/>'+
-            '<p>'+ this.state.phone + '</p><br/>'+
-            '<p>'+ this.state.address + '</p><br/>'+
-            '<p>'+ this.state.description + '</p>',
-            token:config.SENDGRID_API_KEY
+            bodyhtml:
+            '<p> From : '+ this.state.name + '</p><br/>'+
+            '<p> Email : '+ this.state.email + '</p><br/>'+
+            '<p> Phone :'+ this.state.phone + '</p><br/>'+
+            '<p> Address : '+ this.state.address + '</p><br/>'+
+            '<p> Details : '+ this.state.description + '</p>',
+            token:""
           };
           console.log(msg);
+          this.setState.status=false
           // call service sendmail method
+          const response = await fetchService(
+            "Email",
+            "SendEmail",
+            "POST",
+            msg
+          );
+          this.setState.status=true
+          console.log(response);
+          console.log( this.setState.status);
+      
+        
 
     }
   };
 
   render() {
+    const msg=this.state.status;
+    console.log(msg);
     return (
       <form onSubmit={this.submitHandler} className="contactForm">
         <div className="row">
@@ -218,7 +235,7 @@ class Form extends Component {
                 className="form-control"
                 value={this.state.description}
                 onChange={this.changeHandler}
-                placeholder="Case Description..."
+                placeholder="Description..."
                 name="description"
               />
               {this.state.error.description && (
@@ -227,7 +244,8 @@ class Form extends Component {
             </div>
           </div>
           <div className="col-12">
-            <button type="submit">Appointment</button>
+            <button type="submit">{this.state.status?"Sending":"Send"}</button>
+            <p >{!this.state.status?"":"Sucessfully Sent. Thanks for contacting us. We will get back to you soon."}</p>
           </div>
         </div>
       </form>

@@ -9,7 +9,7 @@ import ContactArea from '../../../components/ContactArea'
 
 // images
 import breadcumb from '../../../images/breadcumb/1.jpg'
-import team from '../../../images/Attorneys-single/1.jpg'
+import team from '../../../images/Attorneys-single/1.png'
 import portfolio1 from '../../../images/studies/1.jpg'
 import portfolio2 from '../../../images/studies/2.jpg'
 import portfolio3 from '../../../images/studies/3.jpg'
