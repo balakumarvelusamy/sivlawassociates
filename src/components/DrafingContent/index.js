@@ -101,10 +101,11 @@ const DraftingContent = ({ className, avatar, image }) => {
             clients in interpretation of leases, covenant enforcement, tenant
             renewals, rent review, notices, easement and covenant disputes,
             service charge disputes, boundary disputes.
+            <br/>
           </p>
           <br/>
-        </div>{" "}
-      </div>{" "}
+        </div>
+      </div>
     </div>
   );
 };
