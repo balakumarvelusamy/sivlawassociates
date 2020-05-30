@@ -135,10 +135,11 @@
                     li{
                         display: block;
                         padding: 0;
-                        margin-bottom: 15px;
+                        margin-bottom: 0;
                         a,
                         span{
-                            padding: 0px;
+                            padding: 15px;
+                            border-bottom: solid 1px #c0b596;
                             position: relative;
                             i{
                                 display: block;
@@ -153,7 +154,7 @@
                             li{
                                 margin-bottom: 0;
                                 a{
-                                    padding: 10px 0px;
+                                    padding: 15px;
                                 }
                             }
                         }
