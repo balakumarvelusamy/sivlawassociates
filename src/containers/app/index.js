@@ -19,6 +19,7 @@ import LogInPage from '../Pages/LogInPage'
 import LaborLawPage from '../Pages/LaborLawPage'
 import CyberLawPage from '../Pages/CyberLawPage'
 import EnvLawPage from '../Pages/EnvLawPage'
+import CivilLawPage from '../Pages/CivilLawPage'
 import BankingFinancePage from '../Pages/BankingFinancePage'
 import './App.css';
 import Intellectual from '../Pages/IntellectualPage';
@@ -51,6 +52,7 @@ class App extends Component {
                         <Route exact path="/labourlaw" component={LaborLawPage} />
                         <Route exact path="/cyber-law" component={CyberLawPage} />
                         <Route exact path="/env-law" component={EnvLawPage} />
+                        <Route exact path="/civil" component={CivilLawPage} />
                         <Route exact path="/banking-finance" component={BankingFinancePage} />
                         <Route exact path="/drafting" component={Drafting} />
                         <Route exact path="/tax" component={Tax} />
