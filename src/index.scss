@@ -6,10 +6,12 @@ body {
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     color: #333;
+    
     @media (max-width:1200px) {
         font-size: 14px;
     }
     p {
+        text-align: justify;
         color: #666;
         line-height: 28px;
         @media (max-width:1200px) {

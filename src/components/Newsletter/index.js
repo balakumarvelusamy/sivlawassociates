@@ -45,7 +45,7 @@ const NewsLetter = ({ className }) => {
                                     value={email}
                                     onChange={e => setEmail(e.target.value)}
                                     className="form-control"
-                                    placeholder="Enter Your Email Address..." />
+                                    placeholder="Email Address" />
                                 <button type="submit">subscribe</button>
                             </form>
                         </div>

@@ -39,7 +39,7 @@ class Form extends Component {
         errors.forEach((err) => {
           switch (err.type) {
             default:
-              err.message = "phone can not be Empity";
+              err.message = "phone can not be Empty";
               break;
           }
         });
@@ -51,7 +51,7 @@ class Form extends Component {
         errors.forEach((err) => {
           switch (err.type) {
             default:
-              err.message = "name can not be Empity";
+              err.message = "name can not be Empty";
               break;
           }
         });
@@ -63,7 +63,7 @@ class Form extends Component {
         errors.forEach((err) => {
           switch (err.type) {
             default:
-              err.message = "description can not be Empity";
+              err.message = "description can not be Empty";
               break;
           }
         });

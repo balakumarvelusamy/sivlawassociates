@@ -29,7 +29,7 @@ const HeaderTop = (props) => {
                   <i className="fa fa-phone"></i>+91-9965449000
                 </li>
                 <li>
-                  <i className="fa fa-clock-o"></i>9AM-PM
+                  <i className="fa fa-clock-o"></i>9AM-9PM
                 </li>
               </ul>
             </div>
