@@ -63,9 +63,7 @@ Payment of Wages Act 1936, Factories Act 1948, Payment of Bonus Act 1965, Equal 
                     Draft original suits and petitions, interlocutory applications, criminal complaints, legal notices, consumer complaints and complaints relating to monopolistic and restrictive trade practices.
 </li>
             </ul>
-            <p></p>
-            <h1>Environment Law</h1>
-<p>Our law firm provides advice on environmental laws, rules and regulations, governmental incentives available to further environmental interests, including tax credits, grants and land use provisions. Our law firm advises its clients on regulatory compliances related to environment protection laws.</p>
+            <p></p><br/>
         </div>
 
 
