@@ -9,7 +9,7 @@ import SingleContentAreaBankingFinance from "../../../components/SingleContentAr
 
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
-import single from "../../../images/practice/3.jpg";
+import single from "../../../images/practice/banking.jpg";
 
 import "./style.scss";
 
@@ -42,7 +42,7 @@ const BankingFinancePage = () => {
               
                 <div className="singleContentImg ">
                   
-                  <img src={single} alt="" />
+                  <img src={single} alt="Banking Law" />
                 </div>
                 <hr/>
                 <CetagorySidebar title="Category" className="cetagoryWrap" />

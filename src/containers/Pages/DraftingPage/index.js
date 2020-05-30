@@ -8,11 +8,8 @@ import FooterArea from "../../../components/FooterArea";
 
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
-import single from "../../../images/practice/3.jpg";
-// images
-import portfolio1 from "../../../images/studies/1.jpg";
-import portfolio2 from "../../../images/studies/2.jpg";
-import portfolio3 from "../../../images/studies/3.jpg";
+import single from "../../../images/practice/drafting.jpg";
+
 import "./style.scss";
 import DrafingContent from "../../../components/DrafingContent";
 
@@ -47,7 +44,7 @@ const Drafting = () => {
               
                 <div className="singleContentImg ">
                   
-                  <img src={single} alt="" />
+                  <img src={single} alt="Drafting , Pleading & Conveyancing" />
                 </div>
                 <hr/>
                 <CetagorySidebar title="Category" className="cetagoryWrap" />

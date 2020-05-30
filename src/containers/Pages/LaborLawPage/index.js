@@ -5,26 +5,17 @@ import Breadcumb from "../../../components/Breadcumb";
 import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
-import SearchSidebar from "../../../components/SearchSidebar";
+
 import SingleContentAreaLabourLaw from "../../../components/SingleContentAreaLabourLaw";
-import RecentPosts from "../../../components/RecentPosts";
-import Portfolio from "../../../components/Portfolio";
+
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
-import single from "../../../images/practice/3.jpg";
-// images
-import portfolio1 from "../../../images/studies/1.jpg";
-import portfolio2 from "../../../images/studies/2.jpg";
-import portfolio3 from "../../../images/studies/3.jpg";
+import single from "../../../images/practice/labourlaw.png";
+
 import "./style.scss";
 
 const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Labour Law" }];
 
-const portfolioItem = [
-  { images: portfolio1, title: "General Service", subtitle: "Corporate" },
-  { images: portfolio2, title: "Personal Issue", subtitle: "General" },
-  { images: portfolio3, title: "Business Accounting", subtitle: "Business" },
-];
 
 const SinglePortfolioPage = () => {
   return (
@@ -53,7 +44,7 @@ const SinglePortfolioPage = () => {
               
                 <div className="singleContentImg ">
                   
-                  <img src={single} alt="" />
+                  <img src={single} alt="Labour Law" />
                 </div>
                 <hr/>
                 <CetagorySidebar title="Category" className="cetagoryWrap" />
