@@ -1,10 +1,36 @@
 import React, { useState } from 'react'
 import './style.scss'
+import { fetchService } from "../Services/Globalfunction";
+import config from "../../config.json"
 const NewsLetter = ({ className }) => {
     const [email, setEmail] = useState('')
-    const submitHandler = event =>{
+   
+    const submitHandler = async event =>{
         event.preventDefault()
         console.log('email =',email)
+
+        const msg = {
+            to: config.owneremail,
+            from: config.fromemail,
+            fromname:"Siva Law Associates",
+            toname: "Siva Law Associates",
+            subject: "Newsletter subscription - "+email,
+            body:   'Subscription Email : '+ email ,
+            bodyhtml:
+            '<p> Subscription Email : '+ email + '</p><br/>'
+           
+          };
+        const response = await fetchService(
+            "Email",
+            "SendEmail",
+            "POST",
+            msg
+          );
+          if (response===200){
+        
+          console.log("success");
+  
+          }
     }
     return (
         <div className={className}>

@@ -143,13 +143,17 @@ class Form extends Component {
             fromname:"Siva Law Associates",
             toname: "Siva Law Associates",
             subject: "Message from Website - "+this.state.name,
-            body: this.state.description,
+            body: '<p> From : '+ this.state.name + '</p><br/>'+
+                  '<p> Email : '+ this.state.email + '</p><br/>'+
+                  '<p> Phone :'+ this.state.phone + '</p><br/>'+
+                  '<p> Address : '+ this.state.address + '</p><br/>'+
+                  '<p> Details : '+ this.state.description + '</p>',
             bodyhtml:
-            '<p> From : '+ this.state.name + '</p><br/>'+
-            '<p> Email : '+ this.state.email + '</p><br/>'+
-            '<p> Phone :'+ this.state.phone + '</p><br/>'+
-            '<p> Address : '+ this.state.address + '</p><br/>'+
-            '<p> Details : '+ this.state.description + '</p>',
+                  '<p> From : '+ this.state.name + '</p><br/>'+
+                  '<p> Email : '+ this.state.email + '</p><br/>'+
+                  '<p> Phone :'+ this.state.phone + '</p><br/>'+
+                  '<p> Address : '+ this.state.address + '</p><br/>'+
+                  '<p> Details : '+ this.state.description + '</p>',
             token:""
           };
           console.log(msg);
