@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react'
+import Popup from "reactjs-popup";
+import './style.scss'
 import HeaderBotton from '../../../components/HeaderBottom'
 import HeaderTop from '../../../components/HeaderTop'
 import HeroSlider from '../../../components/HeroSlider'
@@ -38,7 +40,7 @@ const heroSliders = [
         subTitle: 'to End Legal Services.',
         text: 'Branch: Chennai',
         button: 'Contact us now',
-        url:'/contact'
+        url: '/contact'
     },
     {
         images: 'slideWrapperTwo',
@@ -46,7 +48,7 @@ const heroSliders = [
         subTitle: 'As Like A Friend.',
         text: 'Branch: Madurai',
         button: 'Contact us now',
-        url:'/contact'
+        url: '/contact'
     },
 ]
 
@@ -102,13 +104,17 @@ const portfolioItem = [
 ]
 
 const HomePageOne = () => {
+    function close() {
+        return { display: 'none' };
+        //popup-overlay 
+    }
     return (
         <Fragment>
             <header className="headerArea">
                 <HeaderTop className="headerTop" />
                 <HeaderBotton className="headerBottomArea" />
             </header>
-            <HeroSlider 
+            <HeroSlider
                 sliders={heroSliders}
                 className="heroSliderArea" />
             {/* <Service className="serviceArea" /> */}
@@ -118,20 +124,46 @@ const HomePageOne = () => {
                 images={about}
                 pragraphs={aboutText}
             />
-          <hr/>
-             <Disclaimer
-                className="portfolioArea"
-                title=""
-                subTitle=""
-                portfolioItem={portfolioItem}
-            />
+            <hr />
+
+            <button  data-toggle="modal" data-target="#myModal">
+                Disclaimer
+            </button>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+
+                        <div class="modal-body">
+                            <Disclaimer
+                                className="portfolioArea"
+                                title=""
+                                subTitle=""
+                                portfolioItem={portfolioItem}
+                            />
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" onClick={close} class="btn btn-success" data-dismiss="modal">Agree</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
             <ServiceArea
                 className="ourServiceArea"
                 title="How Can We Help You"
                 subTitle="Area Of Practice"
                 services={services}
             />
-           
+
             {/* <Testmonial
                 className="testmonialArea"
             /> */}
@@ -156,7 +188,7 @@ const HomePageOne = () => {
             <NewsLetter
                 className="newsLetterArea"
             />
-            <FooterArea/>
+            <FooterArea />
         </Fragment>
     )
 }

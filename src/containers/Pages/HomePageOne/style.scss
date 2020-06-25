@@ -1,0 +1,19 @@
+.popup-content 
+{
+    width: 95% !important;
+}
+
+button{
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding: 9px 25px;
+    border: 2px solid transparent;
+    text-transform: capitalize;
+    display: inline-block;
+    transition: all .3s;
+    background: #c0b596;
+    &:hover{
+        background:#d4c291;
+    }
+}
