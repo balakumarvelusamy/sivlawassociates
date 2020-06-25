@@ -103,11 +103,28 @@ const portfolioItem = [
     { images: portfolio5, title: 'Business Accounting', subtitle: 'Family Issue' }
 ]
 
-const HomePageOne = () => {
-    function close() {
-        return { display: 'none' };
-        //popup-overlay 
-    }
+//const HomePageOne = () => {
+    class HomePageOne extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+     
+  componentDidMount()
+  {
+    console.log("onload")
+  }
+
+    
+    render() {
+        function close() {
+            //localStorage.getItem("disclaimerflag") === "1" 
+           
+            localStorage.setItem("disclaimerflag", "1");
+           // document.id('#popup-overlay').hide(); 
+            return { display: 'none' };
+            
+            //popup-overlay 
+        }
     return (
         <Fragment>
             <header className="headerArea">
@@ -125,20 +142,20 @@ const HomePageOne = () => {
                 pragraphs={aboutText}
             />
             <hr />
-
+            
             <button  data-toggle="modal" data-target="#myModal">
                 Disclaimer
             </button>
-            <div class="modal" id="myModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
+            <div className="modal" id="myModal">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
 
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <button type="button" className="close" data-dismiss="modal">&times;</button>
                         </div>
 
 
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <Disclaimer
                                 className="portfolioArea"
                                 title=""
@@ -147,7 +164,7 @@ const HomePageOne = () => {
                             />
                         </div>
 
-                        <div class="modal-footer">
+                        <div className="modal-footer">
                             <button type="button" onClick={close} class="btn btn-success" data-dismiss="modal">Agree</button>
                         </div>
 
@@ -191,5 +208,5 @@ const HomePageOne = () => {
             <FooterArea />
         </Fragment>
     )
-}
+}}
 export default HomePageOne
