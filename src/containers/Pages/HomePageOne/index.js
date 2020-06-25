@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react'
+import Popup from "reactjs-popup";
+import './style.scss'
 import HeaderBotton from '../../../components/HeaderBottom'
 import HeaderTop from '../../../components/HeaderTop'
 import HeroSlider from '../../../components/HeroSlider'
@@ -38,7 +40,7 @@ const heroSliders = [
         subTitle: 'to End Legal Services.',
         text: 'Branch: Chennai',
         button: 'Contact us now',
-        url:'/contact'
+        url: '/contact'
     },
     {
         images: 'slideWrapperTwo',
@@ -46,7 +48,7 @@ const heroSliders = [
         subTitle: 'As Like A Friend.',
         text: 'Branch: Madurai',
         button: 'Contact us now',
-        url:'/contact'
+        url: '/contact'
     },
 ]
 
@@ -101,14 +103,35 @@ const portfolioItem = [
     { images: portfolio5, title: 'Business Accounting', subtitle: 'Family Issue' }
 ]
 
-const HomePageOne = () => {
+//const HomePageOne = () => {
+    class HomePageOne extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+     
+  componentDidMount()
+  {
+    console.log("onload")
+  }
+
+    
+    render() {
+        function close() {
+            //localStorage.getItem("disclaimerflag") === "1" 
+           
+            localStorage.setItem("disclaimerflag", "1");
+           // document.id('#popup-overlay').hide(); 
+            return { display: 'none' };
+            
+            //popup-overlay 
+        }
     return (
         <Fragment>
             <header className="headerArea">
                 <HeaderTop className="headerTop" />
                 <HeaderBotton className="headerBottomArea" />
             </header>
-            <HeroSlider 
+            <HeroSlider
                 sliders={heroSliders}
                 className="heroSliderArea" />
             {/* <Service className="serviceArea" /> */}
@@ -118,20 +141,46 @@ const HomePageOne = () => {
                 images={about}
                 pragraphs={aboutText}
             />
-          <hr/>
-             <Disclaimer
-                className="portfolioArea"
-                title=""
-                subTitle=""
-                portfolioItem={portfolioItem}
-            />
+            <hr />
+            
+            <button  data-toggle="modal" data-target="#myModal">
+                Disclaimer
+            </button>
+            <div className="modal" id="myModal">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+
+                            <button type="button" className="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+
+                        <div className="modal-body">
+                            <Disclaimer
+                                className="portfolioArea"
+                                title=""
+                                subTitle=""
+                                portfolioItem={portfolioItem}
+                            />
+                        </div>
+
+                        <div className="modal-footer">
+                            <button type="button" onClick={close} class="btn btn-success" data-dismiss="modal">Agree</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
             <ServiceArea
                 className="ourServiceArea"
                 title="How Can We Help You"
                 subTitle="Area Of Practice"
                 services={services}
             />
-           
+
             {/* <Testmonial
                 className="testmonialArea"
             /> */}
@@ -156,8 +205,8 @@ const HomePageOne = () => {
             <NewsLetter
                 className="newsLetterArea"
             />
-            <FooterArea/>
+            <FooterArea />
         </Fragment>
     )
-}
+}}
 export default HomePageOne

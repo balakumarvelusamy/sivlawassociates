@@ -4,24 +4,19 @@ import "./style.scss";
 
 const DisclaimerContent = () => {
   return (
-    <div className="container inner-container">
-      <h1>Disclaimer</h1>
-      <p>
+    <div className="container inner-container disclaimer">
+      <h6><b>Disclaimer</b></h6>
+      <p className="sm">
         As per the rules of the Bar Council of India, we are not permitted to
         solicit work or advertise for our services. The user acknowledges the
         following:
-      </p>
-<p>
-          There has been no advertisement, personal communication, solicitation,
+         There has been no advertisement, personal communication, solicitation,
           invitation or inducement of any kind whatsoever from us or any of our
           members to solicit any work through this website;
-       </p>
-
-        <p>
+     
           The user wishes to gain more information about us for his/her own
           information and use
-     </p>
-        <p>
+    
           The information about us is provided to the user only on his/her
           specific request and any information obtained or materials downloaded
           from this website is completely at the user’s volition and any
