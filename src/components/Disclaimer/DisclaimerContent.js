@@ -5,8 +5,9 @@ import "./style.scss";
 const DisclaimerContent = () => {
   return (
     <div >
-     <h6><b>Disclaimer</b></h6>
-      <p className="sm">
+        <p className="sm">
+     <h6><b>Disclaimer </b>( Siva Law Associates)</h6>
+    
         As per the rules of the Bar Council of India, we are not permitted to
         solicit work or advertise for our services. The user acknowledges the
         following:
