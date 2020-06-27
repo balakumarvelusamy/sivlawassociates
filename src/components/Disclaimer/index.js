@@ -21,52 +21,7 @@ const Disclaimer = ({ title, subTitle, className, fullWidth, portfolioItem }) =>
     return (
         <>
         <DisclaimerContent></DisclaimerContent>
-        <SectionTitle
-                            title={title}
-                            subTitle={subTitle}
-                        />
-        {/* <div className={className}>
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <SectionTitle
-                            title={title}
-                            subTitle={subTitle}
-                        />
-                    </div>
-                </div>
-            </div> */}
-
-            {/* {!fullWidth ? (
-                <div className="portfolioWrapper">
-                    {portfolioItem.map((portfolio, i) => (
-                        <div key={i} className="portfolioItem">
-                            <img src={portfolio.images} alt="" />
-                            <div className="portfolioContent">
-                                <p>{portfolio.subtitle}</p>
-                                <h4>{portfolio.title}</h4>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            ) : (
-                    <div className="container gridPortfolio">
-                        <div className="row">
-                            {portfolioItem.map((portfolio, i) => (
-                                <div key={i} className="col-lg-4 col-sm-6 col-12">
-                                    <div key={i} className="portfolioItem">
-                                        <img src={portfolio.images} alt="" />
-                                        <div className="portfolioContent">
-                                            <p>{portfolio.subtitle}</p>
-                                            <h3 className="text-white">{portfolio.title}</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                )} 
-        </div>*/}
+       
         </>
     )
 }

@@ -4,8 +4,8 @@ import "./style.scss";
 
 const DisclaimerContent = () => {
   return (
-    <div className="container inner-container disclaimer">
-      <h6><b>Disclaimer</b></h6>
+    <div >
+     <h6><b>Disclaimer</b></h6>
       <p className="sm">
         As per the rules of the Bar Council of India, we are not permitted to
         solicit work or advertise for our services. The user acknowledges the

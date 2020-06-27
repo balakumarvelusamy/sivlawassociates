@@ -1,7 +1,3 @@
-.popup-content 
-{
-    width: 95% !important;
-}
 
 button{
     font-size: 15px;
@@ -16,4 +12,8 @@ button{
     &:hover{
         background:#d4c291;
     }
+}
+.modal-open .modal
+{
+    height: 650px !important;
 }
