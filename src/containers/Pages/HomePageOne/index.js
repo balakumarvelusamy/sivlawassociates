@@ -1,16 +1,14 @@
-import React, { Fragment } from 'react'
-import Popup from "reactjs-popup";
+import React, { useState, useEffect, Fragment } from 'react'
+import { Button, Modal } from 'react-bootstrap';
+
 import './style.scss'
 import HeaderBotton from '../../../components/HeaderBottom'
 import HeaderTop from '../../../components/HeaderTop'
 import HeroSlider from '../../../components/HeroSlider'
-import Service from '../../../components/Service'
 import About from '../../../components/About'
 import ServiceArea from '../../../components/ServiceArea'
 // import Portfolio from '../../../components/Portfolio'
 import Disclaimer from '../../../components/Disclaimer'
-
-import Testmonial from "../../../components/Testmonial";
 import ContactArea from '../../../components/ContactArea'
 import TeamMember from '../../../components/TeamMember'
 import CounterArea from '../../../components/CounterArea'
@@ -59,7 +57,7 @@ const services = [
         // content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
     {
-        icon: 'flaticon-wounded',
+        icon: 'flaticon-house',
         title: 'Banking & Finance',
         // content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
@@ -69,7 +67,7 @@ const services = [
         // content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
     {
-        icon: 'flaticon-thief',
+        icon: 'flaticon-house',
         title: 'Intellectual Property',
         // content: 'It is a long established fact that a reader will be distracted by the readable content of '
     },
@@ -103,28 +101,23 @@ const portfolioItem = [
     { images: portfolio5, title: 'Business Accounting', subtitle: 'Family Issue' }
 ]
 
-//const HomePageOne = () => {
-    class HomePageOne extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-     
-  componentDidMount()
-  {
-    console.log("onload")
-  }
+const HomePageOne = () => {
+    const [show, setShow] = useState(false);
+    const handleClose = () => {
+        localStorage.setItem("disclaimer_agree", "1");
+        setShow(false)
+    };
+    const handleShow = () => setShow(true);
 
-    
-    render() {
-        function close() {
-            //localStorage.getItem("disclaimerflag") === "1" 
-           
-            localStorage.setItem("disclaimerflag", "1");
-           // document.id('#popup-overlay').hide(); 
-            return { display: 'none' };
-            
-            //popup-overlay 
+    useEffect(() => {
+
+
+        {
+            setShow(true)
+
         }
+    }, []);
+
     return (
         <Fragment>
             <header className="headerArea">
@@ -142,38 +135,31 @@ const portfolioItem = [
                 pragraphs={aboutText}
             />
             <hr />
-            
-            <button  data-toggle="modal" data-target="#myModal">
-                Disclaimer
-            </button>
-            <div className="modal" id="myModal">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
 
-                            <button type="button" className="close" data-dismiss="modal">&times;</button>
-                        </div>
+            <div id="disclaimermodel">
 
 
-                        <div className="modal-body">
-                            <Disclaimer
-                                className="portfolioArea"
-                                title=""
-                                subTitle=""
-                                portfolioItem={portfolioItem}
-                            />
-                        </div>
+                <Modal
+                    show={show}
+                    onHide={handleClose}
+                    backdrop="static"
+                    keyboard={false}
 
-                        <div className="modal-footer">
-                            <button type="button" onClick={close} class="btn btn-success" data-dismiss="modal">Agree</button>
-                        </div>
+                >
+                    <Modal.Body>
+                        <Disclaimer
+                            className="portfolioArea"
+                            title=""
+                            subTitle=""
+                            portfolioItem={portfolioItem}
+                        />
+                    </Modal.Body>
+                    <Modal.Footer>
 
-                    </div>
-                </div>
+                        <Button className="btn-success" onClick={handleClose} variant="primary">Agree</Button>
+                    </Modal.Footer>
+                </Modal>
             </div>
-
-
-
             <ServiceArea
                 className="ourServiceArea"
                 title="How Can We Help You"
@@ -208,5 +194,5 @@ const portfolioItem = [
             <FooterArea />
         </Fragment>
     )
-}}
+}
 export default HomePageOne
