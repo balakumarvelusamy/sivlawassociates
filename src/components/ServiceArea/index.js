@@ -5,13 +5,13 @@ import "./style.scss";
 const ServiceArea = ({ className, title, subTitle, services }) => {
   return (
     <div className={className}>
-      <div className="container">
+      <div className="container searviceareacontent">
         <div className="row">
           <div className="col-12">
             <SectionTitle title={title} subTitle={subTitle} />
           </div>
           {services.map((service, index) => (
-            <div key={index} className="col-lg-4 col-md-6 servicesection">
+            <div key={index} className="col-md-3 servicesection">
               <a href={service.url}>
                 <div className="serviceWrap">
                   <div className="serviceIcon">
