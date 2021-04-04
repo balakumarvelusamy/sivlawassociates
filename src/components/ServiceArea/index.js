@@ -18,9 +18,7 @@ const ServiceArea = ({ className, title, subTitle, services }) => {
                     <i className={`fi ${service.icon}`}></i>
                   </div>
                   <div className="serviceContent">
-                    <a href={service.url}>
-                      <h3>{service.title}</h3>
-                    </a>
+                    <h3>{service.title}</h3>
                     <p>{service.content}</p>
                   </div>
                 </a>
