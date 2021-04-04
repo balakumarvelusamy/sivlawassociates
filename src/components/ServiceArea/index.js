@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../Title";
 import "./style.scss";
+import { Link } from "react-router-dom";
 
 const ServiceArea = ({ className, title, subTitle, services }) => {
   return (
@@ -13,7 +14,7 @@ const ServiceArea = ({ className, title, subTitle, services }) => {
           {services.map((service, index) => (
             <div key={index} className="col-md-3 servicesection">
               <div className="serviceWrap">
-                <a href={service.url}>
+                <Link to={service.url}>
                   <div className="serviceIcon">
                     <i className={`fi ${service.icon}`}></i>
                   </div>
@@ -21,7 +22,7 @@ const ServiceArea = ({ className, title, subTitle, services }) => {
                     <h3>{service.title}</h3>
                     <p>{service.content}</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           ))}
