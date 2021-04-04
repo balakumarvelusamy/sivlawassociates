@@ -66,49 +66,49 @@ const services = [
   {
     icon: "flaticon-parents",
     title: "Civil",
-    url: "civil",
+    url: "/civil",
     // content: 'It is a long established fact that a reader will be distracted by the readable content of '
   },
   {
     icon: "flaticon-house",
     title: "Banking & Finance",
-    url: "banking-finance",
+    url: "/banking-finance",
     // content: 'It is a long established fact that a reader will be distracted by the readable content of '
   },
   {
     icon: "flaticon-employee",
     title: "Labour Law",
-    url: "labourlaw",
+    url: "/labourlaw",
     // content: 'It is a long established fact that a reader will be distracted by the readable content of '
   },
   {
     icon: "flaticon-house",
     title: "Intellectual Property",
-    url: "intellectual",
+    url: "/intellectual",
     // content: 'It is a long established fact that a reader will be distracted by the readable content of '
   },
   {
     icon: "flaticon-university-graduate-hat",
     title: "Cyber Law",
-    url: "cyber-law",
+    url: "/cyber-law",
     // content: 'It is a long established fact that a reader will be distracted by the readable content of '
   },
   {
     icon: "flaticon-house",
     title: "Environmental Law",
-    url: "env-law",
+    url: "/env-law",
     // content: 'It is a long established fact that a reader will be distracted by the readable content of '
   },
   {
     icon: "flaticon-house",
     title: "Drafting , Pleading & Conveyancing",
-    url: "drafting",
+    url: "/drafting",
     // content: 'It is a long established fact that a reader will be distracted by the readable content of '
   },
   {
     icon: "flaticon-house",
     title: "Tax",
-    url: "tax",
+    url: "/tax",
     // content: 'It is a long established fact that a reader will be distracted by the readable content of '
   },
 ];
