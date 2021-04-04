@@ -12,17 +12,19 @@ const ServiceArea = ({ className, title, subTitle, services }) => {
           </div>
           {services.map((service, index) => (
             <div key={index} className="col-md-3 servicesection">
-              <a href={service.url}>
-                <div className="serviceWrap">
+              <div className="serviceWrap">
+                <a href={service.url}>
                   <div className="serviceIcon">
                     <i className={`fi ${service.icon}`}></i>
                   </div>
                   <div className="serviceContent">
-                    <h3>{service.title}</h3>
+                    <a href={service.url}>
+                      <h3>{service.title}</h3>
+                    </a>
                     <p>{service.content}</p>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           ))}
         </div>
