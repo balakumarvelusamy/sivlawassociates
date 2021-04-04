@@ -131,11 +131,20 @@ const HomePageOne = () => {
     localStorage.setItem("disclaimer_agree", "1");
     setShow(false);
   };
-  const handleShow = () => setShow(true);
+
+  const handleShow = () => {
+    if (localStorage.getItem("disclaimer_agree") == "1") setShow(false);
+  };
 
   useEffect(() => {
     {
-      setShow(true);
+      if (localStorage.getItem("disclaimer_agree") == "1") {
+        console.log(
+          "disclaimer_agree",
+          localStorage.getItem("disclaimer_agree")
+        );
+        setShow(false);
+      } else setShow(true);
     }
   }, []);
 
