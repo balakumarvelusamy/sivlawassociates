@@ -21,7 +21,7 @@ const About = ({
           >
             <div className="aboutImageWrap">
               <a href="http://www.hcmadras.tn.nic.in/" target="blank">
-                <img src={images} alt="chennai highcout" href="" />
+                <img src={images} alt="chennai highcourt" href="" />
               </a>
             </div>
           </div>
