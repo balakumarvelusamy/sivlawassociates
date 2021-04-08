@@ -17,6 +17,7 @@ import NewsLetter from "../../../components/Newsletter";
 import FooterArea from "../../../components/FooterArea";
 // images
 import about from "../../../images/about/2.jpg";
+import maduraihc from "../../../images/about/maduraihc.jpg";
 import signature from "../../../images/about/1.png";
 
 // images
@@ -160,6 +161,7 @@ const HomePageOne = () => {
         className="aboutArea"
         title="About Us"
         images={about}
+        imagesmadurai={maduraihc}
         pragraphs={aboutText}
       />
       <hr />

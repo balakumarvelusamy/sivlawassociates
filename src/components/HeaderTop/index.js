@@ -9,8 +9,8 @@ const HeaderTop = (props) => {
             <div className="col-md-3 col-sm-12 col-12 col-lg-5">
               <ul className="d-flex accountLoginArea">
                 <li>
-                  <i className="fa fa-map-marker" aria-hidden="true"></i>309 1st
-                  Floor, Linghi Chetty St., Parrys, Chennai-01
+                  <i className="fa fa-map-marker" aria-hidden="true"></i>150 &
+                  309 1st Floor, Linghi Chetty St., Parrys, Chennai-01
                 </li>
               </ul>
             </div>
