@@ -22,6 +22,7 @@ const About = ({
             <div className="aboutImageWrap">
               <a href="http://www.hcmadras.tn.nic.in/" target="blank">
                 <img src={images} alt="chennai highcourt" href="" />
+                <h6>Madras High Court</h6>
               </a>
             </div>
           </div>
@@ -39,6 +40,8 @@ const About = ({
                 target="blank"
               >
                 <img src={imagesmadurai} alt="madurai high court" />
+
+                <h6>Madurai Bench of Madras High Court</h6>
               </a>
             </div>
           </div>
