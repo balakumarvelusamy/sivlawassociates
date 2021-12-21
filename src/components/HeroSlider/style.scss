@@ -2,28 +2,24 @@
   .slideWrapper {
     position: relative;
     z-index: 1;
-    height: 400px;
+    height: 500px;
     @media (max-width: 1200px) {
-      height: 400px;
+      height: 500px;
     }
     @media (max-width: 768px) {
       height: 300px;
     }
     &.slideWrapperOne {
-      background: url(../../images/slider/s-1.jpg) no-repeat center center /
-        cover;
+      background: url(../../images/slider/s-1.jpg) no-repeat center center / cover;
     }
     &.slideWrapperTwo {
-      background: url(../../images/slider/s-2.jpg) no-repeat center center /
-        cover;
+      background: url(../../images/slider/s-2.jpg) no-repeat center center / cover;
     }
     &.slideWrapperThree {
-      background: url(../../images/slider/slide-22.jpg) no-repeat center center /
-        cover;
+      background: url(../../images/slider/slide-22.jpg) no-repeat center center / cover;
     }
     &.slideWrapperFour {
-      background: url(../../images/slider/slide-1.jpg) no-repeat center center /
-        cover;
+      background: url(../../images/slider/slide-1.jpg) no-repeat center center / cover;
     }
     .sliderContent {
       position: absolute;
@@ -89,39 +85,9 @@
       position: absolute;
       left: 0;
       top: 0;
-      background: -moz-linear-gradient(
-        left,
-        rgba(21, 26, 48, 0.82) 14%,
-        rgba(27, 32, 53, 0.82) 15%,
-        rgba(138, 140, 151, 0) 33%,
-        rgba(255, 255, 255, 0) 52%,
-        rgba(244, 244, 244, 0) 55%,
-        rgba(166, 167, 175, 0) 68%,
-        rgba(75, 79, 96, 0.86) 83%,
-        rgba(21, 26, 48, 0.86) 92%
-      );
-      background: -webkit-linear-gradient(
-        left,
-        rgba(21, 26, 48, 0.82) 14%,
-        rgba(27, 32, 53, 0.82) 15%,
-        rgba(138, 140, 151, 0) 33%,
-        rgba(255, 255, 255, 0) 52%,
-        rgba(244, 244, 244, 0) 55%,
-        rgba(166, 167, 175, 0) 68%,
-        rgba(75, 79, 96, 0.86) 83%,
-        rgba(21, 26, 48, 0.86) 92%
-      );
-      background: linear-gradient(
-        to right,
-        rgba(21, 26, 48, 0.82) 14%,
-        rgba(27, 32, 53, 0.82) 15%,
-        rgba(138, 140, 151, 0) 33%,
-        rgba(255, 255, 255, 0) 52%,
-        rgba(244, 244, 244, 0) 55%,
-        rgba(166, 167, 175, 0) 68%,
-        rgba(75, 79, 96, 0.86) 83%,
-        rgba(21, 26, 48, 0.86) 92%
-      );
+      background: -moz-linear-gradient(left, rgba(21, 26, 48, 0.82) 14%, rgba(27, 32, 53, 0.82) 15%, rgba(138, 140, 151, 0) 33%, rgba(255, 255, 255, 0) 52%, rgba(244, 244, 244, 0) 55%, rgba(166, 167, 175, 0) 68%, rgba(75, 79, 96, 0.86) 83%, rgba(21, 26, 48, 0.86) 92%);
+      background: -webkit-linear-gradient(left, rgba(21, 26, 48, 0.82) 14%, rgba(27, 32, 53, 0.82) 15%, rgba(138, 140, 151, 0) 33%, rgba(255, 255, 255, 0) 52%, rgba(244, 244, 244, 0) 55%, rgba(166, 167, 175, 0) 68%, rgba(75, 79, 96, 0.86) 83%, rgba(21, 26, 48, 0.86) 92%);
+      background: linear-gradient(to right, rgba(21, 26, 48, 0.82) 14%, rgba(27, 32, 53, 0.82) 15%, rgba(138, 140, 151, 0) 33%, rgba(255, 255, 255, 0) 52%, rgba(244, 244, 244, 0) 55%, rgba(166, 167, 175, 0) 68%, rgba(75, 79, 96, 0.86) 83%, rgba(21, 26, 48, 0.86) 92%);
       opacity: 0.75;
     }
   }
@@ -215,7 +181,7 @@
     li {
       margin: 0;
       button {
-        background-color: #0188b9;
+        background-color: #0188b9 !important;
         width: 14px;
         height: 14px;
         border: 1px solid #fff;

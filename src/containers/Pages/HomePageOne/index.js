@@ -7,7 +7,8 @@ import HeaderTop from "../../../components/HeaderTop";
 import HeroSlider from "../../../components/HeroSlider";
 import About from "../../../components/About";
 import ServiceArea from "../../../components/ServiceArea";
-// import Portfolio from '../../../components/Portfolio'
+import Testmonial from "../../../components/Testmonial";
+import Whatsapp from "../../../components/Whatsapp";
 import Disclaimer from "../../../components/Disclaimer";
 import ContactArea from "../../../components/ContactArea";
 import TeamMember from "../../../components/TeamMember";
@@ -29,12 +30,10 @@ import portfolio5 from "../../../images/studies/5.jpg";
 
 const aboutText = [
   {
-    text:
-      "Siva Law Associates, a law firm established in 2009, our firm consists of well experienced attorney’s dealing with variety of cases mainly civil, criminal, Bank cases & Corporate matters on behalf of clients, companies and banks.",
+    text: "Siva Law Associates, a law firm established in 2009, our firm consists of well experienced attorney’s dealing with variety of cases mainly civil, criminal, Bank cases & Corporate matters on behalf of clients, companies and banks.",
   },
   {
-    text:
-      "We also do the preparing of sale deed, other legal agreements and appearing cases for SEBI. Our motto is to provide high quality and timely service to our clients at the time, when they needed the most.",
+    text: "We also do the preparing of sale deed, other legal agreements and appearing cases for SEBI. Our motto is to provide high quality and timely service to our clients at the time, when they needed the most.",
   },
 ];
 
@@ -140,10 +139,7 @@ const HomePageOne = () => {
   useEffect(() => {
     {
       if (localStorage.getItem("disclaimer_agree") == "1") {
-        console.log(
-          "disclaimer_agree",
-          localStorage.getItem("disclaimer_agree")
-        );
+        console.log("disclaimer_agree", localStorage.getItem("disclaimer_agree"));
         setShow(false);
       } else setShow(true);
     }
@@ -152,74 +148,34 @@ const HomePageOne = () => {
   return (
     <Fragment>
       <header className="headerArea">
-        <HeaderTop className="headerTop" />
+        {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea" />
       </header>
       <HeroSlider sliders={heroSliders} className="heroSliderArea" />
       {/* <Service className="serviceArea" /> */}
-      <About
-        className="aboutArea"
-        title="About Us"
-        images={about}
-        imagesmadurai={maduraihc}
-        pragraphs={aboutText}
-      />
-      <hr />
+      <About className="aboutArea" title="About Us" images={about} imagesmadurai={maduraihc} pragraphs={aboutText} />
 
       <div id="disclaimermodel">
-        <Modal
-          show={show}
-          onHide={handleClose}
-          backdrop="static"
-          keyboard={false}
-        >
+        <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
           <Modal.Body>
-            <Disclaimer
-              className="portfolioArea"
-              title=""
-              subTitle=""
-              portfolioItem={portfolioItem}
-            />
+            <Disclaimer className="portfolioArea" title="" subTitle="" portfolioItem={portfolioItem} />
           </Modal.Body>
           <Modal.Footer>
-            <Button
-              className="btn-success"
-              onClick={handleClose}
-              variant="primary"
-            >
+            <Button className="btn-success" onClick={handleClose} variant="primary">
               Agree
             </Button>
           </Modal.Footer>
         </Modal>
       </div>
-      <ServiceArea
-        className="ourServiceArea"
-        title="How Can We Help You"
-        subTitle="Area Of Practice"
-        services={services}
-      />
-
-      {/* <Testmonial
-                className="testmonialArea"
-            /> */}
+      <ServiceArea className="ourServiceArea" title="How Can We Help You" subTitle="Area Of Practice" services={services} />
       <ContactArea className="contactArea" />
-      <TeamMember
-        title="Qualified Attorneys "
-        subTitle="Meet Our Experts"
-        className="teamArea"
-        slider={true}
-      />
-      {/* <CounterArea
-                className="counterArea"
-            /> */}
-      {/* <BlogArea
-                className="blogArea"
-                title="Latest News"
-                subTitle="From Our Blog
-                "
-            /> */}
+      <TeamMember title="Qualified Attorneys " subTitle="Meet Our Experts" className="teamArea" slider={true} />
+      <CounterArea className="counterArea" />
+      <BlogArea className="blogArea" title="Latest Post" subTitle="From Our Blog " />
+      <Testmonial className="testmonialArea" />
       <NewsLetter className="newsLetterArea" />
       <FooterArea />
+      <Whatsapp />
     </Fragment>
   );
 };

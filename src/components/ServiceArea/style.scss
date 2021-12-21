@@ -1,13 +1,23 @@
 .servicesection {
-  border: solid #373737 1px;
-  margin: 10px !important;
+  //border: solid #373737 1px;
+  //margin: 10px !important;
   padding-top: 5px;
   border-radius: 5px;
 }
 .servicesection:hover {
-  background-color: #272c3f;
+  background-color: #0188b9;
   h3 {
     color: #fff !important;
+  }
+  .serviceIcon {
+    border: 1px solid rgb(255, 255, 255) !important;
+    i {
+      color: #ffffff !important;
+      transition: all 0.3s;
+      &::before {
+        font-size: 40px;
+      }
+    }
   }
 }
 .ourServiceArea {
@@ -21,7 +31,7 @@
     }
     .serviceIcon {
       float: left;
-      border: 1px solid rgba(192, 181, 150, 0.5);
+      border: 1px solid #0188b9;
       border-radius: 50%;
       width: 70px;
       height: 70px;
@@ -33,7 +43,7 @@
         margin-right: 10px;
       }
       i {
-        color: #c0b596;
+        color: #0188b9;
         transition: all 0.3s;
         &::before {
           font-size: 40px;
@@ -43,7 +53,7 @@
     &:hover {
       .serviceIcon {
         i {
-          color: #999;
+          color: #0188b9;
         }
       }
     }
@@ -66,11 +76,11 @@
           bottom: 0;
           width: 30px;
           height: 2px;
-          background: #c0b596;
+          background: #0188b9;
         }
       }
       p {
-        color: #777;
+        color: #0188b9;
         margin-bottom: 0;
       }
     }
@@ -113,11 +123,11 @@
           top: 50%;
           width: 1px;
           height: 65px;
-          background: #c0b596;
+          background: #0188b9;
           transform: translateY(-50%);
         }
         i {
-          color: #c0b596;
+          color: #0188b9;
           &::before {
             font-size: 60px;
           }

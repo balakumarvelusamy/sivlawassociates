@@ -27,12 +27,7 @@ const footerLinks = [
   },
   {
     title: "Contact Us",
-    menus: [
-      { name: "Head Office Address" },
-      { name: "Old No. 150 & New no. 309,1st Floor," },
-      { name: "Linghi Chetty Street," },
-      { name: "Parrys, Chennai-600 001" },
-    ],
+    menus: [{ name: "Head Office Address" }, { name: "Old No. 150 & New no. 309,1st Floor," }, { name: "Linghi Chetty Street," }, { name: "Parrys, Chennai-600 001" }],
   },
 ];
 
@@ -43,16 +38,11 @@ const FooterArea = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="footerLogo">
+              <div className="footerLogo text-center">
                 <Link to="/">
-                  <img src={logo} alt="" />
+                  <h3 className="text-white">Siva Law Associates</h3> <img src={logo} className="d-none" alt="" />
                 </Link>
-                <p>
-                  Siva Law Associates, a law firm established in 2009, our firm
-                  consists of well experienced attorney’s dealing with variety
-                  of cases mainly civil, criminal, Bank cases & Corporate
-                  matters on behalf of clients, companies and banks.
-                </p>
+                <p>Siva Law Associates, a law firm established in 2009, our firm consists of well experienced attorney’s dealing with variety of cases mainly civil, criminal, Bank cases & Corporate matters on behalf of clients, companies and banks.</p>
               </div>
             </div>
             {footerLinks.map((menu, i) => (
@@ -61,13 +51,7 @@ const FooterArea = () => {
                   <h3>{menu.title}</h3>
                   <ul>
                     {menu.menus.map((item, i) => (
-                      <li key={i}>
-                        {item.route ? (
-                          <Link to={`/${item.route}`}>{item.name}</Link>
-                        ) : (
-                          `${item.name}`
-                        )}
-                      </li>
+                      <li key={i}>{item.route ? <Link to={`/${item.route}`}>{item.name}</Link> : `${item.name}`}</li>
                     ))}
                   </ul>
                 </div>
@@ -83,10 +67,7 @@ const FooterArea = () => {
               <div className="col-md-8 col-sm-10 col-12 ">
                 <span className="small">
                   Privacy Policy | © {new Date().getFullYear()} Developed by{" "}
-                  <a
-                    href="https://www.instagram.com/theuniquecreations"
-                    target="blank"
-                  >
+                  <a href="https://www.instagram.com/theuniquecreations.it" target="blank">
                     TheUniqueCreations
                   </a>
                 </span>
@@ -96,10 +77,7 @@ const FooterArea = () => {
                   {/* <li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li> */}
                   <li>
-                    <a
-                      href="https://www.instagram.com/theuniquecreations"
-                      target="blank"
-                    >
+                    <a href="https://www.instagram.com/theuniquecreations.it" target="blank">
                       <i className="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                   </li>
