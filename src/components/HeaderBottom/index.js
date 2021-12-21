@@ -50,6 +50,11 @@ const HeaderBottom = (props) => {
                     Attorneys
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink exact to="/blog">
+                    Blog
+                  </NavLink>
+                </li>
 
                 <li>
                   <NavLink exact className="text-white" to="#">
