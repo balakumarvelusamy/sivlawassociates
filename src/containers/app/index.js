@@ -2,16 +2,14 @@ import React, { Fragment, Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import HomePageOne from "../Pages/HomePageOne";
-import HomePageTwo from "../Pages/HomePageTwo";
-import HomePageThree from "../Pages/HomePageThree";
+
 import AboutPage from "../Pages/AboutPage";
-import PracticePage from "../Pages/PracticePage";
 import PracticeSinglePage from "../Pages/PracticeSinglePage";
 import PortfolioPage from "../Pages/PortfolioPage";
 import TeamPage from "../Pages/TeamPage";
 import SingleTeamPage from "../Pages/SingleTeamPage";
 import ContactPage from "../Pages/ContactPage";
-import BlogLeftPage from "../Pages/BlogLeftPage";
+import BlogPage from "../Pages/BlogPage";
 import BlogRightPage from "../Pages/BlogRightPage";
 import BlogFullWidth from "../Pages/BlogFullWidth";
 import LogInPage from "../Pages/LogInPage";
@@ -41,8 +39,8 @@ class App extends Component {
             <Route exact path="/attorneys" component={TeamPage} />
             <Route exact path="/attorneys-single" component={SingleTeamPage} />
             <Route exact path="/contact" component={ContactPage} />
-            <Route exact path="/blog-left" component={BlogLeftPage} />
-            <Route exact path="/blog-right" component={BlogRightPage} />
+            <Route exact path="/allblog" component={BlogPage} />
+            <Route exact path="/blog-single" component={BlogRightPage} />
             <Route exact path="/blog-fullwidth" component={BlogFullWidth} />
             <Route exact path="/login" component={LogInPage} />
             <Route exact path="/labourlaw" component={LaborLawPage} />

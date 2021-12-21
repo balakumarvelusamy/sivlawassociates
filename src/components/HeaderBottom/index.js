@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../../images/logo/slalogo.png";
+import drp from "../../images/down-arrow.png";
 import "./style.scss";
 
 const HeaderBottom = (props) => {
@@ -27,7 +28,7 @@ const HeaderBottom = (props) => {
                 <div className="d-flex justify-content-between">
                   <NavLink to="/">
                     <div>
-                      <h2 className="text-white text-nowrap">{<img className="m-1" src={logo} height="40" alt=""></img>}Siva Law Associates</h2>
+                      <h2 className="text-white text-nowrap mt-1">{<img className="" src={logo} height="40" alt=""></img>}Siva Law Associates</h2>
                     </div>
                   </NavLink>
                 </div>
@@ -51,14 +52,14 @@ const HeaderBottom = (props) => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink exact to="/blog">
+                  <NavLink exact to="/allblog">
                     Blog
                   </NavLink>
                 </li>
 
                 <li>
                   <NavLink exact className="text-white" to="#">
-                    Area of Practice
+                    Area of Practice <img src={drp} height="15" />
                   </NavLink>
                   <ul className="subMenu">
                     <li>
@@ -108,28 +109,6 @@ const HeaderBottom = (props) => {
                     </li>
                   </ul>
                 </li>
-                {/* <li>
-                  <NavLink exact to="/blog-left">
-                    News
-                  </NavLink>
-                  <ul className="subMenu">
-                    <li>
-                      <NavLink exact to="/blog-left">
-                        Blog left sidebar
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink exact to="/blog-right">
-                        Blog Right sidebar
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink exact to="/blog-fullwidth">
-                        Blog FullWidth
-                      </NavLink>
-                    </li>
-                  </ul>
-                </li> */}
 
                 <li>
                   <NavLink exact to="/contact">

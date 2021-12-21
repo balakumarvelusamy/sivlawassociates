@@ -37,6 +37,15 @@ const blogs = [
       time: "Oct 12,2018",
     },
   },
+  {
+    images: blog3,
+    title: "Justice May For You If You Are Innocent",
+    meta: {
+      avatar: avatar,
+      name: "By Aliza",
+      time: "Oct 12,2018",
+    },
+  },
 ];
 
 const BlogArea = ({ className, title, subTitle }) => {
@@ -55,7 +64,7 @@ const BlogArea = ({ className, title, subTitle }) => {
                 </div>
                 <div className="blogContent">
                   <h3>
-                    <Link to="/blog-fullwidth">Justice May For You If You Are Innocent</Link>
+                    <Link to="/blog-single?slug">Justice May For You If You Are Innocent</Link>
                   </h3>
                   <ul className="blogMeta">
                     <li>

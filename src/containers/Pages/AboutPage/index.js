@@ -64,7 +64,7 @@ const AboutPage = () => {
       </header>
       <Breadcumb className="breadcumbArea" title="About Us" breadcumbMenu={breadcumbMenu} background={breadcumb} />
 
-      <About className="aboutArea aboutAreaStyleTwo" title="About us" subTitle="We Are Expert" images={about} orderLast="order-last" videoId="XxVg_s8xAms" pragraphs={aboutText} />
+      <About className="aboutArea aboutAreaStyleTwo" title="About us" subTitle="We Are Expert" images={about} imagesmadurai={"http://www.hcmadras.tn.nic.in/image/mdu2a.jpg"} orderLast="order-last" videoId="XxVg_s8xAms" pragraphs={aboutText} />
       {/* <ServiceArea
                 className="ourServiceArea ourServiceAreaStyleTwo"
                 title="How Can We Help You"

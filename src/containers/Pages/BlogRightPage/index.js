@@ -15,29 +15,27 @@ import Instagram from "../../../components/Instagram";
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import "./style.scss";
 
-const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "News" }];
+const BlogRightPage = (props) => {
+  const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Blog Title" }];
 
-const BlogRightPage = () => {
   return (
     <Fragment>
       <header className="headerArea">
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
       </header>
-      <Breadcumb className="breadcumbArea" title="News" breadcumbMenu={breadcumbMenu} background={breadcumb} />
+      <Breadcumb className="breadcumbArea" title="Blog Title" breadcumbMenu={breadcumbMenu} background={breadcumb} />
       <div className="blogPostArea blogPostLeftArea">
-        <div className="container">
-          <div className="row">
+        <div className="container ">
+          <div className="row mt-5 mb-5">
             <div className="col-lg-8">
-              <BlogPost />
+              <BlogPost slug="title-title" />
             </div>
             <div className="col-lg-4">
               <aside>
-                <SearchSidebar className="searchSidebarWrapper" />
-                <CetagorySidebar title="Cetagory" className="cetagoryWrap" />
+                <CetagorySidebar title="Category" className="cetagoryWrap" />
                 <RecentPosts className="recentPostWrapper" />
-                <Tags />
-                <Instagram />
+                {/* <Instagram /> */}
               </aside>
             </div>
           </div>
