@@ -56,14 +56,15 @@
             font-size: 14px;
           }
           &.active {
-            color: #c0b596;
+            color: #b5b5b5;
+            font-weight: 600;
           }
         }
 
         &:hover {
           a,
           span {
-            color: #c0b596;
+            color: #cecece;
           }
         }
         ul.subMenu {
@@ -100,7 +101,7 @@
               text-transform: capitalize;
               &:hover,
               &.active {
-                color: #c0b596;
+                color: #0188b9;
               }
             }
           }

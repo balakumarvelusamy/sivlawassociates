@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../../images/logo/slalogo.png";
+import drp from "../../images/down-arrow.png";
 import "./style.scss";
 
 const HeaderBottom = (props) => {
@@ -22,43 +23,23 @@ const HeaderBottom = (props) => {
       <div className="container">
         <div className="headerBottomMainWrapper">
           <div className="row">
-            <div className="col-lg-3 col-md-10 col-sm-6 col-8">
-              <div className="logo">
-                <NavLink to="/">
-                  { <img className="m-1" src={logo} alt=""></img> }
-
-                </NavLink>
+            <div className="col-lg-3 col-md-10 col-sm-6 col-8 d-flex align-items-center">
+              <div className="logo ">
+                <div className="d-flex justify-content-between">
+                  <NavLink to="/">
+                    <div>
+                      <h2 className="text-white text-nowrap mt-1">{<img className="" src={logo} height="40" alt=""></img>}Siva Law Associates</h2>
+                    </div>
+                  </NavLink>
+                </div>
               </div>
             </div>
-            <div
-              className={
-                responsive
-                  ? "col-lg-8 responsiveWrapper active"
-                  : "col-lg-8 responsiveWrapper"
-              }
-            >
+            <div className={responsive ? "col-lg-8 responsiveWrapper active" : "col-lg-8 responsiveWrapper"}>
               <ul className="mainMenuWrap">
                 <li>
                   <NavLink exact to="/">
                     Home
                   </NavLink>
-                  {/* <ul className="subMenu">
-                    <li>
-                      <NavLink exact to="/">
-                        Home One
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink exact to="/home-two">
-                        Home Two
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink exact to="/home-three">
-                        Home Three
-                      </NavLink>
-                    </li>
-                  </ul> */}
                 </li>
                 <li>
                   <NavLink exact to="/about">
@@ -66,87 +47,69 @@ const HeaderBottom = (props) => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink exact to="/attorneys-single">
+                  <NavLink exact to="/attorneys">
                     Attorneys
                   </NavLink>
-                 
+                </li>
+                <li>
+                  <NavLink exact to="/allblog">
+                    Blog
+                  </NavLink>
                 </li>
 
                 <li>
-                  <NavLink exact to="#">
-                  Area of Practice
+                  <NavLink exact className="text-white" to="#">
+                    Area of Practice <img src={drp} height="12" />
                   </NavLink>
                   <ul className="subMenu">
                     <li>
                       <NavLink exact to="/alt-dispute-resolution">
-                      Alternate Dispute Resolution
+                        Alternate Dispute Resolution
                       </NavLink>
                     </li>
                     <li>
                       <NavLink exact to="/civil">
-                     Civil
+                        Civil
                       </NavLink>
                     </li>
                     <li>
                       <NavLink exact to="/banking-finance">
-                      Banking & Finance
+                        Banking & Finance
                       </NavLink>
                     </li>
                     <li>
                       <NavLink exact to="/labourlaw">
-                      Labour Law
+                        Labour Law
                       </NavLink>
                     </li>
                     <li>
                       <NavLink exact to="/intellectual">
-                      Intellectual Property
+                        Intellectual Property
                       </NavLink>
                     </li>
                     <li>
                       <NavLink exact to="/cyber-law">
-                      Cyber Law
+                        Cyber Law
                       </NavLink>
                     </li>
                     <li>
                       <NavLink exact to="/env-law">
-                      Environemntal Law
+                        Environemntal Law
                       </NavLink>
                     </li>
                     <li>
                       <NavLink exact to="/drafting">
-                      Drafting , Pleading & Conveyancing
+                        Drafting , Pleading & Conveyancing
                       </NavLink>
                     </li>
                     <li>
                       <NavLink exact to="/tax">
-                      Tax
+                        Tax
                       </NavLink>
                     </li>
                   </ul>
                 </li>
-                {/* <li>
-                  <NavLink exact to="/blog-left">
-                    News
-                  </NavLink>
-                  <ul className="subMenu">
-                    <li>
-                      <NavLink exact to="/blog-left">
-                        Blog left sidebar
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink exact to="/blog-right">
-                        Blog Right sidebar
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink exact to="/blog-fullwidth">
-                        Blog FullWidth
-                      </NavLink>
-                    </li>
-                  </ul>
-                </li> */}
-               
+
                 <li>
                   <NavLink exact to="/contact">
                     Contact
@@ -159,14 +122,16 @@ const HeaderBottom = (props) => {
                 </li> */}
               </ul>
             </div>
-            <div className="col-lg-1 col-md-2 col-sm-6 col-4">
+            <div className="col-lg-1 col-md-2 col-sm-6 col-4 ">
               <div className="searchMenuWrapper">
-                <div className="searchWrap">
+                <div className="searchWrap d-none">
                   <i onClick={clickHandler} className="fa 3x fa-phone"></i>
                   <div className={trigger ? "searchform active" : "searchform"}>
-                    +91-9965449000<hr/>
+                    +91-9965449000
+                    <hr />
                     +91-9965446000 <hr />
-                    044-43536263<hr />
+                    044-43536263
+                    <hr />
                     <a href="mailto:sivalawassociates@gmail.com">
                       <i class="fa fa-envelope text-dark px-2"></i>
                       sivalawassociates@gmail.com

@@ -14,45 +14,33 @@ import single from "../../../images/practice/property.jpg";
 import "./style.scss";
 const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Intellectual Property" }];
 
-
 const Intellectual = () => {
   return (
     <Fragment>
       <header className="headerArea">
-        <HeaderTop className="headerTop" />
+        {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
       </header>
-      <Breadcumb
-        className="breadcumbArea"
-        title="Intellectual Property"
-        breadcumbMenu={breadcumbMenu}
-        background={breadcumb}
-      />
+      <Breadcumb className="breadcumbArea" title="Intellectual Property" breadcumbMenu={breadcumbMenu} background={breadcumb} />
       <div className="singleArea singlePortfolioArea">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-12">
-              <IntellectualPropertyContent
-                className="singleContentArea"
-                image={single}
-              />
+              <IntellectualPropertyContent className="singleContentArea" image={single} />
             </div>
             <div className="col-lg-4 col-12">
               <aside>
-              
                 <div className="singleContentImg ">
-                  
                   <img src={single} alt="Intellectual Property Copyright" />
                 </div>
-                <hr/>
+                <hr />
                 <CetagorySidebar title="Category" className="cetagoryWrap" />
-             
               </aside>
             </div>
           </div>
         </div>
       </div>
- 
+
       <NewsLetter className="newsLetterArea" />
       <FooterArea />
     </Fragment>

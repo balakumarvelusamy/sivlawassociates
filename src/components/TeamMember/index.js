@@ -18,19 +18,19 @@ const teams = [
     name: "S.Chandrasekaran",
     level: "District & Sessions Judge(Retd)",
     image: teamMember1,
-    socialMedia: ["facebook", "twitter", "linkedin"],
+    socialMedia: ["facebook", "instagram", "linkedin"],
   },
   {
     name: "C.Sivakumar",
     level: "Advocate",
     image: teamMember1,
-    socialMedia: ["facebook", "twitter", "linkedin"],
+    socialMedia: ["facebook", "instagram", "linkedin"],
   },
   {
     name: "Rekha Sivakumar",
     level: "Advocate",
     image: teamMember1,
-    socialMedia: ["facebook", "twitter", "linkedin"],
+    socialMedia: ["facebook", "instagram", "linkedin"],
   },
 ];
 
@@ -96,10 +96,7 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                         {team.socialMedia.map((social) => (
                           <li key={social}>
                             <a href="#">
-                              <i
-                                className={`fa fa-${social}`}
-                                aria-hidden="true"
-                              ></i>
+                              <i className={`fa fa-${social}`} aria-hidden="true"></i>
                             </a>
                           </li>
                         ))}
@@ -124,10 +121,7 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                         {team.socialMedia.map((social) => (
                           <li key={social}>
                             <a href="#">
-                              <i
-                                className={`fa fa-${social}`}
-                                aria-hidden="true"
-                              ></i>
+                              <i className={`fa fa-${social}`} aria-hidden="true"></i>
                             </a>
                           </li>
                         ))}

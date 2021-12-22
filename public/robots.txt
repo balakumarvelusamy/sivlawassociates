@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /about
+Allow: /attorneys
+Allow: /about
+Allow: /contact
+Allow: /alt-dispute-resolution
+Allow: /civil
+Allow: /labourlaw
+Allow: /intellectual
+Allow: /cyber-law
+Allow: /env-law
+Allow: /drafting
+Allow: /tax
+Sitemap: https://www.sivalaassociates.in/sitemap.txt

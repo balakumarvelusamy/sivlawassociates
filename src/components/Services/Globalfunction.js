@@ -1,25 +1,22 @@
+import config from "../../config.json";
 
-//const domain='https://localhost:5001/api/'
-const domain='https://tucservices.azurewebsites.net/api/'
-const fetchService = async (controller, action, type, data) => {
-  let url = domain + controller + '/' + action;
-  const _fetch = type === 'Get' ? await fetch(url) : await fetch(url, {
-    method: 'POST',
-    body: JSON.stringify(data),
-    headers: {
-      'Content-Type': 'application/json'
-    },
-  });
-  console.log(_fetch);
-  const _data = await _fetch;
-  console.log(_data);
-  return (_data.status === 200) ? _data.text().then(function (text) { return text ? JSON.parse(text) : {} }) :
-  (_data.status === 500) ? "UNIQUEKEY":
-  _data.status
-  // return  _data.text().then(function(text) {
-  //   return text ? JSON.parse(text) : {}
-  //  });  
+const getpostbytitle = async (value) => {
+  let id = value;
+  await fetch(config.service_url + `getpost/${id}`)
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.status === 200) {
+        let _filterData = data.data.filter((blog) => blog.posttypevalue === "Blog");
+        if (_filterData) {
+          return _filterData;
+        }
+      } else {
+        return "No Result";
+      }
+    })
+    .catch((err) => {
+      return err;
+    });
+};
 
-}
-
-export { fetchService };
+export { getpostbytitle };
