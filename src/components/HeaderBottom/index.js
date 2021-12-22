@@ -47,7 +47,7 @@ const HeaderBottom = (props) => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink exact to="/attorneys-single">
+                  <NavLink exact to="/attorneys">
                     Attorneys
                   </NavLink>
                 </li>

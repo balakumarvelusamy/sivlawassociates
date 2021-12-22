@@ -7,7 +7,7 @@ const footerLinks = [
     title: "Quick Link",
     menus: [
       //{ name: 'Home', route: '/' },
-      { name: "Attorneys", route: "attorneys-single" },
+      { name: "Attorneys", route: "attorneys" },
       { name: "About Us", route: "about" },
       { name: "Contact", route: "contact" },
     ],
