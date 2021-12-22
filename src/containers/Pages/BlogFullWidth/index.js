@@ -8,7 +8,7 @@ import FooterArea from "../../../components/FooterArea";
 import SearchSidebar from "../../../components/SearchSidebar";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import RecentPosts from "../../../components/RecentPosts";
-import BlogPost from "../../../components/BlogPost";
+import BlogPost from "../../../components/BlogPostbyId";
 import Tags from "../../../components/Tags";
 import Instagram from "../../../components/Instagram";
 // images

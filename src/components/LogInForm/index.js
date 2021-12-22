@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import Joi from "joi-browser";
 import { toast } from "react-toastify";
 import "./style.scss";
-import { CognitoUserPool } from 'amazon-cognito-identity-js';
-import config from "../../config.json"
+import { CognitoUserPool } from "amazon-cognito-identity-js";
+import config from "../../config.json";
 class LogInForm extends Component {
   state = {
     email: "",
     password: "",
     error: {},
-    message:""
+    message: "",
   };
 
   schema = {
@@ -72,10 +72,8 @@ class LogInForm extends Component {
   validate = () => {
     const options = { abortEarly: false };
     const form = {
-    
       email: this.state.email,
       password: this.state.password,
-    
     };
     const { error } = Joi.validate(form, this.schema, options);
     if (!error) return null;
@@ -94,70 +92,49 @@ class LogInForm extends Component {
         error: error || {},
       });
     } else {
-    
-     
-    const poolData = {
-    UserPoolId:config.cognito.UserPoolId,
-    ClientId:config.cognito.ClientId
-    };
+      const poolData = {
+        UserPoolId: config.cognito.UserPoolId,
+        ClientId: config.cognito.ClientId,
+      };
 
-    const { email, password } = this.state;
-    const UserPool = new CognitoUserPool(poolData);
-    UserPool.signUp(email, password, [], null, (err, data) => {
-      if (err) {console.error(err);
-      console.log(data);
-      console.log(err);  
-      this.setState.message="err.message"
+      const { email, password } = this.state;
+      const UserPool = new CognitoUserPool(poolData);
+      UserPool.signUp(email, password, [], null, (err, data) => {
+        if (err) {
+          console.error(err);
+          console.log(data);
+          console.log(err);
+          this.setState.message = "err.message";
+        }
+      });
     }
-    });}
-  
   };
 
   render() {
-    const msg=this.state.message;
+    const msg = this.state.message;
     return (
       <form onSubmit={this.submitHandler} className="contactForm">
         <div className="row">
-
           <div className="col-sm-6 col-12">
             {msg}
             <div className="formInput">
-              <input
-                placeholder="Email"
-                value={this.state.email}
-                name="email"
-                onChange={this.changeHandler}
-                className="form-control"
-                type="email"
-              />
+              <input placeholder="Email" value={this.state.email} name="email" onChange={this.changeHandler} className="form-control" type="email" />
               {this.state.error.email && <p>{this.state.error.email}</p>}
             </div>
           </div>
           <div className="col-sm-6 col-12">
             <div className="formInput">
               <div className="formInput">
-                <input
-                  placeholder="Password"
-                  value={this.state.password}
-                  name="password"
-                  onChange={this.changeHandler}
-                  className="form-control"
-                  type="password"
-                />
-                {this.state.error.password && (
-                  <p>{this.state.error.password}</p>
-                )}
+                <input placeholder="Password" value={this.state.password} name="password" onChange={this.changeHandler} className="form-control" type="password" />
+                {this.state.error.password && <p>{this.state.error.password}</p>}
               </div>
             </div>
           </div>
           <div className="col-6">
             <button type="submit">Log in</button>
-            
           </div>
           <div className="col-6">
-          <button type="submit">Register</button>
-          
-            
+            <button type="submit">Register</button>
           </div>
         </div>
       </form>
