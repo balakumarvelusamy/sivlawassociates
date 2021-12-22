@@ -8,14 +8,19 @@ import FooterArea from "../../../components/FooterArea";
 import SearchSidebar from "../../../components/SearchSidebar";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import RecentPosts from "../../../components/RecentPosts";
-import BlogPost from "../../../components/BlogPost";
+import BlogPostbyId from "../../../components/BlogPostbyId";
 import Tags from "../../../components/Tags";
 import Instagram from "../../../components/Instagram";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import "./style.scss";
+const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "News" }];
+const geturl = window.location.href.split("/");
+const getvalue = geturl[window.location.href.split("/").length - 1];
+const BlogSinglePage = (props) => {
+  const { slug } = props.match.params;
+  let id = slug === undefined ? getvalue : slug;
 
-const BlogRightPage = (props) => {
   const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Blog Title" }];
 
   return (
@@ -29,7 +34,7 @@ const BlogRightPage = (props) => {
         <div className="container ">
           <div className="row mt-5 mb-5">
             <div className="col-lg-8">
-              <BlogPost slug="title-title" />
+              <BlogPostbyId id={id} />
             </div>
             <div className="col-lg-4">
               <aside>
@@ -51,4 +56,4 @@ const BlogRightPage = (props) => {
     </Fragment>
   );
 };
-export default BlogRightPage;
+export default BlogSinglePage;

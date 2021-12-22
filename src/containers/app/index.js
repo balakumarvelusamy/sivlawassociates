@@ -10,7 +10,7 @@ import TeamPage from "../Pages/TeamPage";
 import SingleTeamPage from "../Pages/SingleTeamPage";
 import ContactPage from "../Pages/ContactPage";
 import BlogPage from "../Pages/BlogPage";
-import BlogRightPage from "../Pages/BlogRightPage";
+import BlogSinglePage from "../Pages/BlogSinglePage";
 import BlogFullWidth from "../Pages/BlogFullWidth";
 import LogInPage from "../Pages/LogInPage";
 import LaborLawPage from "../Pages/LaborLawPage";
@@ -40,7 +40,7 @@ class App extends Component {
             <Route exact path="/attorneys" component={SingleTeamPage} />
             <Route exact path="/contact" component={ContactPage} />
             <Route exact path="/allblog" component={BlogPage} />
-            <Route exact path="/blog-single" component={BlogRightPage} />
+            <Route exact path="/blog-single/:id" component={BlogSinglePage} />
             <Route exact path="/blog-fullwidth" component={BlogFullWidth} />
             <Route exact path="/login" component={LogInPage} />
             <Route exact path="/labourlaw" component={LaborLawPage} />

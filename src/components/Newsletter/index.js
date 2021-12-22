@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.scss";
-import { fetchService } from "../Services/Globalfunction";
+//import { fetchService } from "../Services/Globalfunction";
 import config from "../../config.json";
 const NewsLetter = ({ className }) => {
   const [email, setEmail] = useState("");
@@ -18,7 +18,7 @@ const NewsLetter = ({ className }) => {
       body: "Subscription Email : " + email,
       bodyhtml: "<p> Subscription Email : " + email + "</p><br/>",
     };
-    const response = await fetchService("Email", "SendEmail", "POST", msg);
+    const response = ""; //await fetchService("Email", "SendEmail", "POST", msg);
     if (response === 200) {
       console.log("success");
     }

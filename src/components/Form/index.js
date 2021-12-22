@@ -128,42 +128,34 @@ class Form extends Component {
         address: "",
         description: "",
       });
-      //   {
-      //     "from": "noreply@sivalawassociates.com",
-      //     "to": "vbalakumar.cse@gmail.com",
-      //     "subject": "test 1",
-      //     "fromname": "sivalawassociates.com",
-      //     "toname": "bala",
-      //     "body": "test",
-      //     "token": "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"
-      //   }
       const msg = {
-        // to: config.owneremail,
-        // from: config.fromemail,
-        // fromname: "Siva Law Associates",
-        // toname: "Siva Law Associates",
-        subject: "Message from Website - " + this.state.name,
-        body: "<p> From : " + this.state.name + "</p><br/>" + "<p> Email : " + this.state.email + "</p><br/>" + "<p> Phone :" + this.state.phone + "</p><br/>" + "<p> Address : " + this.state.address + "</p><br/>" + "<p> Details : " + this.state.description + "</p>",
-        bodyhtml: "<p> From : " + this.state.name + "</p><br/>" + "<p> Email : " + this.state.email + "</p><br/>" + "<p> Phone :" + this.state.phone + "</p><br/>" + "<p> Address : " + this.state.address + "</p><br/>" + "<p> Details : " + this.state.description + "</p>",
-        token: "",
-      };
-      console.log(msg);
-      this.setState({
-        loading: true,
-        message: "",
-      });
+        subject: "Message from Siva Law Website - " + this.state.name,
 
-      // call service sendmail method
-      const response = await sendMail(msg.bodyhtml, this.state.email, this.state.name, msg.subject);
-      if (response.status === 200) {
-        this.setState({
-          loading: false,
-          message: "Message sucessfully Sent. Thanks for contacting us. We will get back to you soon.",
+        bodyhtml: "<p>Hello " + this.state.name + ",</p><p>Thanks for reaching us, we will get back to you shorlty.</p>" + "<br/><p>Regards,</p> <p><a href='https://www.sivalawassociates.in'>Siva Law Associate</a></p>" + "<table  style='border: 1px solid black'>" + "<tr  style='border: 1px solid black'><td> <i>Name:</i></td> <td> <i>" + this.state.name + "</i></td></tr>" + "<tr style='border: 1px solid black'><td><i>Email:</i></td><td> <i>" + this.state.email + "</i></td></tr>" + "<tr style='border: 1px solid black'><td><i>Phone:</i></td><td> <i>" + this.state.phone + "</i></td></tr>" + "<tr style='border: 1px solid black'><td><i>Message:</i></td><td> <i>" + this.state.description + "</i></td></tr> </table>",
+      };
+      const requestOptions = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          from: config.fromemail,
+          to: this.state.email + "," + config.fromemail,
+          subject: msg.subject + this.state.name,
+          text: "",
+          html: msg.bodyhtml,
+        }),
+      };
+      console.log(requestOptions);
+      try {
+        fetch(config.email_service_url, requestOptions).then((response) => {
+          console.log("output", response.json());
+          this.setState({
+            loading: false,
+            message: "Message sucessfully Sent. Thanks for contacting us. We will get back to you soon.",
+          });
+          return response;
         });
-        console.log("output", response);
-        console.log(this.state.message);
-        console.log(this.setState.loading);
-        console.log(1);
+      } catch (err) {
+        return err;
       }
     }
   };

@@ -181,7 +181,7 @@ const HomePageOne = () => {
 
       <TeamMember title="Qualified Attorneys " subTitle="Meet Our Experts" className="teamArea" slider={true} />
       <CounterArea className="counterArea" />
-      <BlogArea className="blogArea" title="Latest Post" subTitle="From Our Blog " />
+      <BlogArea className="blogArea" title="Latest Post" source="home" subTitle="From Our Blog " />
       <Testmonial className="testmonialArea" />
       <div>
         <svg id="visual" viewBox="0 0 1920 100" width="1920" height="100" xmlns="http://www.w3.org/2000/svg" version="1.1">
