@@ -71,7 +71,7 @@ const BlogArea = ({ className, title, source, subTitle }) => {
                 <div key={index} className="col-lg-4 col-sm-6 col-12">
                   <div className="blogWrap">
                     <div className="blogImage">
-                      <img src={blog.post_image} alt="" />
+                      <img src={blog.post_image} className="thumbnailimage" alt="" />
                     </div>
                     <div className="blogContent">
                       <h3>
