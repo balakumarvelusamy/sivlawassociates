@@ -56,14 +56,15 @@
             font-size: 14px;
           }
           &.active {
-            color: #000000;
+            color: #b5b5b5;
+            font-weight: 600;
           }
         }
 
         &:hover {
           a,
           span {
-            color: #000000;
+            color: #cecece;
           }
         }
         ul.subMenu {

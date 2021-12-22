@@ -1,6 +1,14 @@
 .btmcurve_zindex {
   z-index: 100;
 }
+.spacer {
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 1920/100;
+}
+
 button {
   font-size: 15px;
   font-weight: 700;
