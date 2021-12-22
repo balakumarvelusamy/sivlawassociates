@@ -26,6 +26,7 @@ const CyberLawPage = () => {
       </header>
       <Breadcumb className="breadcumbArea" title="All Recent Blog Post" breadcumbMenu={breadcumbMenu} background={breadcumb} />
       <BlogArea className="blogArea" title="Latest Post" subTitle="From Our Blog " />
+
       <NewsLetter className="newsLetterArea" />
       <FooterArea />
     </Fragment>

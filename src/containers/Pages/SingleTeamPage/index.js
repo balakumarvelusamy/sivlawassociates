@@ -188,6 +188,7 @@ const SingleTeamPage = () => {
         </div>
       </div>
       <ContactArea className="contactArea" />
+
       <NewsLetter className="newsLetterArea" />
       <FooterArea />
     </Fragment>
