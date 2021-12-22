@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Joi from "joi-browser";
 import { toast } from "react-toastify";
 import "./style.scss";
-import { fetchService } from "../Services/Globalfunction";
+import { sendMail } from "../Services/Globalfunction";
 import config from "../../config.json";
 class Form extends Component {
   state = {
@@ -138,10 +138,10 @@ class Form extends Component {
       //     "token": "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"
       //   }
       const msg = {
-        to: config.owneremail,
-        from: config.fromemail,
-        fromname: "Siva Law Associates",
-        toname: "Siva Law Associates",
+        // to: config.owneremail,
+        // from: config.fromemail,
+        // fromname: "Siva Law Associates",
+        // toname: "Siva Law Associates",
         subject: "Message from Website - " + this.state.name,
         body: "<p> From : " + this.state.name + "</p><br/>" + "<p> Email : " + this.state.email + "</p><br/>" + "<p> Phone :" + this.state.phone + "</p><br/>" + "<p> Address : " + this.state.address + "</p><br/>" + "<p> Details : " + this.state.description + "</p>",
         bodyhtml: "<p> From : " + this.state.name + "</p><br/>" + "<p> Email : " + this.state.email + "</p><br/>" + "<p> Phone :" + this.state.phone + "</p><br/>" + "<p> Address : " + this.state.address + "</p><br/>" + "<p> Details : " + this.state.description + "</p>",
@@ -154,13 +154,13 @@ class Form extends Component {
       });
 
       // call service sendmail method
-      const response = await fetchService("Email", "SendEmail", "POST", msg);
-      if (response === 200) {
+      const response = await sendMail(msg.bodyhtml, this.state.email, this.state.name, msg.subject);
+      if (response.status === 200) {
         this.setState({
           loading: false,
           message: "Message sucessfully Sent. Thanks for contacting us. We will get back to you soon.",
         });
-        console.log(response);
+        console.log("output", response);
         console.log(this.state.message);
         console.log(this.setState.loading);
         console.log(1);
