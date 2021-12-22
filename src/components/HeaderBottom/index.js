@@ -59,7 +59,7 @@ const HeaderBottom = (props) => {
 
                 <li>
                   <NavLink exact className="text-white" to="#">
-                    Area of Practice <img src={drp} height="15" />
+                    Area of Practice <img src={drp} height="12" />
                   </NavLink>
                   <ul className="subMenu">
                     <li>
