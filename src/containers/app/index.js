@@ -9,6 +9,7 @@ import TeamPage from "../Pages/TeamPage";
 import SingleTeamPage from "../Pages/SingleTeamPage";
 import ContactPage from "../Pages/ContactPage";
 import BlogPage from "../Pages/BlogPage";
+import PageNotFound from "../Pages/PageNotFoundPage";
 import BlogSinglePage from "../Pages/BlogSinglePage";
 import BlogFullWidth from "../Pages/BlogFullWidth";
 import LogInPage from "../Pages/LogInPage";
@@ -49,6 +50,7 @@ class App extends Component {
             <Route exact path="/banking-finance" component={BankingFinancePage} />
             <Route exact path="/drafting" component={Drafting} />
             <Route exact path="/tax" component={Tax} />
+            <Route path="*" component={PageNotFound} />
           </Switch>
         </BrowserRouter>
       </Fragment>

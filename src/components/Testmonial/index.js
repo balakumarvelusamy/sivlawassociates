@@ -7,22 +7,8 @@ import config from "../../config.json";
 
 // images
 import testmonial from "../../images/testimonial/testimonial.jpg";
-import testmonial2 from "../../images/testimonial/2.jpg";
+import defaultuserimage from "../../images/testimonial/2.jpg";
 
-const sliders = [
-  {
-    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-    images: testmonial2,
-    title: "Jhony Goaver",
-    subTitle: "CEO of American BDS",
-  },
-  {
-    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-    images: testmonial2,
-    title: "Jhony Goaver",
-    subTitle: "CEO of American BDS",
-  },
-];
 const settings = {
   dots: true,
   infinite: true,
@@ -81,7 +67,7 @@ const Testmonial = ({ className }) => {
 
                       <div className="thumbWrap">
                         <div className="thumbImg">
-                          <img src={slider.t_image} alt="" />
+                          <img src={slider.t_image === undefined || slider.t_image === "" ? defaultuserimage : slider.t_image} alt="" />
                         </div>
                         <div className="imgContent">
                           <h4>{slider.t_title}</h4>
