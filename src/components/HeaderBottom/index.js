@@ -27,8 +27,8 @@ const HeaderBottom = (props) => {
               <div className="logo ">
                 <div className="d-flex justify-content-between">
                   <NavLink to="/">
-                    <div>
-                      <h2 className="text-white text-nowrap mt-1">{<img className="" src={logo} height="40" alt=""></img>}Siva Law Associates</h2>
+                    <div className="logoarea">
+                      <h1 className="text-white text-nowrap mt-1">{<img className="logoimage" src={logo} height="40" alt=""></img>}Siva Law Associates</h1>
                     </div>
                   </NavLink>
                 </div>
