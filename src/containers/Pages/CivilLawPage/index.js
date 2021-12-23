@@ -19,40 +19,29 @@ const CyberLawPage = () => {
   return (
     <Fragment>
       <header className="headerArea">
-        <HeaderTop className="headerTop" />
+        {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
       </header>
-      <Breadcumb
-        className="breadcumbArea"
-        title="Civil"
-        breadcumbMenu={breadcumbMenu}
-        background={breadcumb}
-      />
+      <Breadcumb className="breadcumbArea" title="Civil" breadcumbMenu={breadcumbMenu} background={breadcumb} />
       <div className="singleArea singlePortfolioArea">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-12">
-              <SingleContentAreaCivilLaw
-                className="singleContentArea"
-                image={single}
-              />
+              <SingleContentAreaCivilLaw className="singleContentArea" image={single} />
             </div>
             <div className="col-lg-4 col-12">
               <aside>
-              
                 <div className="singleContentImg ">
-                  
                   <img src={single} alt="Environment Law" />
                 </div>
-                <hr/>
+                <hr />
                 <CetagorySidebar title="Category" className="cetagoryWrap" />
-             
               </aside>
             </div>
           </div>
         </div>
       </div>
- 
+
       <NewsLetter className="newsLetterArea" />
       <FooterArea />
     </Fragment>

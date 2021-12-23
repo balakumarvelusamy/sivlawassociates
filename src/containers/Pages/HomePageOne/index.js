@@ -2,12 +2,14 @@ import React, { useState, useEffect, Fragment } from "react";
 import { Button, Modal } from "react-bootstrap";
 
 import "./style.scss";
+
 import HeaderBotton from "../../../components/HeaderBottom";
 import HeaderTop from "../../../components/HeaderTop";
 import HeroSlider from "../../../components/HeroSlider";
 import About from "../../../components/About";
 import ServiceArea from "../../../components/ServiceArea";
-// import Portfolio from '../../../components/Portfolio'
+import Testmonial from "../../../components/Testmonial";
+import Whatsapp from "../../../components/Whatsapp";
 import Disclaimer from "../../../components/Disclaimer";
 import ContactArea from "../../../components/ContactArea";
 import TeamMember from "../../../components/TeamMember";
@@ -19,7 +21,8 @@ import FooterArea from "../../../components/FooterArea";
 import about from "../../../images/about/2.jpg";
 import maduraihc from "../../../images/about/maduraihc.jpg";
 import signature from "../../../images/about/1.png";
-
+import bottomcurve from "../../../images/about/curvebottom.png";
+import curvetop from "../../../images/about/curvetop.png";
 // images
 import portfolio1 from "../../../images/studies/1.jpg";
 import portfolio2 from "../../../images/studies/2.jpg";
@@ -29,12 +32,10 @@ import portfolio5 from "../../../images/studies/5.jpg";
 
 const aboutText = [
   {
-    text:
-      "Siva Law Associates, a law firm established in 2009, our firm consists of well experienced attorney’s dealing with variety of cases mainly civil, criminal, Bank cases & Corporate matters on behalf of clients, companies and banks.",
+    text: "Siva Law Associates, a law firm established in 2009, our firm consists of well experienced attorney’s dealing with variety of cases mainly civil, criminal, Bank cases & Corporate matters on behalf of clients, companies and banks.",
   },
   {
-    text:
-      "We also do the preparing of sale deed, other legal agreements and appearing cases for SEBI. Our motto is to provide high quality and timely service to our clients at the time, when they needed the most.",
+    text: "We also do the preparing of sale deed, other legal agreements and appearing cases for SEBI. Our motto is to provide high quality and timely service to our clients at the time, when they needed the most.",
   },
 ];
 
@@ -140,10 +141,7 @@ const HomePageOne = () => {
   useEffect(() => {
     {
       if (localStorage.getItem("disclaimer_agree") == "1") {
-        console.log(
-          "disclaimer_agree",
-          localStorage.getItem("disclaimer_agree")
-        );
+        console.log("disclaimer_agree", localStorage.getItem("disclaimer_agree"));
         setShow(false);
       } else setShow(true);
     }
@@ -152,74 +150,54 @@ const HomePageOne = () => {
   return (
     <Fragment>
       <header className="headerArea">
-        <HeaderTop className="headerTop" />
+        {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea" />
       </header>
       <HeroSlider sliders={heroSliders} className="heroSliderArea" />
       {/* <Service className="serviceArea" /> */}
-      <About
-        className="aboutArea"
-        title="About Us"
-        images={about}
-        imagesmadurai={maduraihc}
-        pragraphs={aboutText}
-      />
-      <hr />
+      <About className="aboutArea" title="About Us" images={about} imagesmadurai={maduraihc} pragraphs={aboutText} />
 
       <div id="disclaimermodel">
-        <Modal
-          show={show}
-          onHide={handleClose}
-          backdrop="static"
-          keyboard={false}
-        >
+        <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
           <Modal.Body>
-            <Disclaimer
-              className="portfolioArea"
-              title=""
-              subTitle=""
-              portfolioItem={portfolioItem}
-            />
+            <Disclaimer className="portfolioArea" title="" subTitle="" portfolioItem={portfolioItem} />
           </Modal.Body>
           <Modal.Footer>
-            <Button
-              className="btn-success"
-              onClick={handleClose}
-              variant="primary"
-            >
+            <Button className="btn-success" onClick={handleClose} variant="primary">
               Agree
             </Button>
           </Modal.Footer>
         </Modal>
       </div>
-      <ServiceArea
-        className="ourServiceArea"
-        title="How Can We Help You"
-        subTitle="Area Of Practice"
-        services={services}
-      />
+      <div>
+        <svg id="wave" viewBox="0 0 1440 130" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#F5F5F5" d="M0,91L40,78C80,65,160,39,240,26C320,13,400,13,480,23.8C560,35,640,56,720,62.8C800,69,880,61,960,67.2C1040,74,1120,95,1200,99.7C1280,104,1360,91,1440,82.3C1520,74,1600,69,1680,71.5C1760,74,1840,82,1920,84.5C2000,87,2080,82,2160,73.7C2240,65,2320,52,2400,45.5C2480,39,2560,39,2640,45.5C2720,52,2800,65,2880,73.7C2960,82,3040,87,3120,86.7C3200,87,3280,82,3360,80.2C3440,78,3520,78,3600,71.5C3680,65,3760,52,3840,47.7C3920,43,4000,48,4080,56.3C4160,65,4240,78,4320,82.3C4400,87,4480,82,4560,84.5C4640,87,4720,95,4800,82.3C4880,69,4960,35,5040,30.3C5120,26,5200,52,5280,54.2C5360,56,5440,35,5520,28.2C5600,22,5680,30,5720,34.7L5760,39L5760,130L5720,130C5680,130,5600,130,5520,130C5440,130,5360,130,5280,130C5200,130,5120,130,5040,130C4960,130,4880,130,4800,130C4720,130,4640,130,4560,130C4480,130,4400,130,4320,130C4240,130,4160,130,4080,130C4000,130,3920,130,3840,130C3760,130,3680,130,3600,130C3520,130,3440,130,3360,130C3280,130,3200,130,3120,130C3040,130,2960,130,2880,130C2800,130,2720,130,2640,130C2560,130,2480,130,2400,130C2320,130,2240,130,2160,130C2080,130,2000,130,1920,130C1840,130,1760,130,1680,130C1600,130,1520,130,1440,130C1360,130,1280,130,1200,130C1120,130,1040,130,960,130C880,130,800,130,720,130C640,130,560,130,480,130C400,130,320,130,240,130C160,130,80,130,40,130L0,130Z"></path>
+        </svg>
+      </div>
 
-      {/* <Testmonial
-                className="testmonialArea"
-            /> */}
+      <ServiceArea className="ourServiceArea" title="How Can We Help You" subTitle="Area Of Practice" services={services} />
+
       <ContactArea className="contactArea" />
-      <TeamMember
-        title="Qualified Attorneys "
-        subTitle="Meet Our Experts"
-        className="teamArea"
-        slider={true}
-      />
-      {/* <CounterArea
-                className="counterArea"
-            /> */}
-      {/* <BlogArea
-                className="blogArea"
-                title="Latest News"
-                subTitle="From Our Blog
-                "
-            /> */}
+
+      <TeamMember title="Qualified Attorneys " subTitle="Meet Our Experts" className="teamArea" slider={true} />
+      <CounterArea className="counterArea" />
+      <BlogArea className="blogArea" title="Latest Post" source="home" subTitle="From Our Blog " />
+      <Testmonial className="testmonialArea" />
+      <div>
+        <svg id="visual" viewBox="0 0 1920 100" width="1920" height="100" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="0" y="0" width="1920" height="100" fill="white"></rect>
+          <path d="M0 51L53.3 53.8C106.7 56.7 213.3 62.3 320 66.8C426.7 71.3 533.3 74.7 640 75.8C746.7 77 853.3 76 960 74.8C1066.7 73.7 1173.3 72.3 1280 68.5C1386.7 64.7 1493.3 58.3 1600 57.3C1706.7 56.3 1813.3 60.7 1866.7 62.8L1920 65L1920 101L1866.7 101C1813.3 101 1706.7 101 1600 101C1493.3 101 1386.7 101 1280 101C1173.3 101 1066.7 101 960 101C853.3 101 746.7 101 640 101C533.3 101 426.7 101 320 101C213.3 101 106.7 101 53.3 101L0 101Z" fill="#272c3f" stroke-linecap="round" stroke-linejoin="miter"></path>
+        </svg>
+      </div>
       <NewsLetter className="newsLetterArea" />
+      <div className="spacer">
+        <svg id="visual" viewBox="0 0 1920 200" width="1920" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="0" y="0" width="1920" height="200" fill="#272c3f"></rect>
+          <path d="M0 104L53.3 108.2C106.7 112.3 213.3 120.7 320 131.5C426.7 142.3 533.3 155.7 640 151.5C746.7 147.3 853.3 125.7 960 126.7C1066.7 127.7 1173.3 151.3 1280 162.3C1386.7 173.3 1493.3 171.7 1600 161.8C1706.7 152 1813.3 134 1866.7 125L1920 116L1920 201L1866.7 201C1813.3 201 1706.7 201 1600 201C1493.3 201 1386.7 201 1280 201C1173.3 201 1066.7 201 960 201C853.3 201 746.7 201 640 201C533.3 201 426.7 201 320 201C213.3 201 106.7 201 53.3 201L0 201Z" fill="#131313"></path>
+        </svg>
+      </div>
       <FooterArea />
+      <Whatsapp />
     </Fragment>
   );
 };
