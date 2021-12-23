@@ -14,14 +14,14 @@ import Instagram from "../../../components/Instagram";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import "./style.scss";
-const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "News" }];
+
 const geturl = window.location.href.split("/");
 const getvalue = geturl[window.location.href.split("/").length - 1];
 const BlogSinglePage = (props) => {
   const { slug } = props.match.params;
   let id = slug === undefined ? getvalue : slug;
 
-  const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Blog Title" }];
+  const breadcumbMenu = [{ name: "Home", route: "/" }, { name: id }];
 
   return (
     <Fragment>
@@ -29,7 +29,7 @@ const BlogSinglePage = (props) => {
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
       </header>
-      <Breadcumb className="breadcumbArea" title="Blog Title" breadcumbMenu={breadcumbMenu} background={breadcumb} />
+      <Breadcumb className="breadcumbArea" title={id} breadcumbMenu={breadcumbMenu} background={breadcumb} />
       <div className="blogPostArea blogPostLeftArea">
         <div className="container ">
           <div className="row mt-5 mb-5">
