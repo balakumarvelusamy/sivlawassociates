@@ -88,10 +88,11 @@
   &:hover {
     .blogPostImg {
       img {
-        width: 100%;
-        -webkit-filter: grayscale(50%);
-        -moz-filter: grayscale(50%);
-        filter: grayscale(50%);
+        // width: 100%;
+        // -webkit-filter: grayscale(50%);
+        // -moz-filter: grayscale(50%);
+        // filter: grayscale(50%);
+        transform: scale(1.02);
       }
     }
   }
