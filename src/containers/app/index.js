@@ -51,7 +51,7 @@ class App extends Component {
             <Route exact path="/drafting" component={Drafting} />
             <Route exact path="/tax" component={Tax} />
             <Route path="/pagenotfound" component={PageNotFound} />
-            <Redirect to="/pagenotfound" />
+            {/* <Redirect to="/pagenotfound" /> */}
             {/* <Route path="*" component={PageNotFound} /> */}
           </Switch>
         </BrowserRouter>
