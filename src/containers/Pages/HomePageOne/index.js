@@ -184,14 +184,14 @@ const HomePageOne = () => {
       <BlogArea className="blogArea" title="Latest Post" source="home" subTitle="From Our Blog " />
       <Testmonial className="testmonialArea" />
       <div>
-        <svg id="visual" viewBox="0 0 1920 100" width="1920" height="100" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <svg id="visual" viewBox="0 0 1920 100" width="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
           <rect x="0" y="0" width="1920" height="100" fill="white"></rect>
           <path d="M0 51L53.3 53.8C106.7 56.7 213.3 62.3 320 66.8C426.7 71.3 533.3 74.7 640 75.8C746.7 77 853.3 76 960 74.8C1066.7 73.7 1173.3 72.3 1280 68.5C1386.7 64.7 1493.3 58.3 1600 57.3C1706.7 56.3 1813.3 60.7 1866.7 62.8L1920 65L1920 101L1866.7 101C1813.3 101 1706.7 101 1600 101C1493.3 101 1386.7 101 1280 101C1173.3 101 1066.7 101 960 101C853.3 101 746.7 101 640 101C533.3 101 426.7 101 320 101C213.3 101 106.7 101 53.3 101L0 101Z" fill="#272c3f" stroke-linecap="round" stroke-linejoin="miter"></path>
         </svg>
       </div>
       <NewsLetter className="newsLetterArea" />
       <div className="spacer">
-        <svg id="visual" viewBox="0 0 1920 200" width="1920" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <svg id="visual" viewBox="0 0 1920 200" width="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
           <rect x="0" y="0" width="1920" height="200" fill="#272c3f"></rect>
           <path d="M0 104L53.3 108.2C106.7 112.3 213.3 120.7 320 131.5C426.7 142.3 533.3 155.7 640 151.5C746.7 147.3 853.3 125.7 960 126.7C1066.7 127.7 1173.3 151.3 1280 162.3C1386.7 173.3 1493.3 171.7 1600 161.8C1706.7 152 1813.3 134 1866.7 125L1920 116L1920 201L1866.7 201C1813.3 201 1706.7 201 1600 201C1493.3 201 1386.7 201 1280 201C1173.3 201 1066.7 201 960 201C853.3 201 746.7 201 640 201C533.3 201 426.7 201 320 201C213.3 201 106.7 201 53.3 201L0 201Z" fill="#131313"></path>
         </svg>
