@@ -35,7 +35,7 @@ class App extends Component {
             {/* <Route exact path="/practice-details" component={PracticeSinglePage} /> */}
             <Route exact path="/alt-dispute-resolution" component={PortfolioPage} />
             <Route exact path="/intellectual" component={Intellectual} />
-            <Route exact path="/attorneys" component={TeamPage} />
+            <Route exact path="/attorneys-team" component={TeamPage} />
             <Route exact path="/attorneys" component={SingleTeamPage} />
             <Route exact path="/contact" component={ContactPage} />
             <Route exact path="/allblog" component={BlogPage} />
