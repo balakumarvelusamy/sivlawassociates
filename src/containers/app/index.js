@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import HomePageOne from "../Pages/HomePageOne";
 
@@ -50,7 +50,9 @@ class App extends Component {
             <Route exact path="/banking-finance" component={BankingFinancePage} />
             <Route exact path="/drafting" component={Drafting} />
             <Route exact path="/tax" component={Tax} />
-            <Route path="*" component={PageNotFound} />
+            <Route path="/pagenotfound" component={PageNotFound} />
+            <Redirect to="/pagenotfound" />
+            {/* <Route path="*" component={PageNotFound} /> */}
           </Switch>
         </BrowserRouter>
       </Fragment>
