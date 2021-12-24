@@ -10,6 +10,8 @@ import About from "../../../components/About";
 import ServiceArea from "../../../components/ServiceArea";
 import Testmonial from "../../../components/Testmonial";
 import Whatsapp from "../../../components/Whatsapp";
+import ChatBox from "../../../components/ChatBox";
+
 import Disclaimer from "../../../components/Disclaimer";
 import ContactArea from "../../../components/ContactArea";
 import TeamMember from "../../../components/TeamMember";
@@ -192,6 +194,7 @@ const HomePageOne = () => {
       <NewsLetter className="newsLetterArea" />
 
       <FooterArea />
+      {/* <ChatBox /> */}
       <Whatsapp />
     </Fragment>
   );

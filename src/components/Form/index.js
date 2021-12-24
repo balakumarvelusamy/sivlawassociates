@@ -9,7 +9,7 @@ class Form extends Component {
     name: "",
     phone: "",
     email: "",
-    address: "",
+
     description: "",
     error: {},
     loading: false,
@@ -125,7 +125,6 @@ class Form extends Component {
         name: "",
         phone: "",
         email: "",
-        address: "",
         description: "",
       });
       const msg = {
@@ -186,15 +185,7 @@ class Form extends Component {
               {this.state.error.email && <p>{this.state.error.email}</p>}
             </div>
           </div>
-          <div className="col-sm-6 col-12">
-            <div className="formInput">
-              <div className="formInput">
-                Address
-                <input placeholder="Address" value={this.state.address} name="address" onChange={this.changeHandler} className="form-control" type="address" />
-                {this.state.error.address && <p>{this.state.error.address}</p>}
-              </div>
-            </div>
-          </div>
+
           <div className="col-12">
             <div className="formInput">
               Description
