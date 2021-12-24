@@ -60,19 +60,26 @@ const AboutPage = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>SivaLawAssociate | About us</title>
-        <meta charSet="utf-8" />
-        <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/tucfbclouddb.appspot.com/o/Sivakumar%20C-06f1fca-64f-a7f1-4770-7f4da07b4850%2Fposts%2F7f52ac3-d00f-a3c3-6c2-b7a5a171bc38?alt=media&token=66994afa-7629-40b6-8d03-fc9dcd02dfcc" />
-        <meta property="og:title" content="Siva Law Associates" />
-        <meta property="og:description" content="Siva Associates is a top and well known Lawyer and Advocate in Kodambakkam, Chennai and also known for Lawyers, Lawyers For Banking, Lawyers For Service Matters, Lawyers For Supreme Court and Lawyers For Writ Petition. Get access to address, contact number, photos, directions, working hours and services of Siva Associates, Kodambakkam, Chennai." />
+        <title>Siva Law Associates | About us</title>
+        <meta name="title" content="Siva Law Associates" />
+        <meta name="description" content="Siva Associates is a top and well known Lawyer and Advocate in Kodambakkam, Chennai and also known for Lawyers, Lawyers For Banking, Lawyers For Service Matters, Lawyers For Supreme Court and Lawyers For Writ Petition. Get access to address, contact number, photos, directions, working hours and services of Siva Associates, Kodambakkam, Chennai." />
 
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://sivalawassociates.in/" />
+        <meta property="og:title" content="Siva Law Associates - About" />
+        <meta property="og:description" content="About us - Siva Associates is a top and well known Lawyer and Advocate in Kodambakkam, Chennai and also known for Lawyers, Lawyers For Banking, Lawyers For Service Matters, Lawyers For Supreme Court and Lawyers For Writ Petition. Get access to address, contact number, photos, directions, working hours and services of Siva Associates, Kodambakkam, Chennai." />
+        <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/tucfbclouddb.appspot.com/o/Sivakumar%20C-06f1fca-64f-a7f1-4770-7f4da07b4850%2Fposts%2F7f52ac3-d00f-a3c3-6c2-b7a5a171bc38?alt=media&token=66994afa-7629-40b6-8d03-fc9dcd02dfcc" />
+
+        {/* <!-- Twitter --> */}
         <meta name="title" content="Siva Law Associates - Chennai" />
         <meta name="twitter:title" content="Siva Law Associates - Chennai" />
-        <meta property="twitter:card" content="Siva Associates is a top and well known Lawyer and Advocate in Kodambakkam, Chennai and also known for Lawyers, Lawyers For Banking, Lawyers For Service Matters, Lawyers For Supreme Court and Lawyers For Writ Petition. Get access to address, contact number, photos, directions, working hours and services of Siva Associates, Kodambakkam, Chennai." />
+        <meta property="twitter:card" content="About us - Siva Associates is a top and well known Lawyer and Advocate in Kodambakkam, Chennai and also known for Lawyers, Lawyers For Banking, Lawyers For Service Matters, Lawyers For Supreme Court and Lawyers For Writ Petition. Get access to address, contact number, photos, directions, working hours and services of Siva Associates, Kodambakkam, Chennai." />
         <meta property="twitter:url" content="http://sivalawassociates.in/" />
-        <meta property="twitter:description" content="Siva Associates is a top and well known Lawyer and Advocate in Kodambakkam, Chennai and also known for Lawyers, Lawyers For Banking, Lawyers For Service Matters, Lawyers For Supreme Court and Lawyers For Writ Petition. Get access to address, contact number, photos, directions, working hours and services of Siva Associates, Kodambakkam, Chennai." />
+        <meta property="twitter:title" content="Siva Law Associates" />
+        <meta property="twitter:description" content="About us - Siva Associates is a top and well known Lawyer and Advocate in Kodambakkam, Chennai and also known for Lawyers, Lawyers For Banking, Lawyers For Service Matters, Lawyers For Supreme Court and Lawyers For Writ Petition. Get access to address, contact number, photos, directions, working hours and services of Siva Associates, Kodambakkam, Chennai." />
         <meta property="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/tucfbclouddb.appspot.com/o/Sivakumar%20C-06f1fca-64f-a7f1-4770-7f4da07b4850%2Fposts%2F7f52ac3-d00f-a3c3-6c2-b7a5a171bc38?alt=media&token=66994afa-7629-40b6-8d03-fc9dcd02dfcc" />
-
+        {/* <!-- keywords --> */}
         <meta name="keywords" content="Siva Associates Kodambakkam Chennai, Siva Associates contact number, Siva Associates address, crimial case, family case, leagal advice, best advocate in chennai, low cost advocate in chennai, advocate in chennai, advocate in madurai, siva Associates direction, Siva Associates photos, Siva Associates official website link, siva Associates working hours, Siva Associates services, Lawyers Kodambakkam Chennai, Lawyers For Banking Kodambakkam Chennai, Lawyers For Service Matters Kodambakkam Chennai, Lawyers For Supreme Court Kodambakkam Chennai, Lawyers For Writ Petition Kodambakkam Chennai, Labour Law Lawyers Kodambakkam Chennai" />
         <meta property="og:keywords" content="Siva Associates Kodambakkam Chennai, Siva Associates contact number, Siva Associates address, crimial case, family case, leagal advice, best advocate in chennai, low cost advocate in chennai, advocate in chennai, advocate in madurai, siva Associates direction, Siva Associates photos, Siva Associates official website link, siva Associates working hours, Siva Associates services, Lawyers Kodambakkam Chennai, Lawyers For Banking Kodambakkam Chennai, Lawyers For Service Matters Kodambakkam Chennai, Lawyers For Supreme Court Kodambakkam Chennai, Lawyers For Writ Petition Kodambakkam Chennai, Labour Law Lawyers Kodambakkam Chennai" />
       </Helmet>
