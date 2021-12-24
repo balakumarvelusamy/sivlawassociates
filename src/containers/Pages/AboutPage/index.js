@@ -61,6 +61,7 @@ const AboutPage = () => {
     <Fragment>
       <Helmet>
         <title>Siva Law Associates | About us</title>
+        <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/tucfbclouddb.appspot.com/o/Sivakumar%20C-06f1fca-64f-a7f1-4770-7f4da07b4850%2Fposts%2F7f52ac3-d00f-a3c3-6c2-b7a5a171bc38?alt=media&token=66994afa-7629-40b6-8d03-fc9dcd02dfcc" />
         <meta name="title" content="Siva Law Associates" />
         <meta name="description" content="Siva Associates is a top and well known Lawyer and Advocate in Kodambakkam, Chennai and also known for Lawyers, Lawyers For Banking, Lawyers For Service Matters, Lawyers For Supreme Court and Lawyers For Writ Petition. Get access to address, contact number, photos, directions, working hours and services of Siva Associates, Kodambakkam, Chennai." />
 
