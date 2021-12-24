@@ -31,7 +31,7 @@ class App extends Component {
           <ToastContainer autoClose={2500} position="top-center" />
 
           <Route exact path={`${process.env.PUBLIC_URL + "/"}`} component={HomePageOne} />
-          <Route exact path="/#/about" component={AboutPage} />
+          <Route exact path={`${process.env.PUBLIC_URL + "/about"}`} component={AboutPage} />
           {/* <Route exact path="/practice" component={PracticePage} /> */}
           {/* <Route exact path="/practice-details" component={PracticeSinglePage} /> */}
           <Route exact path="/alt-dispute-resolution" component={PortfolioPage} />
