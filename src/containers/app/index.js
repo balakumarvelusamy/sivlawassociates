@@ -33,7 +33,7 @@ class App extends Component {
           <Route exact path="/" component={HomePageOne} />
           <Route exact path="/about" component={AboutPage} />
 
-          {/* <Route exact path="/alt-dispute-resolution" component={PortfolioPage} />
+          <Route exact path="/alt-dispute-resolution" component={PortfolioPage} />
           <Route exact path="/intellectual" component={Intellectual} />
           <Route exact path="/attorneys-team" component={TeamPage} />
           <Route exact path="/attorneys" component={SingleTeamPage} />
@@ -50,7 +50,7 @@ class App extends Component {
           <Route exact path="/drafting" component={Drafting} />
           <Route exact path="/tax" component={Tax} />
           <Route exact path="/pagenotfound" component={PageNotFound} />
-          <Route path="*" component={PageNotFound} /> */}
+          <Route path="*" component={PageNotFound} />
         </BrowserRouter>
       </Fragment>
     );
