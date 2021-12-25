@@ -6,7 +6,8 @@ import NewsLetter from "../../../components/Newsletter";
 import FooterArea from "../../../components/FooterArea";
 import Portfolio from "../../../components/Portfolio";
 import ContactArea from "../../../components/ContactArea";
-
+import config from "../../../config.json";
+import MetaTags from "../../../components/Scripts/HelmetPage";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import team from "../../../images/Attorneys-single/1.png";
@@ -43,6 +44,7 @@ const portfolioItem = [
 const SingleTeamPage = () => {
   return (
     <Fragment>
+      <MetaTags title={"Siva Law Assocaites | Attorneys"} description={config.homedescription} imageurl={config.attoryimageurl} imagealt={config.name} keywords={"Sivakumar, Rekha"} />
       <header className="headerArea">
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
