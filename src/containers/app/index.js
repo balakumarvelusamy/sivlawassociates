@@ -49,7 +49,8 @@ class App extends Component {
           <Route exact path="/drafting" element={<Drafting />} />
           <Route exact path="/tax" element={<Tax />} />
           <Route exact path="/pagenotfound" element={<PageNotFound />} />
-          <Route path="*" element={<PageNotFound />} />
+          <Route path="*" exact={true} element={<PageNotFound />} />
+          <Route element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     );

@@ -16,12 +16,7 @@ import breadcumb from "../../../images/breadcumb/1.jpg";
 import "./style.scss";
 
 const BlogSinglePage = (props) => {
-  const geturl = window.location.href.split("/");
-  const getvalue = geturl[window.location.href.split("/").length - 1];
-  const { slug } = props.match.params;
-  //let id = slug === undefined ? getvalue : slug;
-  let id = getvalue;
-  const breadcumbMenu = [{ name: "Home", route: "/" }, { name: id }];
+  const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Page Not Found" }];
 
   return (
     <Fragment>
@@ -29,7 +24,7 @@ const BlogSinglePage = (props) => {
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
       </header>
-      <Breadcumb className="breadcumbArea" title={id} breadcumbMenu={breadcumbMenu} background={breadcumb} />
+      <Breadcumb className="breadcumbArea" title={"Page Not Found"} breadcumbMenu={breadcumbMenu} background={breadcumb} />
       <div className="blogPostArea blogPostLeftArea">
         <div className="container ">
           <div className="row mt-5 mb-5">
