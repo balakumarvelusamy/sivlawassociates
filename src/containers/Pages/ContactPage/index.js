@@ -6,6 +6,8 @@ import NewsLetter from "../../../components/Newsletter";
 import FooterArea from "../../../components/FooterArea";
 import Whatsapp from "../../../components/Whatsapp";
 import Form from "../../../components/Form";
+import config from "../../../config.json";
+import MetaTags from "../../../components/Scripts/HelmetPage";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 
@@ -16,6 +18,7 @@ const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Contact" }];
 const ContactPage = () => {
   return (
     <Fragment>
+      <MetaTags title={"Siva Law Assocaites | Contact"} description={config.contactdescription} imageurl={config.contactimageurl} imagealt={config.name} keywords={""} />
       <header className="headerArea">
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
