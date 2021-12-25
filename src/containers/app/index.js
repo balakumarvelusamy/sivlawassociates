@@ -1,5 +1,6 @@
 import React, { Fragment, Component } from "react";
-import { BrowserRouter, Route, Redirect, Router } from "react-router-dom";
+import { BrowserRouter, Route, Redirect, Router, HashRouter } from "react-router-dom";
+
 import { ToastContainer } from "react-toastify";
 import HomePageOne from "../Pages/HomePageOne";
 
@@ -27,7 +28,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <BrowserRouter basename="/">
+        <HashRouter basename="/">
           <ToastContainer autoClose={2500} position="top-center" />
 
           <Route exact path="/" component={HomePageOne} />
@@ -51,7 +52,7 @@ class App extends Component {
           <Route exact path="/tax" component={Tax} />
           <Route exact path="/pagenotfound" component={PageNotFound} />
           <Route path="*" component={PageNotFound} />
-        </BrowserRouter>
+        </HashRouter>
       </Fragment>
     );
   }
