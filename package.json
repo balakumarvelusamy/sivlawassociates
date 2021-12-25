@@ -31,8 +31,7 @@
     "redux-thunk": "^2.4.1",
     "sass-loader": "^12.4.0",
     "slick-carousel": "^1.8.1",
-    "webpack": "^5.65.0",
-    "webpack-dev-server": "^4.7.1"
+    "webpack": "^5.65.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -54,10 +53,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devServer": {
-    "historyApiFallback": true,
-    "contentBase": "./",
-    "hot": true
   }
 }
