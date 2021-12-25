@@ -62,7 +62,7 @@ const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "About us" }];
 const AboutPage = () => {
   return (
     <Fragment>
-      <MetaTags title="Siva Law Assocaites | About" description={aboutText} imageurl={config.aboutimageurl} imagealt={config.name} keywords="" />
+      <MetaTags title="Siva Law Assocaites | About" description={config.aboutdescription} imageurl={config.aboutimageurl} imagealt={config.name} keywords="" />
       <header className="headerArea">
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
       </header>
