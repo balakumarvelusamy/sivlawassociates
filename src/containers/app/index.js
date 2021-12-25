@@ -39,7 +39,7 @@ class App extends Component {
           <Route exact path="/attorneys" component={SingleTeamPage} />
           <Route exact path="/contact" component={ContactPage} />
           <Route exact path="/allblog" component={BlogPage} />
-          <Route exact path="/blog-single/#/:id" component={BlogSinglePage} />
+          <Route exact path="/blog-single/:id" component={BlogSinglePage} />
           <Route exact path="/blog-fullwidth" component={BlogFullWidth} />
           <Route exact path="/login" component={LogInPage} />
           <Route exact path="/labourlaw" component={LaborLawPage} />
