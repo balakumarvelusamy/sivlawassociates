@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <BrowserRouter>
+        <BrowserRouter basename="/">
           <ToastContainer autoClose={2500} position="top-center" />
 
           <Route exact path="/" component={HomePageOne} />
