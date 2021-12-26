@@ -1,15 +1,19 @@
 import React, { useState, useEffect, Fragment } from "react";
 import { Button, Modal } from "react-bootstrap";
-
+import { Helmet } from "react-helmet";
 import "./style.scss";
-
+import config from "../../../config.json";
+import MetaTags from "../../../components/Scripts/HelmetPage";
 import HeaderBotton from "../../../components/HeaderBottom";
+
 import HeaderTop from "../../../components/HeaderTop";
 import HeroSlider from "../../../components/HeroSlider";
 import About from "../../../components/About";
 import ServiceArea from "../../../components/ServiceArea";
 import Testmonial from "../../../components/Testmonial";
 import Whatsapp from "../../../components/Whatsapp";
+import ChatBox from "../../../components/ChatBox";
+
 import Disclaimer from "../../../components/Disclaimer";
 import ContactArea from "../../../components/ContactArea";
 import TeamMember from "../../../components/TeamMember";
@@ -149,6 +153,7 @@ const HomePageOne = () => {
 
   return (
     <Fragment>
+      <MetaTags title={"Siva Law Assocaites | Home"} description={config.homedescription} imageurl={config.homeimageurl} imagealt={config.name} keywords={""} />
       <header className="headerArea">
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea" />
@@ -192,6 +197,7 @@ const HomePageOne = () => {
       <NewsLetter className="newsLetterArea" />
 
       <FooterArea />
+      {/* <ChatBox /> */}
       <Whatsapp />
     </Fragment>
   );

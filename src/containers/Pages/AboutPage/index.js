@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
+import { Helmet } from "react-helmet";
 import HeaderBotton from "../../../components/HeaderBottom";
+import MetaTags from "../../../components/Scripts/HelmetPage";
 import HeaderTop from "../../../components/HeaderTop";
 import Breadcumb from "../../../components/Breadcumb";
 import Service from "../../../components/Service";
@@ -12,6 +14,8 @@ import CounterArea from "../../../components/CounterArea";
 import BlogArea from "../../../components/BlogArea";
 import NewsLetter from "../../../components/Newsletter";
 import FooterArea from "../../../components/FooterArea";
+import "./style.scss";
+import config from "../../../config.json";
 // images
 import about from "../../../images/about/2.jpg";
 import breadcumb from "../../../images/breadcumb/1.jpg";
@@ -58,6 +62,7 @@ const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "About us" }];
 const AboutPage = () => {
   return (
     <Fragment>
+      <MetaTags title="Siva Law Assocaites | About" description={config.aboutdescription} imageurl={config.aboutimageurl} imagealt={config.name} keywords="" />
       <header className="headerArea">
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
       </header>

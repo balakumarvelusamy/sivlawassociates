@@ -1,5 +1,6 @@
 import React, { Fragment, Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Redirect, Router, HashRouter, Routes, Switch } from "react-router-dom";
+
 import { ToastContainer } from "react-toastify";
 import HomePageOne from "../Pages/HomePageOne";
 
@@ -26,34 +27,32 @@ import Tax from "../Pages/TaxPage";
 class App extends Component {
   render() {
     return (
-      <Fragment>
-        <BrowserRouter>
-          <ToastContainer autoClose={2500} position="top-center" />
-          <Switch>
-            <Route exact path="/" component={HomePageOne} />
-            <Route exact path="/about" component={AboutPage} />
-            {/* <Route exact path="/practice" component={PracticePage} /> */}
-            {/* <Route exact path="/practice-details" component={PracticeSinglePage} /> */}
-            <Route exact path="/alt-dispute-resolution" component={PortfolioPage} />
-            <Route exact path="/intellectual" component={Intellectual} />
-            <Route exact path="/attorneys-team" component={TeamPage} />
-            <Route exact path="/attorneys" component={SingleTeamPage} />
-            <Route exact path="/contact" component={ContactPage} />
-            <Route exact path="/allblog" component={BlogPage} />
-            <Route exact path="/blog-single/:id" component={BlogSinglePage} />
-            <Route exact path="/blog-fullwidth" component={BlogFullWidth} />
-            <Route exact path="/login" component={LogInPage} />
-            <Route exact path="/labourlaw" component={LaborLawPage} />
-            <Route exact path="/cyber-law" component={CyberLawPage} />
-            <Route exact path="/env-law" component={EnvLawPage} />
-            <Route exact path="/civil" component={CivilLawPage} />
-            <Route exact path="/banking-finance" component={BankingFinancePage} />
-            <Route exact path="/drafting" component={Drafting} />
-            <Route exact path="/tax" component={Tax} />
-            <Route path="*" component={PageNotFound} />
-          </Switch>
-        </BrowserRouter>
-      </Fragment>
+      <BrowserRouter>
+        <Routes>
+          {/* <ToastContainer autoClose={2500} position="top-center" /> */}
+          <Route exact path="/" element={<HomePageOne />}></Route>
+          <Route exact path="/about" element={<AboutPage />}></Route>
+          <Route exact path="/alt-dispute-resolution" element={<PortfolioPage />}></Route>
+          <Route exact path="/intellectual" element={<Intellectual />}></Route>
+          <Route exact path="/attorneys-team" element={<TeamPage />} />
+          <Route exact path="/attorneys" element={<SingleTeamPage />} />
+          <Route exact path="/contact" element={<ContactPage />} />
+          <Route exact path="/allblog" element={<BlogPage />} />
+          <Route exact path="/blog-single/:id" element={<BlogSinglePage />} />
+          <Route exact path="/blog-fullwidth" element={<BlogFullWidth />} />
+          <Route exact path="/login" element={<LogInPage />} />
+          <Route exact path="/labourlaw" element={<LaborLawPage />} />
+          <Route exact path="/cyber-law" element={<CyberLawPage />} />
+          <Route exact path="/env-law" element={<EnvLawPage />} />
+          <Route exact path="/civil" element={<CivilLawPage />} />
+          <Route exact path="/banking-finance" element={<BankingFinancePage />} />
+          <Route exact path="/drafting" element={<Drafting />} />
+          <Route exact path="/tax" element={<Tax />} />
+          <Route exact path="/pagenotfound" element={<PageNotFound />} />
+          <Route path="*" exact={true} element={<PageNotFound />} />
+          <Route element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
     );
   }
 }

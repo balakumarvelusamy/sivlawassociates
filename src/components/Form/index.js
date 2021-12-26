@@ -9,7 +9,7 @@ class Form extends Component {
     name: "",
     phone: "",
     email: "",
-    address: "",
+
     description: "",
     error: {},
     loading: false,
@@ -125,11 +125,10 @@ class Form extends Component {
         name: "",
         phone: "",
         email: "",
-        address: "",
         description: "",
       });
       const msg = {
-        subject: "Message from Siva Law Website - " + this.state.name,
+        subject: "Message from SivaLawAssociate Website - " + this.state.name,
 
         bodyhtml: "<p>Hello " + this.state.name + ",</p><p>Thanks for reaching us, we will get back to you shorlty.</p>" + "<br/><p>Regards,</p> <p><a href='https://www.sivalawassociates.in'>Siva Law Associate</a></p>" + "<table  style='border: 1px solid black'>" + "<tr  style='border: 1px solid black'><td> <i>Name:</i></td> <td> <i>" + this.state.name + "</i></td></tr>" + "<tr style='border: 1px solid black'><td><i>Email:</i></td><td> <i>" + this.state.email + "</i></td></tr>" + "<tr style='border: 1px solid black'><td><i>Phone:</i></td><td> <i>" + this.state.phone + "</i></td></tr>" + "<tr style='border: 1px solid black'><td><i>Message:</i></td><td> <i>" + this.state.description + "</i></td></tr> </table>",
       };
@@ -186,15 +185,7 @@ class Form extends Component {
               {this.state.error.email && <p>{this.state.error.email}</p>}
             </div>
           </div>
-          <div className="col-sm-6 col-12">
-            <div className="formInput">
-              <div className="formInput">
-                Address
-                <input placeholder="Address" value={this.state.address} name="address" onChange={this.changeHandler} className="form-control" type="address" />
-                {this.state.error.address && <p>{this.state.error.address}</p>}
-              </div>
-            </div>
-          </div>
+
           <div className="col-12">
             <div className="formInput">
               Description

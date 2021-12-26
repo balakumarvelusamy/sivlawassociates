@@ -18,7 +18,7 @@ import "./style.scss";
 const BlogSinglePage = (props) => {
   const geturl = window.location.href.split("/");
   const getvalue = geturl[window.location.href.split("/").length - 1];
-  const { slug } = props.match.params;
+  //const { slug } = props.match.params;
   //let id = slug === undefined ? getvalue : slug;
   let id = getvalue;
   const breadcumbMenu = [{ name: "Home", route: "/" }, { name: id }];
