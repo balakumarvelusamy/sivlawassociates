@@ -15,7 +15,7 @@ const HelmetPage = ({ title, description, imageurl, imagealt, keywords }) => {
       <meta property="og:image" content={imageurl}></meta>
       {/* <!-- Twitter --> */}
       <meta property="twitter:title" content={title}></meta>
-      <meta name="twitter:card" content={description}></meta>
+      <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={config.siteurl + window.location.pathname + window.location.search}></meta>
       <meta property="twitter:description" content={description}></meta>
       <meta property="twitter:image:alt" content={imagealt}></meta>
