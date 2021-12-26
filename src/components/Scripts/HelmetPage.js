@@ -21,7 +21,7 @@ const HelmetPage = ({ title, description, imageurl, imagealt, keywords }) => {
       <meta name="title" content={title} />
       <meta name="twitter:title" content={title} />
       <meta property="twitter:card" content={description} />
-      <meta property="twitter:url" content={config.siteurl + window.location.pathname + window.location.search} /> />
+      <meta property="twitter:url" content={config.siteurl + window.location.pathname + window.location.search} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image:alt" content={imagealt} />
       <meta property="twitter:image" content={imageurl} />
