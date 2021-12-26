@@ -11,14 +11,16 @@ import * as serviceWorker from "./serviceWorker";
 import { Provider } from "react-redux";
 import store from "./store";
 import "./index.scss";
-import Routes from "../src/containers/app";
+// import Routes from "../src/containers/app";
 
 const app = (
-  <Provider store={store}>
+  <React.StrictMode>
+    {/* <Provider store={store}> */}
     <App />
-  </Provider>
+    {/* </Provider> */}
+  </React.StrictMode>
 );
 
 ReactDOM.render(app, document.getElementById("root"));
-if (process.env.NODE_ENV !== "development") console.log = () => {};
+if (process.env.NODE_ENV !== "development") console.log = () => { };
 serviceWorker.unregister();
