@@ -7,6 +7,11 @@ const HelmetPage = ({ title, description, imageurl, imagealt, keywords }) => {
       <title>{title}</title>
       <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/tucfbclouddb.appspot.com/o/SIVALAWASSOCIATES.IN%2Fslalogoo.jpg?alt=media&token=643e95c8-3674-4964-b616-ed6ea26fcb66" />
       <meta name="title" content={title} />
+      <meta name="robots" content="index, follow" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="language" content="English" />
+      <meta name="revisit-after" content="20 days" />
+      <meta name="author" content={config.name} />
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#000000" />
