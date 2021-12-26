@@ -7,9 +7,7 @@ const HelmetPage = ({ title, description, imageurl, imagealt, keywords }) => {
       <title>{title}</title>
       <meta name="title" content={title}></meta>
       <meta name="description" content={description}></meta>
-      {/* <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/tucfbclouddb.appspot.com/o/SIVALAWASSOCIATES.IN%2Fslalogoo.jpg?alt=media&token=643e95c8-3674-4964-b616-ed6ea26fcb66" /> */}
-
-      {/* <meta name="robots" content="index, follow"></meta>
+      {/* <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/tucfbclouddb.appspot.com/o/SIVALAWASSOCIATES.IN%2Fslalogoo.jpg?alt=media&token=643e95c8-3674-4964-b616-ed6ea26fcb66" /> <meta name="robots" content="index, follow"></meta>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
       <meta name="language" content="English"></meta>
       <meta name="revisit-after" content="20 days"></meta>
@@ -25,12 +23,12 @@ const HelmetPage = ({ title, description, imageurl, imagealt, keywords }) => {
       <meta property="og:description" content={description}></meta>
       <meta property="og:image" content={imageurl}></meta>
       {/* <!-- Twitter --> */}
-      <meta name="twitter:title" content={title}></meta>
-      <meta name="twitter:card" content={description}></meta>
+      <meta property="twitter:title" content="Title : Siva Law Assiciated"></meta>
+      <meta name="twitter:card" content="Description : Siva Law Assiciated"></meta>
       <meta property="twitter:url" content={config.siteurl + window.location.pathname + window.location.search}></meta>
       <meta property="twitter:description" content={description}></meta>
       <meta property="twitter:image:alt" content={imagealt}></meta>
-      <meta property="twitter:image" content={imageurl}></meta>
+      <meta property="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/tucfbclouddb.appspot.com/o/Sivakumar%20C-06f1fca-64f-a7f1-4770-7f4da07b4850%2Fposts%2F7f52ac3-d00f-a3c3-6c2-b7a5a171bc38?alt=media&token=66994afa-7629-40b6-8d03-fc9dcd02dfcc"></meta>
       {/* <!-- keywords --> */}
       <meta name="keywords" content={keywords || keywords === "" ? config.keywords : keywords}></meta>
       <meta property="og:keywords" content={keywords || keywords === "" ? config.keywords : keywords}></meta>
