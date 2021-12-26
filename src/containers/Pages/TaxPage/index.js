@@ -5,7 +5,8 @@ import Breadcumb from "../../../components/Breadcumb";
 import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
-
+import MetaTags from "../../../components/Scripts/HelmetPage";
+import config from "../../../config.json";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import single from "../../../images/practice/tax.jpg";
@@ -18,6 +19,7 @@ const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Tax" }];
 const Tax = () => {
   return (
     <Fragment>
+      <MetaTags title={"Tax"} description={config.homedescription} imageurl={single} imagealt={"Tax"} keywords={"Tax Law, Tax, how to file tax, how to save tax"} />
       <header className="headerArea">
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />

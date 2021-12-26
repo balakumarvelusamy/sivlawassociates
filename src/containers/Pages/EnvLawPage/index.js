@@ -5,7 +5,8 @@ import Breadcumb from "../../../components/Breadcumb";
 import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
-
+import MetaTags from "../../../components/Scripts/HelmetPage";
+import config from "../../../config.json";
 import SingleContentAreaEnvLaw from "../../../components/SingleContentAreaEnvLaw";
 
 // images
@@ -20,6 +21,7 @@ const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Environmental Law"
 const CyberLawPage = () => {
   return (
     <Fragment>
+      <MetaTags title={"Environmental Law"} description={config.homedescription} imageurl={single} imagealt={"Environmental Law"} keywords={"environmental law"} />
       <header className="headerArea">
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
