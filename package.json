@@ -10,6 +10,7 @@
     "bootstrap": "^5.1.3",
     "caniuse-lite": "^1.0.30001292",
     "font-awesome": "^4.7.0",
+    "gatsby-plugin-react-helmet": "^5.4.0",
     "joi-browser": "^13.4.0",
     "node-sass": "^7.0.0",
     "react": "^17.0.2",
