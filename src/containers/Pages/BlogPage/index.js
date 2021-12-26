@@ -22,7 +22,7 @@ const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "All Posts" }];
 const CyberLawPage = () => {
   return (
     <Fragment>
-      <MetaTags title={"Siva Law Assocaites | Blog"} description={config.homedescription} imageurl={config.blogimageurl} imagealt={config.name} keywords={""} />
+      <MetaTags title={"Siva Law Assocaites | Blog"} description={config.blogdescription} imageurl={config.blogimageurl} imagealt={config.name} keywords={""} />
       <header className="headerArea">
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
       </header>
