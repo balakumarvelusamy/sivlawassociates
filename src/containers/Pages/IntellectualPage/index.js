@@ -6,7 +6,8 @@ import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
 import IntellectualPropertyContent from "../../../components/IntellectualPropertyContent";
-
+import MetaTags from "../../../components/Scripts/HelmetPage";
+import config from "../../../config.json";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import single from "../../../images/practice/property.jpg";
@@ -17,6 +18,7 @@ const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Intellectual Prope
 const Intellectual = () => {
   return (
     <Fragment>
+      <MetaTags title={"Intellectual Property"} description={config.homedescription} imageurl={single} imagealt={"Intellectual Property"} keywords={"Intellectual Property, Land, Legal issue in land, property name change"} />
       <header className="headerArea">
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
