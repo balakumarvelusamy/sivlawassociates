@@ -16,9 +16,6 @@ import "./index.scss";
 
 const app = (
   <React.StrictMode>
-    <Helmet titleTemplate={"%s - " + config.name} defaultTitle={config.name}>
-      <meta name="description" content={"Home - " + config.homedescription} />
-    </Helmet>
     {/* <Provider store={store}> */}
     <App />
     {/* </Provider> */}
