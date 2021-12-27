@@ -6,7 +6,8 @@ import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
 import SingleContentAreaBankingFinance from "../../../components/SingleContentAreaBankingFinance";
-
+import MetaTags from "../../../components/Scripts/HelmetPage";
+import config from "../../../config.json";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import single from "../../../images/practice/banking.jpg";
@@ -18,6 +19,7 @@ const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Banking & Finance"
 const BankingFinancePage = () => {
   return (
     <Fragment>
+      <MetaTags title={"Banking & Finance"} description={config.homedescription} imageurl={single} imagealt={"Banking & Finance"} keywords={"Banking & Finance"} />
       <header className="headerArea">
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />

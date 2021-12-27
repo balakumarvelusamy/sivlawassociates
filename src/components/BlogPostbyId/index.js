@@ -2,12 +2,7 @@ import React, { useState, useEffect, Fragment } from "react";
 import { Link } from "react-router-dom";
 import "./style.scss";
 import config from "../../config.json";
-import blog1 from "../../images/blog-page/1.jpg";
-import blog2 from "../../images/blog-page/2.jpg";
-import blog3 from "../../images/blog-page/3.jpg";
-import blog4 from "../../images/blog-page/4.jpg";
-import blog5 from "../../images/blog-page/5.jpg";
-import avatar from "../../images/blog-page/6.jpg";
+import MetaTags from "../Scripts/HelmetPage";
 
 const BlogPostbyId = (props) => {
   const [blogpost, setBlogpost] = useState([]);
@@ -63,26 +58,29 @@ const BlogPostbyId = (props) => {
       {!loading ? (
         blogpost.length !== 0 ? (
           blogpost.map((blog, index) => (
-            <div key={index} className="blogPostWrapper">
-              <div className="blogPostImg">
-                <img src={blog.post_image} className="titleimage" alt="" />
-              </div>
+            <>
+              <MetaTags title={blog.posttitle} description={"Description of " + blog.posttitle} imageurl={blog.post_image} imagealt={blog.posttitle} keywords={""} />
+              <div key={index} className="blogPostWrapper">
+                <div className="blogPostImg">
+                  <img src={blog.post_image} className="titleimage" alt="" />
+                </div>
 
-              <div className="blogPostContent">
-                <ul className="blogPostMeta">
-                  <Fragment>
-                    <li>
-                      <img src={blog.post_image} alt="" />
-                    </li>
-                    <li>{blog.createdby}</li>
-                    <li>{blog.postcategory}</li>
-                    <li>{blog.displaydate}</li>
-                  </Fragment>
-                </ul>
-                <h3>{blog.posttitle}</h3>
-                <div dangerouslySetInnerHTML={{ __html: blog.postcontent }} />
+                <div className="blogPostContent">
+                  <ul className="blogPostMeta">
+                    <Fragment>
+                      <li>
+                        <img src={blog.post_image} alt="" />
+                      </li>
+                      <li>{blog.createdby}</li>
+                      <li>{blog.postcategory}</li>
+                      <li>{blog.displaydate}</li>
+                    </Fragment>
+                  </ul>
+                  <h3>{blog.posttitle}</h3>
+                  <div dangerouslySetInnerHTML={{ __html: blog.postcontent }} />
+                </div>
               </div>
-            </div>
+            </>
           ))
         ) : (
           <div>
@@ -95,7 +93,7 @@ const BlogPostbyId = (props) => {
               </div>
             </div>
             <div className="row mb-5">
-              <Link to="/allblog" className=" p-2">
+              <Link to="/allblog" className="btn p-2 mx-2">
                 All Posts
               </Link>
             </div>

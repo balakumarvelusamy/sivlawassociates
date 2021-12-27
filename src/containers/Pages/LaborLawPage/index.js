@@ -5,7 +5,8 @@ import Breadcumb from "../../../components/Breadcumb";
 import NewsLetter from "../../../components/Newsletter";
 import CetagorySidebar from "../../../components/CetagorySidebar";
 import FooterArea from "../../../components/FooterArea";
-
+import MetaTags from "../../../components/Scripts/HelmetPage";
+import config from "../../../config.json";
 import SingleContentAreaLabourLaw from "../../../components/SingleContentAreaLabourLaw";
 
 // images
@@ -19,6 +20,7 @@ const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Labour Law" }];
 const SinglePortfolioPage = () => {
   return (
     <Fragment>
+      <MetaTags title={"Labour Law"} description={config.homedescription} imageurl={single} imagealt={"Labour Law"} keywords={"Labour Law"} />
       <header className="headerArea">
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
