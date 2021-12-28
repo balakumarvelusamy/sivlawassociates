@@ -9,15 +9,17 @@ import "../src/css/animate.css";
 import App from "../src/containers/app";
 import * as serviceWorker from "./serviceWorker";
 import { Provider } from "react-redux";
-import { Helmet } from "react-helmet";
 import store from "./store";
 import "./index.scss";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 // import Routes from "../src/containers/app";
 
 const app = (
   <React.StrictMode>
     {/* <Provider store={store}> */}
-    <App />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
     {/* </Provider> */}
   </React.StrictMode>
 );
