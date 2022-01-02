@@ -1,9 +1,4 @@
 {
-  "cognito": {
-    "REGION": "us-east-1",
-    "UserPoolId": "us-east-1_7xGwhWeRm",
-    "ClientId": "7r653tj5j2qb7evejpdle8jbbd"
-  },
   "webadminemail": "info@theuniquecreations.com",
   "owneremail": "sivalawassociates@gmail.com",
   "fromemail": "Siva Law Associates <sivalawassociates@gmail.com>",

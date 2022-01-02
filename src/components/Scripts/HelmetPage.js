@@ -1,14 +1,15 @@
 import React from "react";
 import config from "../../config.json";
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 const HelmetPage = ({ title, description, imageurl, imagealt, keywords }) => {
   return (
     <Helmet>
       <title>{title}</title>
-      <meta name="title" content={title}></meta>
-      <meta name="description" content={description}></meta>
-      <meta property="og:type" content="website"></meta>
+      <meta name="title" content={title} />
+      <meta name="description" content={description} />
+      <meta property="og:type" content="website" />
+      <link rel="canonical" href={config.siteurl + window.location.pathname + window.location.search} />
       <meta property="og:url" content={config.siteurl + window.location.pathname + window.location.search}></meta>
       <meta property="og:title" content={title}></meta>
       <meta property="og:description" content={description}></meta>
