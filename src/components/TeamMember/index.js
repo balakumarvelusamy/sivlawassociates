@@ -8,29 +8,27 @@ import config from "../../config.json";
 
 // images
 import teamMember1 from "../../images/expert/defaultimage.png";
-import teamMember2 from "../../images/expert/2.jpg";
-import teamMember3 from "../../images/expert/3.jpg";
-import teamMember4 from "../../images/expert/4.jpg";
-import teamMember5 from "../../images/expert/5.jpg";
-import teamMember6 from "../../images/expert/6.jpg";
+import chandrasegar from "../../images/expert/chandrasegar.jpg";
+import siva from "../../images/expert/siva.jpg";
+import rekha from "../../images/expert/rekha.jpg";
 
 const teams = [
   {
     name: "S.Chandrasekaran",
     level: "District & Sessions Judge(Retd)",
-    image: teamMember1,
+    image: chandrasegar,
     socialMedia: ["", "instagram", ""],
   },
   {
     name: "C.Sivakumar",
     level: "Advocate",
-    image: teamMember1,
+    image: siva,
     socialMedia: ["facebook", "instagram", ""],
   },
   {
     name: "Rekha Sivakumar",
     level: "Advocate",
-    image: teamMember1,
+    image: rekha,
     socialMedia: ["facebook", "instagram", ""],
   },
 ];
