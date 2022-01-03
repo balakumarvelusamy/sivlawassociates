@@ -11,10 +11,9 @@ import MetaTags from "../../../components/Scripts/HelmetPage";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import team from "../../../images/Attorneys-single/1.png";
-import portfolio1 from "../../../images/studies/1.jpg";
-import portfolio2 from "../../../images/studies/2.jpg";
-import portfolio3 from "../../../images/studies/3.jpg";
-
+import chandrasegar from "../../../images/expert/chandrasegar.jpg";
+import siva from "../../../images/expert/siva.jpg";
+import rekha from "../../../images/expert/rekha.jpg";
 import "./style.scss";
 
 const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Attorneys", route: "/attorneys" }, { name: "Attorneys Details" }];
@@ -35,12 +34,6 @@ const teamMembarInfo_Rekha = [
 ];
 const teamContents = ["Admization Institute of Law andTechnology, Juzment School of Management,Cambridge", "Academy University School of Law, Boston, MA", "The Syntify High School Of New York", "Education & Court Admissions"];
 
-const portfolioItem = [
-  { images: portfolio1, title: "General Service", subtitle: "Corporate" },
-  { images: portfolio2, title: "Personal Issue", subtitle: "General" },
-  { images: portfolio3, title: "Business Accounting", subtitle: "Business" },
-];
-
 const SingleTeamPage = () => {
   return (
     <Fragment>
@@ -58,7 +51,7 @@ const SingleTeamPage = () => {
                 <div className="col-md-6 col-12">
                   <div className="singleTeamImgWrap">
                     <div className="singleTeamImg">
-                      <img src={team} alt="" />
+                      <img src={chandrasegar} alt="" />
                     </div>
                     <h4>S.Chandrasekaran</h4>
                   </div>
@@ -103,7 +96,7 @@ const SingleTeamPage = () => {
                 <div className="col-md-6 col-12">
                   <div className="singleTeamImgWrap">
                     <div className="singleTeamImg">
-                      <img src={team} alt="" />
+                      <img src={siva} alt="" />
                     </div>
                     <h4>C.Sivakumar</h4>
                   </div>
@@ -148,7 +141,7 @@ const SingleTeamPage = () => {
                 <div className="col-md-6 col-12">
                   <div className="singleTeamImgWrap">
                     <div className="singleTeamImg">
-                      <img src={team} alt="" />
+                      <img src={rekha} alt="" />
                     </div>
                     <h4>Rekha Sivakumar</h4>
                   </div>

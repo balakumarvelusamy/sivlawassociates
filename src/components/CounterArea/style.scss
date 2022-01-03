@@ -1,5 +1,5 @@
 .counterArea {
-  padding: 100px 0px;
+  padding: 20px 0px;
   background: url(../../images/counter/1.jpg) center center/cover no-repeat local;
   .counterMainWrapper {
     display: flex;
@@ -10,7 +10,7 @@
       width: 49.5%;
       background: rgba(192, 181, 150, 0.2);
       margin-bottom: 5px;
-      min-height: 170px;
+      min-height: 120px;
       display: flex;
       flex-direction: column;
       justify-content: center;

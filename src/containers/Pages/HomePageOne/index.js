@@ -182,7 +182,7 @@ const HomePageOne = () => {
 
       <ServiceArea className="ourServiceArea" title="How Can We Help You" subTitle="Area Of Practice" services={services} />
 
-      <ContactArea className="contactArea" />
+      {/* <ContactArea className="contactArea" /> */}
 
       <TeamMember title="Qualified Attorneys " subTitle="Meet Our Experts" className="teamArea" slider={true} />
       <CounterArea className="counterArea" />
