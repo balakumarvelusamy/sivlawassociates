@@ -8,15 +8,7 @@ const About = ({ subTitle, title, className, pragraphs, images, imagesmadurai, o
     <div className={className}>
       <div className="container">
         <div className="row">
-          <div className={orderLast ? `${orderLast} col col-lg-6` : "col col-lg-6"}>
-            <div className="aboutImageWrap1">
-              <a href="http://www.hcmadras.tn.nic.in/" target="blank">
-                <img src={images} alt="chennai highcourt" href="" />
-                <h6>Madras High Court</h6>
-              </a>
-            </div>
-          </div>
-          <div className="col-lg-6">
+          <div className={orderLast ? `${orderLast} col col-lg-4` : "col col-lg-4"}>
             <div className="aboutContent">
               {subTitle && <span>{subTitle}</span>}
               <h2>{title}</h2>
@@ -24,15 +16,25 @@ const About = ({ subTitle, title, className, pragraphs, images, imagesmadurai, o
                 <p key={i}>{pragraph.text}</p>
               ))}
             </div>
+          </div>
+          <div className="col-lg-4">
             <div className="aboutImageWrap1">
+              <a href="http://www.hcmadras.tn.nic.in/" target="blank">
+                <h5>Madras High Court</h5>
+                <img src={images} height="250" alt="chennai highcourt" href="" />
+              </a>
+            </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="aboutImageWrap1">
+              <h5>Madurai Bench of Madras High Court</h5>
               <a href="http://www.hcmadras.tn.nic.in/mduhist.html" target="blank">
-                <img src={imagesmadurai} alt="madurai high court" />
-
-                <h6>Madurai Bench of Madras High Court</h6>
+                <img src={imagesmadurai} height="250" alt="madurai high court" />
               </a>
             </div>
           </div>
         </div>
+        <div className="row"></div>
       </div>
     </div>
   );

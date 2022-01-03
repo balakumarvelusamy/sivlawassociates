@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SectionTitle from "../Title";
 import "./style.scss";
+import config from "../../config.json";
 
 // images
 import teamMember1 from "../../images/expert/defaultimage.png";
@@ -18,19 +19,19 @@ const teams = [
     name: "S.Chandrasekaran",
     level: "District & Sessions Judge(Retd)",
     image: teamMember1,
-    socialMedia: ["facebook", "instagram", "linkedin"],
+    socialMedia: ["", "instagram", ""],
   },
   {
     name: "C.Sivakumar",
     level: "Advocate",
     image: teamMember1,
-    socialMedia: ["facebook", "instagram", "linkedin"],
+    socialMedia: ["facebook", "instagram", ""],
   },
   {
     name: "Rekha Sivakumar",
     level: "Advocate",
     image: teamMember1,
-    socialMedia: ["facebook", "instagram", "linkedin"],
+    socialMedia: ["facebook", "instagram", ""],
   },
 ];
 
@@ -84,18 +85,21 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                 {teams.map((team, i) => (
                   <div key={i} className="teamWrapper">
                     <div className="teamImage">
-                      <h5 className="p-5">
+                      <h5 className="p-3">
                         <img src={team.image} alt={team.name} />
                         {/* <i class="fa fa-user"> </i> {team.name} */}
                       </h5>
                     </div>
                     <div className="teamContent">
-                      <h3>{team.name}</h3>
+                      <a href="/attorneys">
+                        <h3>{team.name}</h3>
+                      </a>
+
                       <span>{team.level}</span>
                       <ul>
                         {team.socialMedia.map((social) => (
                           <li key={social}>
-                            <a href="#">
+                            <a href={config.instagramurl}>
                               <i className={`fa fa-${social}`} aria-hidden="true"></i>
                             </a>
                           </li>
