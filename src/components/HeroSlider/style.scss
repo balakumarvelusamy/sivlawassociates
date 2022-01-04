@@ -7,7 +7,7 @@
       height: 500px;
     }
     @media (max-width: 768px) {
-      height: 300px;
+      height: 450px;
     }
     &.slideWrapperOne {
       background: url(../../images/slider/s-1.jpg) no-repeat center center / cover;
@@ -33,7 +33,7 @@
       p {
         font-size: 20px;
         color: #fff;
-        line-height: 0.8em;
+        line-height: 1.5em;
         font-weight: 300;
         margin: 0;
         @media (max-width: 768px) {
@@ -44,7 +44,7 @@
         }
       }
       h2 {
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 400;
         color: white;
         line-height: 90px;

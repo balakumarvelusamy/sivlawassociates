@@ -74,9 +74,9 @@ const BlogArea = ({ className, title, source, subTitle }) => {
                       <img src={blog.post_image} className="thumbnailimage" alt="" />
                     </div>
                     <div className="blogContent">
-                      <h3>
+                      <h1>
                         <Link to={"/blog-single/" + blog.slug}>{blog.posttitle}</Link>
-                      </h3>
+                      </h1>
 
                       <ul className="blogMeta font-size-small">
                         <li>{blog.createdby}</li>
