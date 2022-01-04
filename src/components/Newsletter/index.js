@@ -21,7 +21,7 @@ const NewsLetter = ({ className }) => {
           event.target.reset();
           setMsg("Thank you. You are Sucessfully subscribed to our newsletter.");
         } else {
-          setMsg("Error Occured, please try after sometime.");
+          setMsg(data.message);
         }
       })
       .catch((error) => {});

@@ -72,6 +72,7 @@ const Testmonial = ({ className }) => {
                         <div className="imgContent">
                           <h4>{slider.t_title}</h4>
                           <span>{slider.t_description}</span>
+                          <span>Rating: {slider.t_rating}</span>
                         </div>
                       </div>
                     </div>

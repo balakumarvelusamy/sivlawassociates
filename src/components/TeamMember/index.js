@@ -83,7 +83,7 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                 {teams.map((team, i) => (
                   <div key={i} className="teamWrapper">
                     <div className="teamImage">
-                      <h5 className="p-3">
+                      <h5 className="">
                         <img src={team.image} alt={team.name} />
                         {/* <i class="fa fa-user"> </i> {team.name} */}
                       </h5>

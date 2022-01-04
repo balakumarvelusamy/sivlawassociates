@@ -76,7 +76,7 @@ const BlogPostbyId = (props) => {
                       <li>{blog.displaydate}</li>
                     </Fragment>
                   </ul>
-                  <h3>{blog.posttitle}</h3>
+                  <h1>{blog.posttitle}</h1>
                   <div dangerouslySetInnerHTML={{ __html: blog.postcontent }} />
                 </div>
               </div>
