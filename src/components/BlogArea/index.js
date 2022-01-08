@@ -30,7 +30,7 @@ const BlogArea = ({ className, title, source, subTitle }) => {
       .then((response) => response.json())
       .then((data) => {
         let active = data
-          .filter((filter) => filter.isactive === 1 && filter.published === 1 && filter.posttypevalue === "Blog")
+          .filter((filter) => filter.isactive === 1 && filter.published === 1 && filter.posttypevalue === "blog")
           .map((data) => {
             return data;
           });
