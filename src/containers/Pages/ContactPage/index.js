@@ -6,6 +6,7 @@ import NewsLetter from "../../../components/Newsletter";
 import FooterArea from "../../../components/FooterArea";
 import Whatsapp from "../../../components/Whatsapp";
 import Form from "../../../components/Form";
+import SocialShare from "../../../components/SocialShare";
 import config from "../../../config.json";
 import MetaTags from "../../../components/Scripts/HelmetPage";
 // images
@@ -59,6 +60,9 @@ const ContactPage = () => {
                       +91-9965449000
                     </a>
                   </h5>
+                </div>
+                <div>
+                  <SocialShare />
                 </div>
               </div>
             </div>

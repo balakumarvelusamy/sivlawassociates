@@ -174,7 +174,9 @@ const HomePageOne = () => {
           </Modal.Footer>
         </Modal>
       </div>
-      <BlogArea className="blogArea" title="Latest Post/News" source="home" subTitle="From Our Blog " />
+      <BlogArea className="blogArea" title="News Updates" source="home" subTitle="" category="News" />
+      <BlogArea className="blogArea" title="Judgement Updates" source="home" subTitle="" category="Judgement" />
+      <BlogArea className="blogArea" title="Recent Blog" source="home" subTitle="" category="Legal Advice" />
       <Testmonial className="testmonialArea" />
       <TeamMember title="Qualified Attorneys " subTitle="Meet Our Experts" className="teamArea" slider={true} />
       <div>

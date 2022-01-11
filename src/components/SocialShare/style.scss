@@ -1,0 +1,28 @@
+.tagsWrap {
+  h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  ul {
+    li {
+      display: inline-block;
+      margin-right: 7px;
+      margin-bottom: 7px;
+
+      a {
+        background-color: #60c7f6 !important;
+        border: #60c7f6 1px solid;
+        font-size: 14px;
+        display: inline-block;
+        padding: 9px 25px 10px;
+        color: rgb(0, 0, 0);
+        transition: all 0.3s;
+        &:hover {
+          background-color: #000000 !important;
+          color: #fff;
+          border: #60ccf6 1px solid;
+        }
+      }
+    }
+  }
+}
