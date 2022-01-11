@@ -27,7 +27,7 @@ const CyberLawPage = () => {
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
       </header>
       <Breadcumb className="breadcumbArea" title="All Recent Blog Post" breadcumbMenu={breadcumbMenu} background={breadcumb} />
-      <BlogArea className="blogArea" title="Latest Post" subTitle="From Our Blog " />
+      <BlogArea className="blogArea" title="Latest Post" subTitle="From Our Blog" category="" />
       <NewsLetter className="newsLetterArea" />
       <FooterArea />
     </Fragment>

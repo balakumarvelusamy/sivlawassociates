@@ -38,8 +38,8 @@ const BlogSinglePage = (props) => {
             </div>
             <div className="col-lg-4">
               <aside>
-                <CetagorySidebar title="Category" className="cetagoryWrap" />
-                <RecentPosts className="recentPostWrapper d-none" />
+                <CetagorySidebar title="Category" className="cetagoryWrap d-none" />
+                <RecentPosts className="recentPostWrapper" type="blog" source="nothome" />
                 {/* <Instagram /> */}
               </aside>
             </div>
