@@ -31,6 +31,7 @@ class App extends Component {
         <Routes>
           {/* <ToastContainer autoClose={2500} position="top-center" /> */}
           <Route exact path="/" element={<HomePageOne />}></Route>
+          <Route exact path="/home" element={<HomePageOne />}></Route>
           <Route exact path="/about" element={<AboutPage />}></Route>
           <Route exact path="/alt-dispute-resolution" element={<PortfolioPage />}></Route>
           <Route exact path="/intellectual" element={<Intellectual />}></Route>

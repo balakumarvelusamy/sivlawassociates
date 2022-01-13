@@ -37,7 +37,7 @@ const teamContents = ["Admization Institute of Law andTechnology, Juzment School
 const SingleTeamPage = () => {
   return (
     <Fragment>
-      <MetaTags title={"Siva Law Assocaites | Attorneys"} description={config.homedescription} imageurl={config.attoryimageurl} imagealt={config.name} keywords={"Sivakumar, Rekha"} />
+      <MetaTags title={"Siva Law Assocaites | Attorneys"} description={config.attorneydescription} imageurl={config.attoryimageurl} imagealt={config.name} keywords={"Sivakumar, Rekha"} />
       <header className="headerArea">
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />
