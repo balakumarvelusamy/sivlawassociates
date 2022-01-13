@@ -11,4 +11,5 @@ Allow: /cyber-law
 Allow: /env-law
 Allow: /drafting
 Allow: /tax
+Allow: /blog-single/siva-law-associates-11th-anniversary
 Sitemap: https://www.sivalaassociates.in/sitemap.txt
