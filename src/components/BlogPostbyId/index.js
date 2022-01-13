@@ -59,10 +59,10 @@ const BlogPostbyId = (props) => {
         blogpost.length !== 0 ? (
           blogpost.map((blog, index) => (
             <>
-              <MetaTags title={blog.posttitle} description={"Description of " + blog.posttitle} imageurl={blog.post_image} imagealt={blog.posttitle} keywords={""} />
+              <MetaTags title={blog.posttitle} description={"Description - " + blog.posttitle} imageurl={blog.post_image} imagealt={blog.posttitle} keywords={""} />
               <div key={index} className="blogPostWrapper">
                 <div className="blogPostImg">
-                  <img src={blog.post_image} className="titleimage" alt="" />
+                  <img src={blog.post_image} className="titleimage" alt={config.name} />
                 </div>
 
                 <div className="blogPostContent">
