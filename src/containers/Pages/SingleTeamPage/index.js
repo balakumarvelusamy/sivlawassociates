@@ -9,6 +9,7 @@ import ContactArea from "../../../components/ContactArea";
 import config from "../../../config.json";
 import MetaTags from "../../../components/Scripts/HelmetPage";
 // images
+import Whatsapp from "../../../components/Whatsapp";
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import team from "../../../images/Attorneys-single/1.png";
 import chandrasegar from "../../../images/expert/chandrasegar.jpg";
@@ -189,8 +190,8 @@ const SingleTeamPage = () => {
         </svg>
       </div>
       <NewsLetter className="newsLetterArea" />
-
       <FooterArea />
+      <Whatsapp />
     </Fragment>
   );
 };

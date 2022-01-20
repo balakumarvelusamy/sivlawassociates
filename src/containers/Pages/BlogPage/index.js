@@ -14,7 +14,7 @@ import MetaTags from "../../../components/Scripts/HelmetPage";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import single from "../../../images/practice/cyber.jpeg";
-
+import Whatsapp from "../../../components/Whatsapp";
 import "./style.scss";
 
 const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "All Posts" }];
@@ -30,6 +30,7 @@ const CyberLawPage = () => {
       <BlogArea className="blogArea" title="Latest Post" subTitle="From Our Blog" category="" />
       <NewsLetter className="newsLetterArea" />
       <FooterArea />
+      <Whatsapp />
     </Fragment>
   );
 };
