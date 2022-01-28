@@ -23,7 +23,7 @@ const BlogSinglePage = (props) => {
   //const { slug } = props.match.params;
   //let id = slug === undefined ? getvalue : slug;
   let id = getvalue;
-  const breadcumbMenu = [{ name: "Home", route: "/" }, { name: id }];
+  const breadcumbMenu = [{ name: "Home", route: "/" }, { name: id.replace("%", " ") }];
 
   return (
     <Fragment>
@@ -48,7 +48,7 @@ const BlogSinglePage = (props) => {
           </div>
         </div>
       </div>
-      <div className="p-3">
+      <div className="p-3 container">
         For any leagal issues or consultations, Please call/contact us at <a href={config.whatsappurl}>+919965449000</a>
       </div>
       <div>
