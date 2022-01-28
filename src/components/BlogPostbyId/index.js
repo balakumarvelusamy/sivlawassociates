@@ -61,7 +61,7 @@ const BlogPostbyId = (props) => {
             <>
               <MetaTags title={blog.posttitle} description={"Description - " + blog.posttitle} imageurl={blog.post_image} imagealt={blog.posttitle} keywords={""} />
               <div key={index} className="blogPostWrapper">
-                <div className="blogPostImg">
+                <div className="blogPostImg text-center">
                   <img src={blog.post_image} className="titleimage" alt={config.name} />
                 </div>
 
