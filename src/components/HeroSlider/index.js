@@ -31,7 +31,13 @@ class HeroSlider extends Component {
                       <span>{slider.title}</span> <p>{slider.subTitle}</p>
                     </h2>
                     <div className="btnStyle btnStyle3">
-                      <Link to={slider.url}>{slider.button}</Link>
+                      <Link to={slider.url1}>{slider.buttoncall}</Link>{" "}
+                      <Link target="_blank" to={slider.url2}>
+                        {slider.buttonwhatsapp}
+                      </Link>{" "}
+                      <Link target="_blank" to={slider.url3}>
+                        {slider.buttonemail}
+                      </Link>
                       {/* <a href={slider.url}>{slider.button}</a> */}
                     </div>
                   </div>
