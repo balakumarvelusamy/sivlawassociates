@@ -6,7 +6,7 @@ const getpostbytitle = async (value) => {
     .then((response) => response.json())
     .then((data) => {
       if (data.status === 200) {
-        let _filterData = data.data.filter((blog) => blog.posttypevalue === "Blog");
+        let _filterData = data.data;
         if (_filterData) {
           return _filterData;
         }

@@ -34,12 +34,14 @@ const ScrollToTop = (props) => {
   }, [stick]);
 
   return (
-    <div className="whatsapp bordered">
-      <a type="" target="_blank" href={config.whatsappurl} className={`scroll-top ${stick ? "show" : ""}`} onClick={onClickHandler} {...props}>
-        <i className="arrow-top fal fa fa-whatsapp"></i>
-        <i className="arrow-bottom fal  fa fa-whatsapp"></i>
-      </a>
-    </div>
+    <>
+      <div className="whatsapp bordered">
+        <a type="" target="_blank" href={config.whatsappurl} className={`scroll-top ${stick ? "show" : ""}`} onClick={onClickHandler} {...props}>
+          <i className="arrow-top fal fa fa-whatsapp"></i>
+          <i className="arrow-bottom fal  fa fa-whatsapp"></i>
+        </a>
+      </div>
+    </>
   );
 };
 

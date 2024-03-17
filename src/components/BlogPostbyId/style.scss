@@ -8,7 +8,7 @@
   margin-bottom: 60px;
   .blogPostImg {
     img {
-      width: 100%;
+      width: auto;
       -webkit-filter: grayscale(0);
       -moz-filter: grayscale(0);
       filter: grayscale(0);
@@ -60,9 +60,9 @@
         }
       }
     }
-    h3 {
+    h1 {
       font-size: 36px;
-      font-weight: 400;
+
       color: #0188b9;
       margin-bottom: 20px;
       @media (max-width: 375px) {

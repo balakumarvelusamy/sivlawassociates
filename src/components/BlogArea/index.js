@@ -9,7 +9,7 @@ import blog2 from "../../images/blog/2.jpg";
 import blog3 from "../../images/blog/3.jpg";
 import avatar from "../../images/logo/slalogo.png";
 
-const BlogArea = ({ className, title, source, subTitle }) => {
+const BlogArea = ({ className, title, source, subTitle, category }) => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [networkError, setNetworkError] = useState("");
@@ -29,11 +29,20 @@ const BlogArea = ({ className, title, source, subTitle }) => {
     await fetch(config.service_url + "getposts")
       .then((response) => response.json())
       .then((data) => {
-        let active = data
-          .filter((filter) => filter.isactive === 1 && filter.published === 1 && filter.posttypevalue === "Blog")
-          .map((data) => {
-            return data;
-          });
+        let active;
+        if (category === "") {
+          active = data
+            .filter((filter) => filter.isactive === 1 && filter.published === 1 && filter.posttypevalue === "blog")
+            .map((data) => {
+              return data;
+            });
+        } else {
+          active = data
+            .filter((filter) => filter.isactive === 1 && filter.published === 1 && filter.posttypevalue === "blog" && filter.postcategory.toUpperCase() === category.toUpperCase())
+            .map((data) => {
+              return data;
+            });
+        }
         setPosts(active);
         const slicedPosts = active.slice(0, postsPerPage);
         arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedPosts];
@@ -68,15 +77,15 @@ const BlogArea = ({ className, title, source, subTitle }) => {
           {!loading ? (
             postsToShow.length > 0 ? (
               postsToShow.map((blog, index) => (
-                <div key={index} className="col-lg-4 col-sm-6 col-12">
+                <div key={index} className="col-lg-3">
                   <div className="blogWrap">
                     <div className="blogImage">
                       <img src={blog.post_image} className="thumbnailimage" alt="" />
                     </div>
                     <div className="blogContent">
-                      <h3>
+                      <h1>
                         <Link to={"/blog-single/" + blog.slug}>{blog.posttitle}</Link>
-                      </h3>
+                      </h1>
 
                       <ul className="blogMeta font-size-small">
                         <li>{blog.createdby}</li>

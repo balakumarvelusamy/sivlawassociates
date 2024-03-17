@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo/slalogo.png";
 import "./style.scss";
+import SocialShare from "../SocialShare";
 const footerLinks = [
   {
     title: "Quick Link",
@@ -57,6 +58,7 @@ const FooterArea = () => {
                 </div>
               </div>
             ))}
+            <SocialShare />
           </div>
         </div>
       </div>

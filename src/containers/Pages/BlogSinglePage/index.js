@@ -11,6 +11,8 @@ import RecentPosts from "../../../components/RecentPosts";
 import BlogPostbyId from "../../../components/BlogPostbyId";
 import Tags from "../../../components/Tags";
 import Instagram from "../../../components/Instagram";
+import Whatsapp from "../../../components/Whatsapp";
+import config from "../../../config.json";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import "./style.scss";
@@ -21,7 +23,7 @@ const BlogSinglePage = (props) => {
   //const { slug } = props.match.params;
   //let id = slug === undefined ? getvalue : slug;
   let id = getvalue;
-  const breadcumbMenu = [{ name: "Home", route: "/" }, { name: id }];
+  const breadcumbMenu = [{ name: "Home", route: "/" }, { name: id.replace("%", " ") }];
 
   return (
     <Fragment>
@@ -38,13 +40,16 @@ const BlogSinglePage = (props) => {
             </div>
             <div className="col-lg-4">
               <aside>
-                <CetagorySidebar title="Category" className="cetagoryWrap" />
-                <RecentPosts className="recentPostWrapper d-none" />
+                <CetagorySidebar title="Category" className="cetagoryWrap d-none" />
+                <RecentPosts className="recentPostWrapper" type="blog" source="nothome" />
                 {/* <Instagram /> */}
               </aside>
             </div>
           </div>
         </div>
+      </div>
+      <div className="p-3 container">
+        For any leagal issues or consultations, Please call/contact us at <a href={config.whatsappurl}>+919965449000</a>
       </div>
       <div>
         <svg id="wave" viewBox="0 0 1440 127" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -53,6 +58,7 @@ const BlogSinglePage = (props) => {
       </div>
       <NewsLetter className="newsLetterArea" />
       <FooterArea />
+      <Whatsapp />
     </Fragment>
   );
 };

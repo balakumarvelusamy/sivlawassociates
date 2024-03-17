@@ -1,15 +1,20 @@
 .headerArea {
+  background-color: transparent !important;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
   .logoarea {
     .logoimage {
-      height: 30px !important;
+      height: 60px !important;
     }
     h1 {
-      font-size: x-large;
+      font-size: 45px;
+      font-family: "Luxurious Script", cursive;
     }
   }
 
   .headerBottomArea {
-    background: #0188b9;
+    // background: #tra;
     position: relative;
     display: flex;
     align-items: center;

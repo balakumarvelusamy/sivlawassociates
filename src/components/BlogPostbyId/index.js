@@ -20,7 +20,7 @@ const BlogPostbyId = (props) => {
       .then((data) => {
         if (data.status === 200) {
           console.log("id", data.data);
-          let _filterData = data.data.filter((blog) => blog.posttypevalue === "Blog");
+          let _filterData = data.data;
           if (_filterData) {
             setBlogpost(_filterData);
             //getcomments(_filterData[0].post_id);
@@ -59,10 +59,10 @@ const BlogPostbyId = (props) => {
         blogpost.length !== 0 ? (
           blogpost.map((blog, index) => (
             <>
-              <MetaTags title={blog.posttitle} description={"Description of " + blog.posttitle} imageurl={blog.post_image} imagealt={blog.posttitle} keywords={""} />
+              <MetaTags title={blog.posttitle} description={"Description - " + blog.posttitle} imageurl={blog.post_image} imagealt={blog.posttitle} keywords={""} />
               <div key={index} className="blogPostWrapper">
-                <div className="blogPostImg">
-                  <img src={blog.post_image} className="titleimage" alt="" />
+                <div className="blogPostImg text-center">
+                  <img src={blog.post_image} className="titleimage" alt={config.name} />
                 </div>
 
                 <div className="blogPostContent">
@@ -76,7 +76,7 @@ const BlogPostbyId = (props) => {
                       <li>{blog.displaydate}</li>
                     </Fragment>
                   </ul>
-                  <h3>{blog.posttitle}</h3>
+                  <h1>{blog.posttitle}</h1>
                   <div dangerouslySetInnerHTML={{ __html: blog.postcontent }} />
                 </div>
               </div>

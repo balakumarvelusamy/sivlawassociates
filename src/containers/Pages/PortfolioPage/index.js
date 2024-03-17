@@ -5,6 +5,8 @@ import Breadcumb from "../../../components/Breadcumb";
 import NewsLetter from "../../../components/Newsletter";
 import FooterArea from "../../../components/FooterArea";
 import Portfolio from "../../../components/Portfolio";
+import MetaTags from "../../../components/Scripts/HelmetPage";
+import config from "../../../config.json";
 // images
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import single from "../../../images/practice/dispute.jpg";
@@ -18,6 +20,7 @@ const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Area of Practice",
 const PortfolioPage = () => {
   return (
     <Fragment>
+      <MetaTags title={"Alternate Dispute Resolution"} description={config.homedescription} imageurl={single} imagealt={"Alternate Dispute Resolution"} keywords={"Alternate Dispute Resolution, Disputes, Contractual Disputes, Construction Agreements, Service Agreements, Joint Venture Agreements, Supply Contracts, Marketing Agreements, Sale Agreements"} />
       <header className="headerArea">
         {/* <HeaderTop className="headerTop" /> */}
         <HeaderBotton className="headerBottomArea headerBottomAreaStyelTwo" />

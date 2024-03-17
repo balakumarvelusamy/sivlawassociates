@@ -6,6 +6,7 @@ import NewsLetter from "../../../components/Newsletter";
 import FooterArea from "../../../components/FooterArea";
 import Whatsapp from "../../../components/Whatsapp";
 import Form from "../../../components/Form";
+import SocialShare from "../../../components/SocialShare";
 import config from "../../../config.json";
 import MetaTags from "../../../components/Scripts/HelmetPage";
 // images
@@ -35,10 +36,10 @@ const ContactPage = () => {
                 <span>Old No. 150 & New no. 309,1st Floor,Linghi Chetty Street,</span>
                 <span>Parrys,Chennai-600 001</span>
 
-                <h4>Madurai Branch</h4>
-                <span>No: 1, 5th Street,South Alagar Nagar, </span>
-                <span>K.Puthur,</span>
-                <span>Madurai – 600 007</span>
+                <h4>High Court Of Madras & Madurai bench</h4>
+                <span>Suthinthira Nagar, 1st Street, </span>
+                <span>Othakadai,</span>
+                <span>Madurai - 625107</span>
 
                 <h4>Chennai Branch</h4>
                 <span>No. 5, Jasmine Street, Blooming Garden, </span>
@@ -56,9 +57,25 @@ const ContactPage = () => {
                     {" "}
                     <a className="text-dark" href="https://api.whatsapp.com/send?phone=919965449000" target="blank">
                       <i class="fa fa-whatsapp px-2 text-success "></i>
-                      +91-9965449000
+                      <b>+91-9965449000 </b> (Whats app - Advocate Sivakumar)
                     </a>
                   </h5>
+                  <h5>
+                    {" "}
+                    <a className="text-dark" href="https://api.whatsapp.com/send?phone=919965446000" target="blank">
+                      <i class="fa fa-whatsapp px-2 text-success "></i>
+                      <b>+91-9965446000</b> (Whats app - Advocate Rekha)
+                    </a>
+                  </h5>
+                  <h5>
+                    <a className="text-dark" href="Tel:+919965449000">
+                      <i class="fa fa-phone px-2 "></i>
+                      <b> +91-9965449000 </b>(Call Us)
+                    </a>
+                  </h5>
+                </div>
+                <div>
+                  <SocialShare />
                 </div>
               </div>
             </div>
